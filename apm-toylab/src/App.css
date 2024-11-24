@@ -1,0 +1,229 @@
+header {
+  background-color: #C9373B;
+  padding: 1rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  height: 100px;
+  border-radius: 20px;
+}
+
+.header-center {
+  text-align: center;
+  flex-grow: 1;
+  color: #FFFFFF;
+  font-size: x-large;
+}
+
+.header-right {
+  display: flex;
+  gap: 1rem;
+}
+
+header button {
+  background-color: #FFFFFF;
+  color: #C9373B;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+}
+
+header button:hover {
+  background-color: #C9373B;
+  color: #FFFFFF;
+}
+
+.componente-titulo {
+  color: #C9373B;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.inicio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 0px; /* Ajustar según la altura del header */
+}
+
+.inicio-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Para adaptarse en pantallas más pequeñas */
+}
+
+.inicio-image {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.inicio-description {
+  max-width: 600px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.productos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.producto-card {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.producto-imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.producto-nombre {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.producto-descripcion {
+  text-align: left;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  line-height: 1.4;
+}
+
+.integrantes-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.integrante-card {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.integrante-imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.integrante-nombre {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-logo {
+    height: 50px;
+  }
+
+  .header-center {
+    font-size: large;
+    margin-bottom: 0;
+    font-size: medium;
+  }
+
+  .header-right {
+    width: 100%;
+  }
+
+  header button {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .inicio-container {
+    padding: 1rem;
+    margin-top: 0px; /* Ajustar el margen superior en pantallas pequeñas */
+  }
+
+  .inicio-content {
+    flex-direction: column; /* Cambiar a disposición vertical */
+    align-items: center; /* Alinear los elementos al centro */
+    text-align: center; /* Centramos el contenido */
+  }
+
+  .inicio-image {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    max-width: 250px; /* Limitar el tamaño máximo para mantener la proporción */
+  }
+
+  .inicio-description {
+    max-width: 100%; /* Ocupar el ancho del contenedor */
+    font-size: 1rem; /* Reducir el tamaño de la fuente para móviles */
+    margin-top: 1rem; /* Espacio entre la imagen y el texto */
+  }
+
+  .productos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto-card {
+    width: 90%;
+  }
+
+  .integrantes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .integrante-card {
+    width: 90%;
+  }
+}

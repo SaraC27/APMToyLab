@@ -1,0 +1,15 @@
+{
+  "short_name": "APM - ToyLab",
+  "name": "APM - ToyLab",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "247x256 124x128 62x64 46x48 31x32 23x24 15x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
