@@ -15,19 +15,36 @@ interface ProductosProps {
 const Productos: React.FC<ProductosProps> = (props: ProductosProps) => {
     const productos: Producto[] = [
         {
-            nombre: 'Avión',
+            nombre: 'Maverick',
             imagenSrc: avion,
-            descripcion: ['Propiedad1', 'Propiedad2']
+            descripcion: [
+                'Avión de juguete color rojo con blanco',
+                'Dimensiones: 277 x 323 x 72 mm',
+                'Hecho en polipropileno con ejes de hierro',
+                'Cuenta con hélices móviles',
+                'No vuela'
+            ]
         },
         {
-            nombre: 'Carro',
+            nombre: 'Ku-chaw',
             imagenSrc: carro,
-            descripcion: ['Propiedad1', 'Propiedad2']
+            descripcion: [
+                'Carro de juguete color rojo con blanco',
+                'Dimensiones: 255 x 112 x 77 mm',
+                'Hecho en polipropileno con ejes de hierro',
+                'Cuenta con ruedas móviles'
+            ]
         },
         {
             nombre: 'Submarino',
             imagenSrc: submarino,
-            descripcion: ['Propiedad1', 'Propiedad2']
+            descripcion: [
+                'Submarino de juguete color rojo con blanco',
+                'Dimensiones: 248 x 69 x 40 mm',
+                'Hecho en polipropileno con ejes de hierro',
+                'Cuenta con hélice móvil',
+                'No apto para sumergir en agua'
+            ]
         }
     ]
     return (
