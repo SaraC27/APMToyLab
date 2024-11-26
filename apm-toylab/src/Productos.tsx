@@ -36,7 +36,7 @@ const Productos: React.FC<ProductosProps> = (props: ProductosProps) => {
             ]
         },
         {
-            nombre: 'Submarino',
+            nombre: 'Orca',
             imagenSrc: submarino,
             descripcion: [
                 'Submarino de juguete color rojo con blanco',
