@@ -209,11 +209,11 @@
 ### Grupal
 ### Individual
 ## Resultados de ingeniería
-### Módulo 1
-### Módulo 2
-### Módulo 3
-### Módulo 4
-### Módulo 5
-### Módulo 6
-### Módulo 7
-### Módulo 8
+### Resultados Módulo 1
+### Resultados Módulo 2
+### Resultados Módulo 3
+### Resultados Módulo 4
+### Resultados Módulo 5
+### Resultados Módulo 6
+### Resultados Módulo 7
+### Resultados Módulo 8
