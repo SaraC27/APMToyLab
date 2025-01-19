@@ -63,13 +63,13 @@ WEB ❗ - F
      - [Oferta comercial](#oferta-comercial)  🌟
 
    - [Módulo 5: Celda de Manufactura Robotizada](#módulo-5-celda-de-manufactura-robotizada)  
-     - [Justificación y valor agregado](#justificación-y-valor-agregado)  ❗ - M
+     - [Justificación y valor agregado](#justificación-y-valor-agregado)  ✅ - M
      - [Diseño](#diseño)  
-       - [Relación con el proceso de manufactura](#relación-con-el-proceso-de-manufactura) ❗ - M
-       - [Funcionalidad del robot](#funcionalidad-del-robot)  ❗ - M
-       - [Interacción con operarios](#interacción-con-operarios)  ❗ - M
-       - [Análisis y gestión de riesgos](#análisis-y-gestión-de-riesgos)  ❗ - M
-       - [Seguridad](#seguridad)  ❗ - M
+       - [Relación con el proceso de manufactura](#relación-con-el-proceso-de-manufactura) ✅ - M
+       - [Funcionalidad del robot](#funcionalidad-del-robot)  ✅ - M
+       - [Interacción con operarios](#interacción-con-operarios)  ✅ - M
+       - [Análisis y gestión de riesgos](#análisis-y-gestión-de-riesgos)  ✅ - M
+       - [Seguridad](#seguridad)  ✅ - M
      - [RobotStudio](#robotstudio)  
        - [Modelado](#modelado)  🌟
        - [Programación](#programación)
