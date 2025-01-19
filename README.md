@@ -13,7 +13,7 @@
 
 # Tabla de Contenido
 
-PARA PONER CUANDO ALGO ESTE LISTO: ✅✅
+PARA PONER CUANDO ALGO ESTE LISTO: ✅
 
 WEB ❗ - F
 
