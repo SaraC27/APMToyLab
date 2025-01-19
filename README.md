@@ -154,9 +154,7 @@ Los procesos de transporte entre las estaciones pueden variar y pueden ser tanto
 
 ### Value Stream Mapping (VSM)
 
-Con el objetivo de identificar y visualizar de manera integral el flujo de materiales e información a lo largo del proceso de producción, se realiza un **VSM** de la planta mencionada anteriormente. Esta herramienta permite detectar ineficiencias, cuellos de botella y actividades que no generan valor, lo que resulta clave para diseñar estrategias de automatización en las estaciones. 
-
-Así mismo, el VSM ayudará a identificar los distintos indicadores de producción que tiene actualmente la planta.
+Con el objetivo de identificar y visualizar de manera integral el flujo de materiales e información a lo largo del proceso de producción, se realiza un **VSM** de la planta mencionada anteriormente. Esta herramienta permite detectar ineficiencias, cuellos de botella y actividades que no generan valor, lo que resulta clave para diseñar estrategias de automatización en las estaciones. Así mismo, el VSM ayudará a identificar los distintos indicadores de producción que tiene actualmente la planta.
 
 ### Indicadores
 
