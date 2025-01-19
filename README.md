@@ -123,45 +123,14 @@ WEB ❗ - F
 # Módulos
 
 ## Módulo 1: Gestión de Producción y Automatización
-### Fábrica de juguetes de plástico
-
-Una fábrica de juguetes de plástico desempeña un papel crucial en la industria manufacturera y en la sociedad en general. Los juguetes no solo son herramientas esenciales para el entretenimiento infantil, sino también para el desarrollo cognitivo, emocional y social de los niños. Estos productos fomentan la creatividad, la imaginación y las habilidades motoras. 
-
-Por esto mismo es fundamental que la planta cumpla con las demandas de producción establecidas para garantizar un suministro constante que satisfaga las necesidades del mercado. Asimismo, mantener las tecnologías actualizadas permite optimizar los procesos, reducir costos operativos y mejorar la eficiencia general. Esto no solo contribuye a la sostenibilidad al minimizar el impacto ambiental, sino que también refuerza la competitividad de la planta, asegurando su relevancia y capacidad para adaptarse a las exigencias de un mercado en constante evolución.
-
-#### Planta pre-automatización
-
-Antes de implementar un proceso de automatización, es importante comprender las características fundamentales de la planta en su estado inicial. A continuación, se presentarán las características más relevantes de la planta, esenciales para identificar áreas de mejora y garantizar una transición eficiente hacia un modelo más avanzado.
-
-La planta comprende un espacio total de **40x45 m** y tiene únicamente un nivel. Además de esto, cuenta con las siguientes etapas de manufactura que garantizan la producción de los juguetes de calidad que caracterizan a la empresa.
-
-#### Etapas del proceso de manufactura
-
-- Mezclado de plástico con pigmentos y aditivos según el color deseado (rojo y blanco).
-- Dosificación de plástico en pequeñas cantidades, según la capacidad de las inyectoras de plástico.
-- Inyección para formar las diferentes piezas, separadas en las siguientes categorías:
-  - Detalles
-  - Partes móviles
-  - Cuerpos
-- Uso de herramientas como escalpelo y soplete para retirar las rebabas de las piezas moldeadas.
-- Ensamble parcial de cuerpos y detalles específicos de cada juguete.
-- Ensamble parcial de piezas móviles, como ejes con ruedas o hélices.
-- Ensamble final del producto.
-- Empaque del juguete terminado en papel burbuja y cajas individuales.
-- Paletizado de cajas con juguetes para transporte y distribución.
-
-Los procesos de transporte entre las estaciones pueden variar y pueden ser tanto manuales como automáticos. Se darán más detalles en la sección donde se presenta el modelo de la planta.
-
-#### Value Stream Mapping (VSM)
-
-Con el objetivo de identificar y visualizar de manera integral el flujo de materiales e información a lo largo del proceso de producción, se realiza un **VSM** de la planta mencionada anteriormente. Esta herramienta permite detectar ineficiencias, cuellos de botella y actividades que no generan valor, lo que resulta clave para diseñar estrategias de automatización en las estaciones. 
-
-Así mismo, el VSM ayudará a identificar los distintos indicadores de producción que tiene actualmente la planta.
-
+### Pre-Automatización
 #### Indicadores
-
-_(Detalles pendientes de incluir en esta sección)._
-
+#### Tecnomatix
+#### VSM Pre
+### Post-Automatización
+#### Indicadores
+#### Tecnomatix
+#### VSM Post
 ### Propuesta automatización
 #### Propuesta
 #### Análisis de Mercado
@@ -204,7 +173,7 @@ La creación de la celda robotizada sigue una hoja de ruta estructurada que guí
 </p>
 
 <div align="center">
-<img src="/apm-toylab/src/Img/Diagrama de Flujo - Celda Robotizada.png", alt="Diagrama de Flujo", style="max-width: 30%; height: auto;">
+<img src="/Users/macuser/Documents/Visual Studio Code Projects/APMToyLab/apm-toylab/src/Img/Diagrama de Flujo - Celda Robotizada.png", alt="Diagrama de Flujo", style="max-width: 70%; height: auto;">
 </div>
 
 ### Justificación y valor agregado
@@ -274,8 +243,8 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
  - **Justificación:** Diseñado para manejar cargas ligeras, como juguetes de 1,2 kg, con precisión y alta velocidad, ideal para procesos de empaque rápido.
 
 <div style="display: flex; justify-content: center; gap: 20px;">
-    <img src="apm-toylab/src/Img/IRB 360-1.png" alt="IRB 360-1" width="300>
-    <img src="apm-toylab/src/Img/IRB 360-2.png" alt="Diagrama 2" width="300>
+    <img src="/Users/macuser/Documents/Visual Studio Code Projects/APMToyLab/apm-toylab/src/Img/IRB 360-1.png" alt="IRB 360-1" style="max-width: 45%; height: auto;">
+    <img src="/Users/macuser/Documents/Visual Studio Code Projects/APMToyLab/apm-toylab/src/Img/IRB 360-2.png" alt="Diagrama 2" style="max-width: 45%; height: auto;">
 </div>
 
 ***IRB 660 (Paletizado):***
@@ -283,8 +252,8 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 - **Justificación:** Su capacidad de carga y área de trabajo lo convierten en la elección ideal para manipular pallets y organizar grandes volúmenes de productos.
 
 <div style="display: flex; justify-content: center; gap: 20px;">
-    <img src="/apm-toylab/src/Img/IRB 660-1.png" alt="IRB 360-1" style="max-width: 10%; height: auto;">
-    <img src="/apm-toylab/src/Img/IRB 660-2.png" alt="Diagrama 2" style="max-width: 10%; height: auto;">
+    <img src="/Users/macuser/Documents/Visual Studio Code Projects/APMToyLab/apm-toylab/src/Img/IRB 660-1.png" alt="IRB 360-1" style="max-width: 50%; height: auto;">
+    <img src="/Users/macuser/Documents/Visual Studio Code Projects/APMToyLab/apm-toylab/src/Img/IRB 660-2.png" alt="Diagrama 2" style="max-width: 50%; height: auto;">
 </div>
 
 #### Interacción con operarios
