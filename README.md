@@ -173,7 +173,7 @@ La creación de la celda robotizada sigue una hoja de ruta estructurada que guí
 </p>
 
 <div align="center">
-<img src="/APMToyLab/apm-toylab/src/Img/Diagrama de Flujo - Celda Robotizada.png", alt="Diagrama de Flujo", style="max-width: 70%; height: auto;">
+<img src="/apm-toylab/src/Img/Diagrama de Flujo - Celda Robotizada.png", alt="Diagrama de Flujo", style="max-width: 40%; height: auto;">
 </div>
 
 ### Justificación y valor agregado
@@ -243,8 +243,8 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
  - **Justificación:** Diseñado para manejar cargas ligeras, como juguetes de 1,2 kg, con precisión y alta velocidad, ideal para procesos de empaque rápido.
 
 <div style="display: flex; justify-content: center; gap: 20px;">
-    <img src="apm-toylab/src/Img/IRB 360-1.png" alt="IRB 360-1" style="max-width: 45%; height: auto;">
-    <img src="apm-toylab/src/Img/IRB 360-2.png" alt="Diagrama 2" style="max-width: 45%; height: auto;">
+    <img src="apm-toylab/src/Img/IRB 360-1.png" alt="IRB 360-1" style="max-width: 30%; height: auto;">
+    <img src="apm-toylab/src/Img/IRB 360-2.png" alt="Diagrama 2" style="max-width: 30%; height: auto;">
 </div>
 
 ***IRB 660 (Paletizado):***
@@ -252,8 +252,8 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 - **Justificación:** Su capacidad de carga y área de trabajo lo convierten en la elección ideal para manipular pallets y organizar grandes volúmenes de productos.
 
 <div style="display: flex; justify-content: center; gap: 20px;">
-    <img src="/APMToyLab/apm-toylab/src/Img/IRB 660-1.png" alt="IRB 360-1" style="max-width: 50%; height: auto;">
-    <img src="/APMToyLab/apm-toylab/src/Img/IRB 660-2.png" alt="Diagrama 2" style="max-width: 50%; height: auto;">
+    <img src="/apm-toylab/src/Img/IRB 660-1.png" alt="IRB 360-1" style="max-width: 30%; height: auto;">
+    <img src="/apm-toylab/src/Img/IRB 660-2.png" alt="Diagrama 2" style="max-width: 30%; height: auto;">
 </div>
 
 #### Interacción con operarios
