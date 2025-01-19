@@ -274,8 +274,8 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
  - **Justificación:** Diseñado para manejar cargas ligeras, como juguetes de 1,2 kg, con precisión y alta velocidad, ideal para procesos de empaque rápido.
 
 <div style="display: flex; justify-content: center; gap: 20px;">
-    <img src="apm-toylab/src/Img/IRB 360-1.png" alt="IRB 360-1" style="max-width: 10%; height: auto;">
-    <img src="apm-toylab/src/Img/IRB 360-2.png" alt="Diagrama 2" style="max-width: 10%; height: auto;">
+    <img src="apm-toylab/src/Img/IRB 360-1.png" alt="IRB 360-1" width="300>
+    <img src="apm-toylab/src/Img/IRB 360-2.png" alt="Diagrama 2" width="300>
 </div>
 
 ***IRB 660 (Paletizado):***
