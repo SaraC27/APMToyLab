@@ -173,8 +173,9 @@ La creación de la celda robotizada sigue una hoja de ruta estructurada que guí
 </p>
 
 <div align="center">
-<img src="/Users/macuser/Documents/Visual Studio Code Projects/APMToyLab/apm-toylab/src/Img/Diagrama de Flujo - Celda Robotizada.png", alt="Diagrama de Flujo", style="max-width: 70%; height: auto;">
+<img heught="300" alt="Diagrama de Flujo - Celda Robotizada" src="https://github.com/user-attachments/assets/58232c87-4e6b-45fb-8a64-d22cb6fa12e6" />
 </div>
+
 
 ### Justificación y valor agregado
 <p align="justify"> La implementación de una celda robotizada para los procesos de empacado y paletizado se fundamenta en la necesidad de optimizar la eficiencia operativa, mejorar la calidad del producto final y garantizar la seguridad en las operaciones industriales. Este proyecto responde a diversos factores clave:
@@ -242,18 +243,18 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
  - **Función principal:** Realiza tareas de empaquetado de juguetes en las líneas de producción, manipulando objetos individuales con alta velocidad y precisión.
  - **Justificación:** Diseñado para manejar cargas ligeras, como juguetes de 1,2 kg, con precisión y alta velocidad, ideal para procesos de empaque rápido.
 
-<div style="display: flex; justify-content: center; gap: 20px;">
-    <img src="/Users/macuser/Documents/Visual Studio Code Projects/APMToyLab/apm-toylab/src/Img/IRB 360-1.png" alt="IRB 360-1" style="max-width: 45%; height: auto;">
-    <img src="/Users/macuser/Documents/Visual Studio Code Projects/APMToyLab/apm-toylab/src/Img/IRB 360-2.png" alt="Diagrama 2" style="max-width: 45%; height: auto;">
+<div align="center">
+  <img height="300" alt="IRB 360-2" src="https://github.com/user-attachments/assets/33997a38-2937-438c-be1e-9ae0356c42d7" />
+  <img height="300" alt="IRB 360-1" src="https://github.com/user-attachments/assets/dbe4080f-74bc-4d21-a0ac-b1f1475627ba" />
 </div>
 
 ***IRB 660 (Paletizado):***
 - **Función principal:** Encargado de paletizar cajas o productos terminados (juguetes ya empaquetados) en pallets de tamaño estándar de 1,2 m x 1,2 m.
 - **Justificación:** Su capacidad de carga y área de trabajo lo convierten en la elección ideal para manipular pallets y organizar grandes volúmenes de productos.
 
-<div style="display: flex; justify-content: center; gap: 20px;">
-    <img src="/Users/macuser/Documents/Visual Studio Code Projects/APMToyLab/apm-toylab/src/Img/IRB 660-1.png" alt="IRB 360-1" style="max-width: 50%; height: auto;">
-    <img src="/Users/macuser/Documents/Visual Studio Code Projects/APMToyLab/apm-toylab/src/Img/IRB 660-2.png" alt="Diagrama 2" style="max-width: 50%; height: auto;">
+<div align="center">
+  <img height="300" alt="IRB 660-1" src="https://github.com/user-attachments/assets/d1385a1c-aeab-4a7e-b7bf-bc383fabb4b5" />
+  <img height="300" alt="IRB 660-2" src="https://github.com/user-attachments/assets/1cb6cc29-fe77-4be1-ae99-bec89961eadc" />
 </div>
 
 #### Interacción con operarios
