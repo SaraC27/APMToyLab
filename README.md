@@ -27,7 +27,7 @@ WEB ❗ - F
        - [Indicadores](#indicadores-post) ❗ - J
        - [Tecnomatix](#tecnomatix-post)  ❗ - J
        - [VSM](#vsm-post)  ❗ - J
-     - [Propuesta automatización](#propuesta-automatización)  ❗ - YA!
+     - [Propuesta automatización](#propuesta-automatización)  ❗ - F
        - [Propuesta](#propuesta) - F
        - [Análisis de Mercado](#análisis-de-mercado)  ❗ - F
        - [Sistema MES](#sistema-mes)  ❗ - F
@@ -210,7 +210,7 @@ La creación de la celda robotizada sigue una hoja de ruta estructurada que guí
 </p>
 
 <div align="center">
-<img heught="300" alt="Diagrama de Flujo - Celda Robotizada" src="https://github.com/user-attachments/assets/58232c87-4e6b-45fb-8a64-d22cb6fa12e6" />
+<img height="300" alt="Diagrama de Flujo - Celda Robotizada" src="https://github.com/user-attachments/assets/58232c87-4e6b-45fb-8a64-d22cb6fa12e6" />
 </div>
 
 

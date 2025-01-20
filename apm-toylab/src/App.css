@@ -159,6 +159,45 @@ header button:hover {
   margin-bottom: 0.5rem;
 }
 
+.modulo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.modulo-card {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.modulo-card:hover {
+  cursor: pointer;
+  background-color: #C9373B;
+  color: #FFFFFF;
+}
+
+.modulo-imagen {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.modulo-nombre {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
 /* Estilos responsive para pantallas pequeñas */
 @media (max-width: 768px) {
   nav {
@@ -228,6 +267,15 @@ header button:hover {
   }
 
   .integrante-card {
+    width: 90%;
+  }
+
+  .modulo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modulo-card {
     width: 90%;
   }
 }

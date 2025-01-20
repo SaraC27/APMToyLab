@@ -4,6 +4,7 @@ import logo from './Img/logo.webp'
 
 interface HeaderProps {
     setSelectedPage: React.Dispatch<React.SetStateAction<pages>>
+    resetMod: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
@@ -20,6 +21,10 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
           <button onClick={() => props.setSelectedPage('home')}>Inicio</button>
           <button onClick={() => props.setSelectedPage('productos')}>Productos</button>
           <button onClick={() => props.setSelectedPage('integrantes')}>Integrantes</button>
+          <button onClick={() => {
+            props.resetMod(prev=>!prev)
+            props.setSelectedPage('modulos')
+            }}>Módulos</button>
         </div>
       </nav>
     </header>
