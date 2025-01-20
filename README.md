@@ -45,8 +45,8 @@ WEB ❗ - F
    - [Módulo 3: Planeación del Proyecto](#módulo-3-planeación-del-proyecto)  
      - [Proyecto del curso](#proyecto-del-curso) 
        - [EDT](#edt)  ✅ - F
-       - [Cronograma](#cronograma)  ❗ - F
-     - [Proyecto comercial](#proyecto-comercial)  ❗
+       - [Cronograma](#cronograma)  ✅ - F
+     - [Proyecto comercial](#proyecto-comercial)
        - [ERP](#erp)  ❗ - F
        - [EDT](#edt-comercial)  ❗ - F
        - [Cronograma](#cronograma-comercial)  ❗ - F
@@ -281,7 +281,6 @@ dateFormat YYYY-MM-DD
     Modelar juguetes :Manuel, 2024-11-11, 21d
 ```
 
-#### Bitácoras
 ### Proyecto comercial
 #### ERP
 #### EDT Comercial
