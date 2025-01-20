@@ -309,9 +309,25 @@ dateFormat YYYY-MM-DD
 La creación de la celda robotizada sigue una hoja de ruta estructurada que guía cada etapa del proceso, desde la orientación inicial hasta la validación final. Este diagrama de flujo detalla los pasos necesarios para analizar, diseñar, implementar y evaluar la celda, asegurando que cumpla con los objetivos del proyecto de manera eficiente y segura.
 </p>
 
-<div align="center">
-<img height="700" alt="Diagrama de Flujo - Celda Robotizada" src="https://github.com/user-attachments/assets/58232c87-4e6b-45fb-8a64-d22cb6fa12e6" />
-</div>
+```mermaid
+flowchart TD
+    A[Orientación del Proyecto] --> B[Definir objetivos, alcance, recursos y cronograma]
+    B --> C[Identificación de Procesos]
+    C --> D[Analizar operaciones, identificar mejoras y calcular indicadores actuales]
+    D --> E[Definición del Diagrama de Flujo]
+    E --> F[Elaborar un diagrama que incluya espacios, acciones, flujo de materiales y herramientas]
+    F --> G[Análisis del Espacio]
+    G --> H[Determinar necesidades de espacio y restricciones, considerando el robot]
+    H --> I[Proponer Layout 1]
+    H --> J[Proponer Layout N]
+    I & J --> K{¿Layouts cumplen requisitos mínimos?}
+    K -->|Sí| L[Seleccionar el mejor layout]
+    K -->|No| M[Ajustar y mejorar los layouts]
+    L & M --> N[Seguridad]
+    N --> O[Identificar riesgos, definir protecciones y protocolos de emergencia]
+    O --> P[Simulación]
+    P --> Q[Simular la celda en RobotStudio para obtener indicadores y probar programación]
+```
 
 
 ### Justificación y valor agregado
