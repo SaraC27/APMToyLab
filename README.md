@@ -186,6 +186,86 @@ _(Detalles pendientes de incluir en esta sección)._
 ## Módulo 3: Planeación del Proyecto
 ### Proyecto del curso
 #### EDT
+```mermaid
+graph TD
+  A1["1. Realizar análisis del proceso educativo"] --> A1_1["1.1 Analizar gestión de proyecto"]
+  A1["1. Realizar análisis del proceso educativo"] --> A1_2["1.2 Analizar trabajo colaborativo"]
+  A1["1. Realizar análisis del proceso educativo"] --> A1_3["1.3 Analizar proceso de aprendizaje"]
+  A1["1. Realizar análisis del proceso educativo"] --> A1_4["1.4 Dar recomendaciones"]
+
+  A1_1 --> A1_1_1["1.1.1 Definir dinámica de reuniones"]
+  A1_1 --> A1_1_2["1.1.2 Analizar dinámica de reuniones posterior a la finalización del proyecto"]
+  A1_1 --> A1_1_3["1.1.3 Crear sistema de bitácoras"]
+  A1_1 --> A1_1_4["1.1.4 Analizar bitácoras"]
+  A1_1 --> A1_1_5["1.1.5 Definir pasos a seguir para resolver problemáticas"]
+  A1_1 --> A1_1_6["1.1.6 Retroalimentar los avances"]
+  A1_1 --> A1_1_7["1.1.7 Interacción con docentes"]
+
+  A1_2 --> A1_2_1["1.2.1 Definir roles de los participantes"]
+  A1_2 --> A1_2_2["1.2.2 Tomar fotos del trabajo en equipo"]
+  A1_2 --> A1_2_3["1.2.3 Comunicarse por WhatsApp"]
+  A1_2 --> A1_2_4["1.2.4 Analizar colaboración con el equipo"]
+  A1_2 --> A1_2_5["1.2.5 Analizar colaboración con los docentes"]
+
+  A1_3 --> A1_3_1["1.3.1 Analizar correspondencia entre actividades y resultados"]
+  A1_3 --> A1_3_2["1.3.2 Identificar logros"]
+  A1_3 --> A1_3_3["1.3.3 Identificar dificultades"]
+  A1_3 --> A1_3_4["1.3.4 Analizar efectividad del proceso de aprendizaje"]
+
+  A1_4 --> A1_4_1["1.4.1 Dar recomendaciones sobre PBL"]
+
+  B1["2. Gestionar la producción y automatización"] --> B1_1["2.1 Analizar la simulación de la planta"]
+  B1["2. Gestionar la producción y automatización"] --> B1_2["2.2 Diseñar la planta antes de automatizar"]
+  B1["2. Gestionar la producción y automatización"] --> B1_3["2.3 Automatizar la planta"]
+  B1["2. Gestionar la producción y automatización"] --> B1_4["2.4 Desarrollar sistema MES"]
+
+  B1_1 --> B1_1_1["2.1.1 Definir las posibles fallas"]
+  B1_1_1 --> B1_1_1_1["2.1.1.1 Definir frecuencia de las fallas"]
+  B1_1_1 --> B1_1_1_2["2.1.1.2 Definir el impacto de las fallas"]
+  B1_1 --> B1_1_2["2.1.2 Definir parámetros de calidad"]
+  B1_1 --> B1_1_3["2.1.3 Definir protocolo de mantenimiento"]
+  B1_1 --> B1_1_4["2.1.4 Definir protocolo de setup"]
+  B1_1 --> B1_1_5["2.1.5 Calcular indicadores"]
+  B1_1_5 --> B1_1_5_1["2.1.5.1 Estimar producción"]
+  B1_1_5 --> B1_1_5_2["2.1.5.2 Determinar OEE"]
+  B1_1_5 --> B1_1_5_3["2.1.5.3 Calcular KPIs"]
+  B1_1_5 --> B1_1_5_4["2.1.5.4 Balance de líneas"]
+
+  B1_2 --> B1_2_1["2.2.1 Diagramas VSM-PRE"]
+  B1_2 --> B1_2_2["2.2.2 Diagramas VSM-POS"]
+  B1_2 --> B1_2_3["2.2.3 Aplicación de estrategias"]
+
+  B1_3 --> B1_3_1["2.3.1 Selección de tecnologías de automatización"]
+  B1_3 --> B1_3_2["2.3.2 Implementación de sensores y actuadores"]
+  B1_3 --> B1_3_3["2.3.3 Programación del sistema automatizado"]
+  B1_3 --> B1_3_4["2.3.4 Verificación del sistema automatizado"]
+  B1_3 --> B1_3_5["2.3.5 Capacitación de personal"]
+
+  B1_4 --> B1_4_1["2.4.1 Base de datos"]
+  B1_4 --> B1_4_2["2.4.2 API"]
+  B1_4 --> B1_4_3["2.4.3 Autenticación"]
+  B1_4 --> B1_4_4["2.4.4 AWS"]
+
+  C1["3. Implementar la Industria 4.0 en la automatización del proyecto"] --> C1_1["3.1 Realizar diagramas de instrumentación"]
+  C1["3. Implementar la Industria 4.0 en la automatización del proyecto"] --> C1_2["3.2 Diseñar arquitectura de control y comunicaciones"]
+  C1["3. Implementar la Industria 4.0 en la automatización del proyecto"] --> C1_3["3.3 Digitalizar líneas de producción"]
+
+  C1_1 --> C1_1_1["3.1.1 Seleccionar tipo de instrumentos a usar"]
+  C1_1 --> C1_1_2["3.1.2 Definir ubicación de los instrumentos"]
+  C1_1 --> C1_1_3["3.1.3 Definir flujo de información entre instrumentos"]
+  C1_1 --> C1_1_4["3.1.4 Realizar diagrama"]
+
+  C1_2 --> C1_2_1["3.2.1 Definir equipos necesarios para el proyecto"]
+  C1_2 --> C1_2_2["3.2.2 Establecer arquitectura entre los distintos equipos"]
+  C1_2 --> C1_2_3["3.2.3 Identificar protocolos de comunicación entre los distintos equipos"]
+  C1_2 --> C1_2_4["3.2.4 Establecer red de comunicación entre los equipos"]
+  C1_2 --> C1_2_5["3.2.5 Realizar pruebas de la red de comunicación"]
+  C1_2 --> C1_2_6["3.2.6 Determinar la relación con otros niveles de la pirámide de automatización"]
+
+  C1_3 --> C1_3_1["3.3.1 Definir líneas de producción pre y post"]
+  C1_3 --> C1_3_2["3.3.2 Modelar gemelo digital de la planta"]
+  C1_3 --> C1_3_3["3.3.3 Implementar IIoT para complementar gemelo digital"]
+```
 #### Cronograma
 ### Proyecto comercial
 #### ERP
