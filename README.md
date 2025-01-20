@@ -185,7 +185,7 @@ _(Detalles pendientes de incluir en esta sección)._
 ## Módulo 3: Planeación del Proyecto
 ### Proyecto del curso
 #### EDT
-El EDT detallado se encuentra disponible [acá](Files/EDT.xlsx)
+El EDT detallado se encuentra disponible [acá](Files/EDT.xlsx).
 ```mermaid
 graph TD
   A[1 Realizar análisis del proceso educativo] --> B[1.1 Analizar gestión de proyecto]
@@ -242,6 +242,46 @@ graph TD
 ```
 
 #### Cronograma
+El cronograma detallado se encuentra disponible [acá](Files/Cronograma.xlsx).
+```mermaid
+gantt
+title Cronograma del Proyecto
+dateFormat YYYY-MM-DD
+    1.1 Gestionar proyecto :Felipe, 2024-10-28, 35d
+    1.2 Organizar equipo y responsabilidades :Felipe, 2024-10-28, 31d
+    1.3 Analizar resultados del equipo :Felipe, 2025-02-24, 14d
+    1.4 Analizar curso :Felipe, 2025-03-03, 7d
+    2.1 Definir parámetros de la planta :Sara, 2024-11-11, 70d
+    2.2 Diseñar planta pre-automatización :Juan, 2024-11-11, 70d
+    2.3 Automatizar la planta :Juan, 2025-01-13, 42d
+    2.4 Desarrollar sistema MES :Felipe, 2025-01-13, 42d
+    3.1 Diagramar la instrumentación :Manuel, 2025-01-06, 49d
+    3.2 Diseñar arquitectura de la planta :Felipe, 2025-01-13, 14d
+    3.3 Contruir el gemelo digital :Juan, 2025-01-13, 28d
+    4.1 Planear actividades :Manuel, 2024-11-25, 21d
+    4.2 Organizar actividades y tiempos :Felipe, 2025-01-06, 7d
+    5.1 Calcular viabilidad económica :Felipe, 2025-02-10, 14d
+    5.2 Crear oferta comercial :Felipe, 2025-02-24, 7d
+    6.1 Analizar robotización :Manuel, 2025-01-06, 35d
+    6.2 Diseñar celda robotizada :Manuel, 2024-12-02, 49d
+    6.3 Modelar celda robotizada :Manuel, 2025-01-20, 21d
+    6.4 Mitigar riesgos de la celda :Manuel, 2025-02-10, 14d
+    7.1 Construir gemelo digital en NX :Juan, 2025-01-13, 28d
+    7.2 Integrar gemelo digital con otros sistemas :Juan, 2025-02-03, 21d
+    7.3 Probar funcionamiento del gemelo digital :Sara, 2025-02-10, 14d
+    8.1 Diseñar lógica de programación :Felipe, 2025-01-06, 14d
+    8.2 Realizar el programa en Ladder :Felipe, 2025-01-20, 14d
+    9.1 Diseñar interfaz HMI para sistema SCADA :Sara, 2025-01-20, 14d
+    9.2 Incorporar interfaz en el sistema :Sara, 2025-01-27, 14d
+    9.3 Mejorar interfaz :Sara, 2025-02-10, 14d
+    Crear página web :Felipe, 2024-11-25, 7d
+    Definir marca :Sara, 2024-10-28, 14d
+    Documentar trabajo :Felipe, 2024-11-11, 119d
+    Elegir juguetes :Sara, 2024-10-28, 35d
+    Modelar juguetes :Manuel, 2024-11-11, 21d
+```
+
+#### Bitácoras
 ### Proyecto comercial
 #### ERP
 #### EDT Comercial
