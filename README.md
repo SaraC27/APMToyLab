@@ -185,6 +185,7 @@ _(Detalles pendientes de incluir en esta sección)._
 ## Módulo 3: Planeación del Proyecto
 ### Proyecto del curso
 #### EDT
+El EDT detallado se encuentra disponible [acá](Files/EDT.xlsx)
 ```mermaid
 graph TD
   A[1 Realizar análisis del proceso educativo] --> B[1.1 Analizar gestión de proyecto]
