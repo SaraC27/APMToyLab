@@ -170,7 +170,13 @@ _(Detalles pendientes de incluir en esta sección)._
 #### VSM Post
 ### Propuesta automatización
 #### Propuesta
+Como propuesta de automatización se propone realizar los siguientes 4 cambios:
+
+
+
 #### Análisis de Mercado
+
+
 #### Sistema MES
 
 ## Módulo 2: Industria 4.0 en la Automatización

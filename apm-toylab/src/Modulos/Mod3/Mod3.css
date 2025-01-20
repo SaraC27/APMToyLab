@@ -1,12 +1,11 @@
 .hierarchical-renderer {
-  font-family: Arial, sans-serif;
-  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
 }
 
 .hierarchical-renderer h2 {
@@ -54,4 +53,12 @@
 
 .detail-item:hover {
   background-color: #fce4e4;
+}
+
+.mermaid {
+  width: 100%;
+}
+
+.mermaid svg {
+  max-width: 100% !important;
 }
