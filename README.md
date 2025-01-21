@@ -158,7 +158,19 @@ Con el objetivo de identificar y visualizar de manera integral el flujo de mater
 
 ### Indicadores
 
-_(Detalles pendientes de incluir en esta sección)._
+Existen distintos indicadores en una planta de manufactura que permiten medir y evaluar el desempeño de los procesos operativos, productivos y estratégicos. A partir del análisis de los indicadores iniciales, se podrán identificar áreas de oportunidad y sugerir cambios específicos en la planta. Para este caso especifico se tendran en cuenta los siguientes indicadores.
+- **Work in Process (WIP)**
+- **Takt Time (T)**
+- **Tiempo de ciclo (Tc)**
+- **Tasa de producción (Rp)**
+- **Capacidad de producción (Pc)**
+- **Tiempo total de manufactura (MLT)**
+- **Disponibilidad (A)**
+- **Eficiencia**
+- **Calidad**
+- **Overall Equipment Effectiveness (OEE)**
+- **Utilización (U)**
+
 
 ### Pre-Automatización
 #### Indicadores
