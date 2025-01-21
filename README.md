@@ -406,8 +406,8 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 - **Justificación:** Su capacidad de carga y área de trabajo lo convierten en la elección ideal para manipular pallets y organizar grandes volúmenes de productos.
 
 <div align="center">
-  <img style="height: 40vh;" alt="IRB 660-1" src="https://github.com/user-attachments/assets/d1385a1c-aeab-4a7e-b7bf-bc383fabb4b5" />
-  <img style="height: 40vh;" alt="IRB 660-2" src="https://github.com/user-attachments/assets/1cb6cc29-fe77-4be1-ae99-bec89961eadc" />
+  <img style="width: 36vw;" alt="IRB 660-1" src="https://github.com/user-attachments/assets/d1385a1c-aeab-4a7e-b7bf-bc383fabb4b5" />
+  <img style="width: 40vw;" alt="IRB 660-2" src="https://github.com/user-attachments/assets/1cb6cc29-fe77-4be1-ae99-bec89961eadc" />
 </div>
 
 #### Interacción con operarios
