@@ -275,7 +275,7 @@ Para saber cuántos juguetes deben producirse (gestión de la producción), se r
 *Eje vertical en millones de pesos colombianos*
 
 6. Supusimos un precio de venta de los juguetes de $1.5$ veces su costo.
-7. Modelamos cuántos juguetes de cada tipo hay que fabricar y vender para llegar a los ingresos estimados. Para esto, se tiene $total juguetes tipo i = precio de un juguete tipo i* \frac{ingresos esperados totales}{porcentaje de ingresos que suple juguete tipo i}$.
+7. Modelamos cuántos juguetes de cada tipo hay que fabricar y vender para llegar a los ingresos estimados. Para esto, se tiene $total juguetes tipo i = precio de un juguete tipo i* \frac{ingresos\ esperados\ totales}{porcentaje\ de\ ingresos\ que\ suple\ juguete\ tipo\ i}$.
 8. Calculamos cuántos juguetes de cada tipo se deben producir. Se ajustó el `porcentaje de ingresos que suple juguete tipo i` para que la cantidad de juguetes a producir de cada tipo fuera similar y se obtuvo la siguiente gráfica de producción:
 
 <img width="454" alt="Screenshot 2025-01-22 at 2 02 37 AM" src="https://github.com/user-attachments/assets/866e68f2-4536-4238-853f-ef832aae265c" />
