@@ -189,11 +189,12 @@ A partir de la planta previa a la automatizacion, se obtienen solo siguientes KP
 | **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                                      | Cálculos                | 47 %                          |
 | **Utilización (U)**         | % en el que trabaja la fábrica                                                          | Cálculos                | Variable según el mes (70% máximo) |
 
+
 #### Tecnomatix
 
 El diseño inicial de la planta pre-automatizada se llevó a cabo en el software de fabricación digital Tecnomatix Plant Simulation de Siemens, debido a que este software permitió la simulación de las diferentes etapas del proceso de manufactura incluyendo, asimismo, los tiempos de proceso de cada una de las máquinas. Esto último facilitó observar que en la estación de empaque con papel burbuja se preseta un cuello de botella.
 
-
+![image](https://github.com/user-attachments/assets/71ed153f-e903-409c-a6ed-5a1510199684)
 
 
 #### VSM Pre
