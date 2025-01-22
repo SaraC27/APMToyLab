@@ -184,7 +184,7 @@ A partir de la planta previa a la automatizacion, se obtienen solo siguientes KP
 | **Capacidad de producción (Pc)** | Máxima tasa de salida que una fábrica es capaz de producir                                | Calculado               | 2288 juguetes / mes           |
 | **Tiempo total de manufactura (MLT)** | Tiempo desde la orden de producción hasta finalizar el lote                                   | Cálculos                | 514 minutos                   |
 | **Disponibilidad (A)**      | Disponibilidad de las máquinas                                                          | Definido                | 70 %                          |
-| **Eficiencia**              |                                                                                         | Definido                | 75 %                          |
+| **Eficiencia**              | Eficiencia de desempeño                                                                                        | Definido                | 75 %                          |
 | **Calidad**                 | % de producto defectuoso                                                                | Definido                | 90 %                          |
 | **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                                      | Cálculos                | 47 %                          |
 | **Utilización (U)**         | % en el que trabaja la fábrica                                                          | Cálculos                | Variable según el mes (70% máximo) |
