@@ -212,7 +212,7 @@ Luego de implementar la propuesta de automatizacion se espera obtener los siguie
 
 #### Tecnomatix
 #### VSM Post
-Luego de implementar la propuesta de automatizacion se espera obtener el siguiente [VSM](Files/_VSM-Post-Automatizacion.drawio.pdf).
+Luego de implementar la propuesta de automatizacion se espera obtener el siguiente [VSM](Files/VSM_Post.pdf).
 ### Propuesta automatización
 
 Se propone implementar un plan de automatización en la planta, enfocado en optimizar tres zonas clave del proceso de producción. A continuación, se detalla la propuesta para cada una de estas áreas:
