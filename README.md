@@ -195,7 +195,7 @@ La informacion detallada del diagrama VSM de la planta antes de la automatizacio
 
 ### Post-Automatización
 #### Indicadores
-Luego de implementar la propuesta de automatizacion se espera obtener los siguientes KPI. Para obtener informacion mas detallada sobre el calculo de los mismos, remitirse al siguiente [archivo](Files/Indicadores.xlsx).
+Luego de implementar la propuesta de automatizacion se espera obtener los siguientes KPI. Para obtener informacion mas detallada sobre el calculo de los mismos, remitirse al siguiente [archivo](Files/Indicadores_Post.xlsx).
 | **KPI**                     | **Qué es?**                                                                             | **Cómo se determina?** | **Valor**                     |
 |-----------------------------|-----------------------------------------------------------------------------------------|-------------------------|-------------------------------|
 | **Work in Process (WIP)**   | Contempla el material que se encuentra entre estaciones y está en espera de ser procesado (Wi) o que está siendo procesado en las estaciones (WEi) | Cálculos                | $1.249.964,00                |
