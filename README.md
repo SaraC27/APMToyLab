@@ -20,13 +20,13 @@ WEB ❗ - F
 1. [Módulos](#módulos)  
    - [Módulo 1: Gestión de Producción y Automatización](#módulo-1-gestión-de-producción-y-automatización)  
      - [Pre-Automatización](#pre-automatización) ❗
-       - [Indicadores](#indicadores) ❗ - J
+       - [Indicadores](#indicadores) ✅
        - [Tecnomatix](#tecnomatix) ❗ - J
-       - [VSM](#vsm-pre) ❗ - J
+       - [VSM](#vsm-pre) ✅
      - [Post-Automatización](#post-automatización)  ❗
-       - [Indicadores](#indicadores-post) ❗ - J
+       - [Indicadores](#indicadores-post) ✅
        - [Tecnomatix](#tecnomatix-post)  ❗ - J
-       - [VSM](#vsm-post)  ❗ - J
+       - [VSM](#vsm-post)  ✅
      - [Propuesta automatización](#propuesta-automatización)  ❗ - F
        - [Propuesta](#propuesta) - F
        - [Análisis de Mercado](#análisis-de-mercado)  ❗ - F
