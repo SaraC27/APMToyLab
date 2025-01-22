@@ -140,7 +140,7 @@ header button:hover {
   padding: 1rem;
   border-radius: 20px;
   width: 200px;
-  height: 400px;
+  height: 500px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -166,6 +166,13 @@ header button:hover {
   gap: 2rem;
   flex-wrap: wrap;
   padding: 2rem;
+}
+
+.integrante-descripcion {
+  text-align: left;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  line-height: 1.4;
 }
 
 .modulo-card {

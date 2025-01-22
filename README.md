@@ -43,13 +43,10 @@ WEB ❗ - F
        - [Tecnologías 4.0](#tecnologías-40-post) 🌟 
 
    - [Módulo 3: Planeación del Proyecto](#módulo-3-planeación-del-proyecto)  
-     - [Proyecto del curso](#proyecto-del-curso) 
-       - [EDT](#edt)  ✅ - F
-       - [Cronograma](#cronograma)  ✅ - F
-     - [Proyecto comercial](#proyecto-comercial)
-       - [ERP](#erp)  ❗ - F
-       - [EDT](#edt-comercial)  ❗ - F
-       - [Cronograma](#cronograma-comercial)  ❗ - F
+     - [ERP](#erp)
+     - [EDT](#edt)  ✅ - F
+     - [Cronograma](#cronograma)  ✅ - F
+     - [Bitácoras](#bitácoras)  ❗ - F
 
    - [Módulo 4: Evaluación Económica de Proyectos](#módulo-4-evaluación-económica-de-proyectos)  
      - [Economía del Proyecto](#economía-del-proyecto)  
@@ -279,8 +276,8 @@ Con esta mejora, el tiempo necesario para el empacado se reduciría a 40 segundo
 #### Diagrama Arquitectura
 #### Tecnologías 4.0
 ## Módulo 3: Planeación del Proyecto
-### Proyecto del curso
-#### EDT
+### ERP
+### EDT
 El EDT detallado se encuentra disponible [acá](Files/EDT.xlsx).
 ```mermaid
 graph TD
@@ -337,7 +334,7 @@ graph TD
   A --> D[9.3 Mejorar la interfaz]
 ```
 
-#### Cronograma
+### Cronograma
 El cronograma detallado se encuentra disponible [acá](Files/Cronograma.xlsx).
 ```mermaid
 gantt
@@ -376,11 +373,7 @@ dateFormat YYYY-MM-DD
     Elegir juguetes :Sara, 2024-10-28, 35d
     Modelar juguetes :Manuel, 2024-11-11, 21d
 ```
-
-### Proyecto comercial
-#### ERP
-#### EDT Comercial
-#### Cronograma Comercial
+### Bitácoras
 
 ## Módulo 4: Evaluación Económica de Proyectos
 ### Economía del Proyecto

@@ -221,8 +221,8 @@ const HierarchicalRenderer: React.FC = () => {
         7.1 Construir gemelo digital en NX :Juan, 2025-01-13, 28d
         7.2 Integrar gemelo digital con otros sistemas :Juan, 2025-02-03, 21d
         7.3 Probar funcionamiento del gemelo digital :Sara, 2025-02-10, 14d
-        8.1 Diseñar lógica de programación :Felipe, 2025-01-06, 14d
-        8.2 Realizar el programa en Ladder :Felipe, 2025-01-20, 14d
+        8.1 Diseñar lógica de programación :Felipe, 2025-01-20, 14d
+        8.2 Realizar el programa en Ladder :Felipe, 2025-01-27, 14d
         9.1 Diseñar interfaz HMI para sistema SCADA :Sara, 2025-01-20, 14d
         9.2 Incorporar interfaz en el sistema :Sara, 2025-01-27, 14d
         9.3 Mejorar interfaz :Sara, 2025-02-10, 14d
@@ -250,11 +250,11 @@ const HierarchicalRenderer: React.FC = () => {
       startOnLoad: true,
       theme: "base",
       themeVariables: {
-        primaryColor: '#C9373B',
+        primaryColor: '#fb777b',
         primaryTextColor: '#000',
-        primaryBorderColor: '#C9373B',
+        primaryBorderColor: '#fb777b',
         lineColor: '#000000',
-        secondaryColor: '#C9373B',
+        secondaryColor: '#fb777b',
         tertiaryColor: '#fff'
       },
       gantt: {

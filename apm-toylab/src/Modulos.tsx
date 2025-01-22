@@ -7,7 +7,9 @@ import modulo5 from './Img/Modulo5.webp'
 import modulo6 from './Img/Modulo6.webp'
 import modulo7 from './Img/Modulo7.webp'
 import modulo8 from './Img/Modulo8.webp'
+import Mod1 from './Modulos/Mod1/Mod1'
 import Mod3 from './Modulos/Mod3/Mod3'
+import Mod5 from './Modulos/Mod5/Mod5'
 
 
 interface Modulo {
@@ -63,21 +65,21 @@ const Modulos: React.FC<ModulosProps> = (props: ModulosProps) => {
     return (
         <div className="modulo-container">
             {selected ? (selected === 1 ? 
-            (<></>) : 
+            <Mod1 /> :
             selected === 2 ? 
-            (<></>) : 
+            <h1 style={{color: "#000000"}}>Este módulo está en construcción...</h1> : 
             selected === 3 ? 
             <Mod3 /> :
             selected === 4 ? 
-            (<></>):
+            <h1 style={{color: "#000000"}}>Este módulo está en construcción...</h1> : 
             selected === 5 ? 
-            (<></>):
+            <Mod5 /> :
             selected === 6 ? 
-            (<></>):
+            <h1 style={{color: "#000000"}}>Este módulo está en construcción...</h1> : 
             selected === 7 ? 
-            (<></>):
+            <h1 style={{color: "#000000"}}>Este módulo está en construcción...</h1> : 
             selected === 8 ? 
-            (<></>):
+            <h1 style={{color: "#000000"}}>Este módulo está en construcción...</h1> : 
             (<></>)) : modulos.map((modulo, index) => (
                 <div key={index} className="modulo-card" onClick={()=>setSelected(index + 1)}>
                     <img src={modulo.imagenSrc} alt={modulo.nombre} className="modulo-imagen" />
