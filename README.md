@@ -174,7 +174,7 @@ Existen distintos indicadores en una planta de manufactura que permiten medir y 
 
 ### Pre-Automatización
 #### Indicadores
-A partir de la planta previa a la automatizacion, se obtienen solo siguientes KPI. Para obtener informacion mas detallada sobre el calculo de los mismos, remitirse al siguiente archivo.
+A partir de la planta previa a la automatizacion, se obtienen solo siguientes KPI. Para obtener informacion mas detallada sobre el calculo de los mismos, remitirse al siguiente [archivo](Files/Indicadores_Pre.xlsx).
 | **KPI**                     | **Qué es?**                                                                             | **Cómo se determina?** | **Valor**                     |
 |-----------------------------|-----------------------------------------------------------------------------------------|-------------------------|-------------------------------|
 | **Work in Process (WIP)**   | Contempla el material que se encuentra entre estaciones y está en espera de ser procesado (Wi) o que está siendo procesado en las estaciones (WEi) | Cálculos                | $1.236.560,00                |
@@ -191,11 +191,11 @@ A partir de la planta previa a la automatizacion, se obtienen solo siguientes KP
 
 #### Tecnomatix
 #### VSM Pre
-La informacion detallada del diagrama VSM de la planta antes de la automatizacion se puede encontrar en el siguiente en el siguiente enlace.
+La informacion detallada del diagrama VSM de la planta antes de la automatizacion se puede encontrar en el siguiente en el siguiente [enlace](Files/VSM_Pre.pdf).
 
 ### Post-Automatización
 #### Indicadores
-Luego de implementar la propuesta de automatizacion se espera obtener los siguientes KPI. Para obtener informacion mas detallada sobre el calculo de los mismos, remitirse al siguiente archivo.
+Luego de implementar la propuesta de automatizacion se espera obtener los siguientes KPI. Para obtener informacion mas detallada sobre el calculo de los mismos, remitirse al siguiente [archivo](Files/Indicadores.xlsx).
 | **KPI**                     | **Qué es?**                                                                             | **Cómo se determina?** | **Valor**                     |
 |-----------------------------|-----------------------------------------------------------------------------------------|-------------------------|-------------------------------|
 | **Work in Process (WIP)**   | Contempla el material que se encuentra entre estaciones y está en espera de ser procesado (Wi) o que está siendo procesado en las estaciones (WEi) | Cálculos                | $1.249.964,00                |
