@@ -19,14 +19,14 @@ WEB ❗ - F
 
 1. [Módulos](#módulos)  
    - [Módulo 1: Gestión de Producción y Automatización](#módulo-1-gestión-de-producción-y-automatización)  
-     - [Pre-Automatización](#pre-automatización) ❗
+     - [Pre-Automatización](#pre-automatización) ✅
        - [Indicadores](#indicadores) ✅
        - [Tecnomatix](#tecnomatix) ✅
        - [VSM](#vsm-pre) ✅
-     - [Post-Automatización](#post-automatización)  ❗
+     - [Post-Automatización](#post-automatización) ✅
        - [Indicadores](#indicadores-post) ✅
        - [Tecnomatix](#tecnomatix-post) ✅
-       - [VSM](#vsm-post)  ✅
+       - [VSM](#vsm-post) ✅
      - [Propuesta automatización](#propuesta-automatización)  ❗ - F
        - [Propuesta](#propuesta) - F
        - [Análisis de Mercado](#análisis-de-mercado)  ❗ - F
@@ -189,7 +189,8 @@ A partir de la planta previa a la automatizacion, se obtienen solo siguientes KP
 
 #### Tecnomatix
 
-El diseño inicial de la planta pre-automatizada se llevó a cabo en el software de fabricación digital Tecnomatix Plant Simulation de Siemens (como se evidencia en la imagen a continuación), debido a que este software permitió la simulación de las diferentes etapas del proceso de manufactura incluyendo, asimismo, los tiempos de proceso de cada una de las máquinas. Esto último facilitó observar que en la estación de empaque con papel burbuja se preseta un cuello de botella.
+El diseño inicial de la planta pre-automatizada se llevó a cabo en el software de fabricación digital Tecnomatix Plant Simulation de Siemens (como se evidencia en la imagen a continuación), debido a que este software permitió la simulación de las diferentes etapas del proceso de manufactura incluyendo, asimismo, los tiempos de proceso de cada una de las máquinas. Esto último facilitó observar que en la estación de empaque con papel burbuja se presetó un cuello de botella. 
+De la misma manera, teniendo en cuenta los indicadores calculados, se configuró la cantidad de materia prima necesaria para la producción de un día de trabajo (8 horas), sin embargo, la simulación indicó que con dicha cantidad de materia prima la planta solo funcionaría 3 horas y media, razón por la cual los indicadores y la planta se siguen ajustando.
 
 ![image](https://github.com/user-attachments/assets/b09964cc-4bc6-4098-8eb5-5ade45d120eb)
 
@@ -217,7 +218,7 @@ Luego de implementar la propuesta de automatizacion se espera obtener los siguie
 
 #### Tecnomatix
 
-Al igual que el diseño de la planta antes de automatizarla, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, un robot de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se pudo evidenciar que el cuello de botella se supera con las automatizaciones propuestas. Sin embargo, como en la planta pre-automatizada, considerando la cantidad de materia prima que ingresa a la planta, la simulación debería correr por 8 horas, pues así lo señalan los indicadores, no obstante, el proceso tiene una duración de 3 horas y media, por lo tanto, los indicadores y la simulación de la tabla se siguen revisando y corrigiendo.
+Al igual que el diseño de la planta antes de automatizarla, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, un robot de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se pudo evidenciar que el cuello de botella se superó con las automatizaciones propuestas. Sin embargo, como en la planta pre-automatizada, considerando la cantidad de materia prima que ingresa a la planta, la simulación debería correr por 8 horas, pues así lo señalan los indicadores, no obstante, el proceso tuvo una duración de 3 horas y media, por lo tanto, los indicadores y la simulación de la planta se siguen revisando y corrigiendo.
 
 ![image](https://github.com/user-attachments/assets/07043485-836e-46d8-9817-ae692a2e4691)
 
