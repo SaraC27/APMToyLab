@@ -13,40 +13,36 @@
 
 # Tabla de Contenido
 
-PARA PONER CUANDO ALGO ESTE LISTO: ✅
-
-WEB ❗ - F
-
 1. [Módulos](#módulos)  
    - [Módulo 1: Gestión de Producción y Automatización](#módulo-1-gestión-de-producción-y-automatización)  
-     - [Pre-Automatización](#pre-automatización) ✅
-       - [Indicadores](#indicadores) ✅
-       - [Tecnomatix](#tecnomatix) ✅
-       - [VSM](#vsm-pre) ✅
-     - [Post-Automatización](#post-automatización) ✅
-       - [Indicadores](#indicadores-post) ✅
-       - [Tecnomatix](#tecnomatix-post) ✅
-       - [VSM](#vsm-post) ✅
-     - [Propuesta automatización](#propuesta-automatización)  ❗ - F
-       - [Propuesta](#propuesta) - F
-       - [Análisis de Mercado](#análisis-de-mercado)  ❗ - F
-       - [Sistema MES](#sistema-mes)  ❗ - F
+     - [Pre-Automatización](#pre-automatización)
+       - [Indicadores](#indicadores)
+       - [Tecnomatix](#tecnomatix)
+       - [VSM](#vsm-pre)
+     - [Post-Automatización](#post-automatización) 
+       - [Indicadores](#indicadores-post)
+       - [Tecnomatix](#tecnomatix-post)
+       - [VSM](#vsm-post)
+     - [Propuesta automatización](#propuesta-automatización)
+       - [Propuesta](#propuesta)
+     - [Análisis de Mercado](#análisis-de-mercado)
+     - [Sistema MES](#sistema-mes)
 
    - [Módulo 2: Industria 4.0 en la Automatización](#módulo-2-industria-40-en-la-automatización)  
      - [Pre-Automatización](#pre-automatización-40)  
-       - [Diagramas P&ID](#diagramas-pid)  🌟
-       - [Diagrama Arquitectura](#diagrama-arquitectura)  🌟
-       - [Tecnologías 4.0](#tecnologías-40)  🌟
+       - [Diagramas P&ID](#diagramas-pid)
+       - [Diagrama Arquitectura](#diagrama-arquitectura)
+       - [Tecnologías 4.0](#tecnologías-40)
      - [Post-Automatización](#post-automatización-40)  
-       - [Diagramas P&ID](#diagramas-pid-post)  🌟
-       - [Diagrama Arquitectura](#diagrama-arquitectura-post)  🌟
-       - [Tecnologías 4.0](#tecnologías-40-post) 🌟 
+       - [Diagramas P&ID](#diagramas-pid-post)
+       - [Diagrama Arquitectura](#diagrama-arquitectura-post)
+       - [Tecnologías 4.0](#tecnologías-40-post)
 
    - [Módulo 3: Planeación del Proyecto](#módulo-3-planeación-del-proyecto)  
      - [ERP](#erp)
-     - [EDT](#edt)  ✅ - F
-     - [Cronograma](#cronograma)  ✅ - F
-     - [Bitácoras](#bitácoras)  ❗ - F
+     - [EDT](#edt)
+     - [Cronograma](#cronograma)
+     - [Bitácoras](#bitácoras)
 
    - [Módulo 4: Evaluación Económica de Proyectos](#módulo-4-evaluación-económica-de-proyectos)  
      - [Economía del Proyecto](#economía-del-proyecto)  
@@ -57,34 +53,34 @@ WEB ❗ - F
        - [VPN](#vpn)  
        - [TIR](#tir)  
        - [Payback](#payback)  
-     - [Oferta comercial](#oferta-comercial)  🌟
+     - [Oferta comercial](#oferta-comercial)
 
    - [Módulo 5: Celda de Manufactura Robotizada](#módulo-5-celda-de-manufactura-robotizada)  
-     - [Justificación y valor agregado](#justificación-y-valor-agregado)  ✅ - M
+     - [Justificación y valor agregado](#justificación-y-valor-agregado) 
      - [Diseño](#diseño)  
-       - [Relación con el proceso de manufactura](#relación-con-el-proceso-de-manufactura) ✅ - M
-       - [Funcionalidad del robot](#funcionalidad-del-robot)  ✅ - M
-       - [Interacción con operarios](#interacción-con-operarios)  ✅ - M
-       - [Análisis y gestión de riesgos](#análisis-y-gestión-de-riesgos)  ✅ - M
-       - [Seguridad](#seguridad)  ✅ - M
+       - [Relación con el proceso de manufactura](#relación-con-el-proceso-de-manufactura)
+       - [Funcionalidad del robot](#funcionalidad-del-robot) 
+       - [Interacción con operarios](#interacción-con-operarios) 
+       - [Análisis y gestión de riesgos](#análisis-y-gestión-de-riesgos) 
+       - [Seguridad](#seguridad) 
      - [RobotStudio](#robotstudio)  
-       - [Modelado](#modelado)  🌟
+       - [Modelado](#modelado) 
        - [Programación](#programación)
        - [Simulación](#simulación)  
 
    - [Módulo 6: Digital Factory](#módulo-6-digital-factory)  
      - [Siemens NX](#siemens-nx)  
-       - [Entorno y modelamiento](#entorno-y-modelamiento)  ❗ - J
-       - [Actuadores virtuales](#actuadores-virtuales) 🌟 
-       - [Sensores virtuales](#sensores-virtuales)  🌟
+       - [Entorno y modelamiento](#entorno-y-modelamiento)
+       - [Actuadores virtuales](#actuadores-virtuales)
+       - [Sensores virtuales](#sensores-virtuales)
        - [Simulación](#simulación-digital-factory)  
 
    - [Módulo 7: Controladores industriales (PLC)](#módulo-7-controladores-industriales-plc)  
      - [Selección de controladores](#selección-de-controladores)  
-     - [Desglose de la lógica](#desglose-de-la-lógica) 🌟 
-       - [Etapas](#etapas)  🌟
-       - [Transiciones](#transiciones)  🌟
-       - [Modos](#modos)  🌟
+     - [Desglose de la lógica](#desglose-de-la-lógica)
+       - [Etapas](#etapas)
+       - [Transiciones](#transiciones)
+       - [Modos](#modos)
      - [Programación](#programación-plc)  
        - [Grafcet](#grafcet)  
        - [Ladder](#ladder)  
@@ -263,10 +259,10 @@ Con esta mejora, el tiempo necesario para el empacado se reduciría a 40 segundo
 </div>
 
 
-#### Análisis de Mercado
+### Análisis de Mercado
 
 
-#### Sistema MES
+### Sistema MES
 
 ## Módulo 2: Industria 4.0 en la Automatización
 ### Pre-Automatización
