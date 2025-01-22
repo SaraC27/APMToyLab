@@ -21,7 +21,7 @@ WEB ❗ - F
    - [Módulo 1: Gestión de Producción y Automatización](#módulo-1-gestión-de-producción-y-automatización)  
      - [Pre-Automatización](#pre-automatización) ❗
        - [Indicadores](#indicadores) ✅
-       - [Tecnomatix](#tecnomatix) ❗ - J
+       - [Tecnomatix](#tecnomatix) ✅
        - [VSM](#vsm-pre) ✅
      - [Post-Automatización](#post-automatización)  ❗
        - [Indicadores](#indicadores-post) ✅
@@ -192,7 +192,7 @@ A partir de la planta previa a la automatizacion, se obtienen solo siguientes KP
 
 #### Tecnomatix
 
-El diseño inicial de la planta pre-automatizada se llevó a cabo en el software de fabricación digital Tecnomatix Plant Simulation de Siemens, debido a que este software permitió la simulación de las diferentes etapas del proceso de manufactura incluyendo, asimismo, los tiempos de proceso de cada una de las máquinas. Esto último facilitó observar que en la estación de empaque con papel burbuja se preseta un cuello de botella.
+El diseño inicial de la planta pre-automatizada se llevó a cabo en el software de fabricación digital Tecnomatix Plant Simulation de Siemens (como se evidencia en la imagen a continuación), debido a que este software permitió la simulación de las diferentes etapas del proceso de manufactura incluyendo, asimismo, los tiempos de proceso de cada una de las máquinas. Esto último facilitó observar que en la estación de empaque con papel burbuja se preseta un cuello de botella.
 
 ![image](https://github.com/user-attachments/assets/b09964cc-4bc6-4098-8eb5-5ade45d120eb)
 
@@ -217,7 +217,14 @@ Luego de implementar la propuesta de automatizacion se espera obtener los siguie
 | **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                                      | Cálculos                | 47 %                          |
 | **Utilización (U)**         | % en el que trabaja la fábrica                                                          | Cálculos                | Variable según el mes (70% max) |
 
+
 #### Tecnomatix
+
+Al igual que el diseño de la planta antes de automatizarla, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, un robot de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se pudo evidenciar que el cuello de botella se supera con las automatizaciones propuestas.
+
+![image](https://github.com/user-attachments/assets/07043485-836e-46d8-9817-ae692a2e4691)
+
+
 #### VSM Post
 Luego de implementar la propuesta de automatizacion se espera obtener el siguiente [VSM](Files/VSM_Post.pdf).
 ### Propuesta automatización
@@ -255,8 +262,6 @@ Con esta mejora, el tiempo necesario para el empacado se reduciría a 40 segundo
    <img style="width: 30vw;" alt="Planta PRE" src="https://github.com/user-attachments/assets/c10cb57f-d02b-4472-a99b-f110225ddf2d"/>
    <img style="width: 30vw;" alt="Planta PRE" src="https://github.com/user-attachments/assets/2ffb4910-22df-4652-8ce5-2d59a4df7857"/>
 </div>
-
-
 
 
 #### Análisis de Mercado
