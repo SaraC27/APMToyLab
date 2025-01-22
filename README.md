@@ -191,6 +191,26 @@ A partir de la planta previa a la automatizacion, se obtienen solo siguientes KP
 
 #### Tecnomatix
 #### VSM Pre
+```mermaid
+    A[Proveedor] -->|Pronóstico semanal<br>Órdenes mensuales| B[Control de producción]
+    B --> C[Almacenamiento de materia prima]
+    C --> D[Mezcla de pigmento y polipropileno]
+    D --> E[División en paquetes]
+    E --> F[Inyección de partes necesarias]
+    F --> G[Eliminación de rebaba]
+    G --> H[Almacenamiento intermedio]
+    H --> I[Ensamble parcial]
+    I --> J[Ensamble final]
+    J --> K[Empaque individual]
+    K --> L[Almacenamiento final]
+    L --> Cliente[Cliente]
+
+    %% Indicadores clave
+    F -->|C/T=90s<br>Operarios=6| G
+    I -->|C/T=30s<br>Operarios=2| J
+    K -->|C/T=15s<br>Operarios=1| L
+```
+    
 ### Post-Automatización
 #### Indicadores
 #### Tecnomatix
