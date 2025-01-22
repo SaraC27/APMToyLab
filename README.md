@@ -316,6 +316,13 @@ dateFormat YYYY-MM-DD
 ### Oferta comercial
 
 ## Módulo 5: Celda de Manufactura Robotizada
+### Productos de entrada y salida de la celda
+
+<div align="center">
+   <img style="width: 40vw;" alt="productos de Entrada y Salida" src="https://github.com/user-attachments/assets/339c7808-8252-4327-9eaa-f9f6e8b1ad23" />
+</div>
+
+
 ### Proceso de creación de la celda
 <p align="justify"> 
 La creación de la celda robotizada sigue una hoja de ruta estructurada que guía cada etapa del proceso, desde la orientación inicial hasta la validación final. Este diagrama de flujo detalla los pasos necesarios para analizar, diseñar, implementar y evaluar la celda, asegurando que cumpla con los objetivos del proyecto de manera eficiente y segura.
@@ -409,8 +416,8 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
  - **Justificación:** Diseñado para manejar cargas ligeras, como juguetes de 1,2 kg, con precisión y alta velocidad, ideal para procesos de empaque rápido.
 
 <div align="center">
-  <img height="300" alt="IRB 360-2" src="https://github.com/user-attachments/assets/33997a38-2937-438c-be1e-9ae0356c42d7" />
-  <img height="300" alt="IRB 360-1" src="https://github.com/user-attachments/assets/dbe4080f-74bc-4d21-a0ac-b1f1475627ba" />
+  <img style="width: 21vw;" alt="IRB 360-2" src="https://github.com/user-attachments/assets/33997a38-2937-438c-be1e-9ae0356c42d7" />
+  <img style="width: 19vw;" alt="IRB 360-1" src="https://github.com/user-attachments/assets/dbe4080f-74bc-4d21-a0ac-b1f1475627ba" />
 </div>
 
 ***IRB 660 (Paletizado):***
@@ -418,8 +425,8 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 - **Justificación:** Su capacidad de carga y área de trabajo lo convierten en la elección ideal para manipular pallets y organizar grandes volúmenes de productos.
 
 <div align="center">
-  <img style="width: 36vw;" alt="IRB 660-1" src="https://github.com/user-attachments/assets/d1385a1c-aeab-4a7e-b7bf-bc383fabb4b5" />
-  <img style="width: 40vw;" alt="IRB 660-2" src="https://github.com/user-attachments/assets/1cb6cc29-fe77-4be1-ae99-bec89961eadc" />
+  <img style="width: 27vw;" alt="IRB 660-1" src="https://github.com/user-attachments/assets/d1385a1c-aeab-4a7e-b7bf-bc383fabb4b5" />
+  <img style="width: 30vw;" alt="IRB 660-2" src="https://github.com/user-attachments/assets/1cb6cc29-fe77-4be1-ae99-bec89961eadc" />
 </div>
 
 #### Interacción con operarios
