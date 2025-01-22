@@ -191,28 +191,25 @@ A partir de la planta previa a la automatizacion, se obtienen solo siguientes KP
 
 #### Tecnomatix
 #### VSM Pre
-```mermaid
-    A[Proveedor] -->|Pronóstico semanal<br>Órdenes mensuales| B[Control de producción]
-    B --> C[Almacenamiento de materia prima]
-    C --> D[Mezcla de pigmento y polipropileno]
-    D --> E[División en paquetes]
-    E --> F[Inyección de partes necesarias]
-    F --> G[Eliminación de rebaba]
-    G --> H[Almacenamiento intermedio]
-    H --> I[Ensamble parcial]
-    I --> J[Ensamble final]
-    J --> K[Empaque individual]
-    K --> L[Almacenamiento final]
-    L --> Cliente[Cliente]
+La informacion detallada del diagrama VSM se puede encontrar en el siguiente en el siguiente enlace.
 
-    %% Indicadores clave
-    F -->|C/T=90s<br>Operarios=6| G
-    I -->|C/T=30s<br>Operarios=2| J
-    K -->|C/T=15s<br>Operarios=1| L
-```
-    
 ### Post-Automatización
 #### Indicadores
+Luego de implementar la propuesta de automatizacion se espera obtener los siguientes KPI. Para obtener informacion mas detallada sobre el calculo de los mismos, remitirse al siguiente archivo.
+| **KPI**                     | **Qué es?**                                                                             | **Cómo se determina?** | **Valor**                     |
+|-----------------------------|-----------------------------------------------------------------------------------------|-------------------------|-------------------------------|
+| **Work in Process (WIP)**   | Contempla el material que se encuentra entre estaciones y está en espera de ser procesado (Wi) o que está siendo procesado en las estaciones (WEi) | Cálculos                | $1.249.964,00                |
+| **Takt Time (T)**           | Cadencia con la que se debe fabricar el producto para satisfacer la demanda             | Cálculos                | T = 276 seg / juguete         |
+| **Tiempo de ciclo (Tc)**    | Tiempo de proceso de cada estación                                                      | VSM                     | Revisar VSM (cada estación es diferente) |
+| **Tasa de producción (Rp)** | Número de partes producidas por hora                                                    | Simulación              | 13 juguetes / hora            |
+| **Capacidad de producción (Pc)** | Máxima tasa de salida que una fábrica es capaz de producir                                | Calculado               | 2288 juguetes / mes           |
+| **Tiempo total de manufactura (MLT)** | Tiempo desde la orden de producción hasta finalizar el lote                                   | Cálculos                | 473 minutos                   |
+| **Disponibilidad (A)**      | Disponibilidad de las máquinas                                                          | Definido                | 70 %                          |
+| **Eficiencia**              | Eficiencia de desempeño                                                                                      | Definido                | 75 %                          |
+| **Calidad**                 | % de producto defectuoso                                                                | Definido                | 90 %                          |
+| **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                                      | Cálculos                | 47 %                          |
+| **Utilización (U)**         | % en el que trabaja la fábrica                                                          | Cálculos                | Variable según el mes (70% max) |
+
 #### Tecnomatix
 #### VSM Post
 ### Propuesta automatización
