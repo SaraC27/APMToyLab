@@ -259,7 +259,44 @@ Con esta mejora, el tiempo necesario para el empacado se reduciría a 40 segundo
 
 
 ### Análisis de Mercado
+Para saber cuántos juguetes deben producirse (gestión de la producción), se realizó el siguiente paso a paso para obtener un estimado de la demanda de juguetes en Colombia.
 
+1. Se descargaron datos de los últimos `5` años de la `DIAN`. [Link DIAN](https://www.dian.gov.co/dian/cifras/Paginas/TributosDIAN.aspx)
+2. Se revisó la información para la actividad económica: `Fabricación de juegos, juguetes y rompecabezas`.
+3. En base al `número de responsables`, `total de ingresos brutos` y `total anticipos de IVA por bimestre`, se obtuvo la sigueinte gráfica, suponiendo que $\frac{1}{3}$ del total de la actividad económica corresponde a juguetes:
+
+<img width="678" alt="Mercado 1" src="https://github.com/user-attachments/assets/d618e312-2cf6-490b-95a0-92f3149c1261" />
+*Eje vertical en millones de pesos colombianos*
+
+4. Estimamos el promedio de acaparación de mercado para una empresa/fábrica de juguetes en Colombia: $Acaparación=\frac{1}{número\ de\ competidores}\approx0.7%$.
+5. Supusimos una fábrica promedio, con lo cual se obtiene la siguiente gráfica para los ingresos de la misma:
+
+<img width="453" alt="Screenshot 2025-01-22 at 1 53 20 AM" src="https://github.com/user-attachments/assets/3a3540b5-a7aa-4278-b2eb-0d0be365f8f3" />
+*Eje vertical en millones de pesos colombianos*
+
+6. Supusimos un precio de venta de los juguetes de $1.5$ veces su costo.
+7. Modelamos cuántos juguetes de cada tipo hay que fabricar y vender para llegar a los ingresos estimados. Para esto, se tiene $total juguetes tipo i = precio de un juguete tipo i* \frac{ingresos esperados totales}{porcentaje de ingresos que suple juguete tipo i}$.
+8. Calculamos cuántos juguetes de cada tipo se deben producir. Se ajustó el `porcentaje de ingresos que suple juguete tipo i` para que la cantidad de juguetes a producir de cada tipo fuera similar y se obtuvo la siguiente gráfica de producción:
+
+<img width="454" alt="Screenshot 2025-01-22 at 2 02 37 AM" src="https://github.com/user-attachments/assets/866e68f2-4536-4238-853f-ef832aae265c" />
+*La gráfica tiene picos en las fechas donde se celebra el día del niño y Navidad. Lo cual sirve de validación para el estimado realizado.*
+
+9. Se ajustó la gráfica para que se tuviera producción mensual en vez de bimestral (suponiendo que en los dos meses de un bimestre se produce la misma cantidad de juguetes), y se obtuvo la gráfica:
+
+<img width="451" alt="Screenshot 2025-01-22 at 2 05 07 AM" src="https://github.com/user-attachments/assets/e8f2b574-9d67-45cf-bf03-19b716aa879f" />
+
+10. Para estimar la producción esperada gracias a la automatización de la planta. Supusimos que se quiere acaparar el `2.5%` del mercaado en vez del `0.7%` y que, además, se logra cumplir con el crecimiento de la industria (ya que, mes a mes, se ve una tendencia creciente durante los últimos 5 años).
+11. Se realizó una regresión lineal para extrapolar los datos hasta el año `2029` (5 años hacia el futuro), y se obtuvo la siguiente gráfica:
+
+<img width="829" alt="Screenshot 2025-01-22 at 2 09 09 AM" src="https://github.com/user-attachments/assets/01a0f453-56aa-4545-bb6d-86e1b51168a0" />
+
+12. Finalmente, la gráfica de demanda de juguetes estimada para el proyecto corresponde con:
+   - Los datos iniciales estimados para una empresa promedio (acaparación del `0.7%`) en Colombia (antes de automatizar) durante los primeros 5 años.
+   - Los datos extrapolados para una empresa que acapara el `2.5%` del mercado en Colombia (después de automatizar) durante los próximos 5 años.
+
+![jriuks3j](https://github.com/user-attachments/assets/2edbc954-bf87-42d0-88a0-b72ed7f55f59)
+
+El archivo [Analisis_Mercado.xlsx]("Files/Analisis_Mercado.xlsx") se puede usar para generar las gráficas, cambiar estimados y suposiciones.
 
 ### Sistema MES
 
