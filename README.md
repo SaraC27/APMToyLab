@@ -191,7 +191,7 @@ A partir de la planta previa a la automatizacion, se obtienen solo siguientes KP
 
 #### Tecnomatix
 #### VSM Pre
-La informacion detallada del diagrama VSM se puede encontrar en el siguiente en el siguiente enlace.
+La informacion detallada del diagrama VSM de la planta antes de la automatizacion se puede encontrar en el siguiente en el siguiente enlace.
 
 ### Post-Automatización
 #### Indicadores
@@ -212,6 +212,7 @@ Luego de implementar la propuesta de automatizacion se espera obtener los siguie
 
 #### Tecnomatix
 #### VSM Post
+Luego de implementar la propuesta de automatizacion se espera obtener el siguiente VSM.
 ### Propuesta automatización
 #### Propuesta
 Como propuesta de automatización se propone realizar los siguientes 4 cambios:
