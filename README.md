@@ -174,6 +174,7 @@ Existen distintos indicadores en una planta de manufactura que permiten medir y 
 
 ### Pre-Automatización
 #### Indicadores
+A partir de la planta previa a la automatizacion, se obtienen solo siguientes KPI. Para obtener informacion mas detallada sobre el calculo de los mismos, remitirse al siguiente archivo.
 | **KPI**                     | **Qué es?**                                                                             | **Cómo se determina?** | **Valor**                     |
 |-----------------------------|-----------------------------------------------------------------------------------------|-------------------------|-------------------------------|
 | **Work in Process (WIP)**   | Contempla el material que se encuentra entre estaciones y está en espera de ser procesado (Wi) o que está siendo procesado en las estaciones (WEi) | Cálculos                | $1.236.560,00                |
