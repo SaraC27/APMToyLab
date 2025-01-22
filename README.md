@@ -166,14 +166,28 @@ Existen distintos indicadores en una planta de manufactura que permiten medir y 
 - **Capacidad de producción (Pc)**
 - **Tiempo total de manufactura (MLT)**
 - **Disponibilidad (A)**
-- **Eficiencia**
-- **Calidad**
+- **Eficiencia (PE)**
+- **Calidad (Q)**
 - **Overall Equipment Effectiveness (OEE)**
 - **Utilización (U)**
 
 
 ### Pre-Automatización
 #### Indicadores
+| **KPI**                     | **Qué es?**                                                                             | **Cómo se determina?** | **Valor**                     |
+|-----------------------------|-----------------------------------------------------------------------------------------|-------------------------|-------------------------------|
+| **Work in Process (WIP)**   | Contempla el material que se encuentra entre estaciones y está en espera de ser procesado (Wi) o que está siendo procesado en las estaciones (WEi) | Cálculos                | $1.236.560,00                |
+| **Takt Time (T)**           | Cadencia con la que se debe fabricar el producto para satisfacer la demanda             | Cálculos                | T = 276 seg / juguete         |
+| **Tiempo de ciclo (Tc)**    | Tiempo de proceso de cada estación                                                      | VSM                     | Revisar VSM (cada estación es diferente) |
+| **Tasa de producción (Rp)** | Número de partes producidas por hora                                                    | Simulación              | 13 juguetes / hora            |
+| **Capacidad de producción (Pc)** | Máxima tasa de salida que una fábrica es capaz de producir                                | Calculado               | 2288 juguetes / mes           |
+| **Tiempo total de manufactura (MLT)** | Tiempo desde la orden de producción hasta finalizar el lote                                   | Cálculos                | 514 minutos                   |
+| **Disponibilidad (A)**      | Disponibilidad de las máquinas                                                          | Definido                | 70 %                          |
+| **Eficiencia**              |                                                                                         | Definido                | 75 %                          |
+| **Calidad**                 | % de producto defectuoso                                                                | Definido                | 90 %                          |
+| **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                                      | Cálculos                | 47 %                          |
+| **Utilización (U)**         | % en el que trabaja la fábrica                                                          | Cálculos                | Variable según el mes (70% máximo) |
+
 #### Tecnomatix
 #### VSM Pre
 ### Post-Automatización
