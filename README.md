@@ -25,7 +25,7 @@ WEB ❗ - F
        - [VSM](#vsm-pre) ✅
      - [Post-Automatización](#post-automatización)  ❗
        - [Indicadores](#indicadores-post) ✅
-       - [Tecnomatix](#tecnomatix-post)  ❗ - J
+       - [Tecnomatix](#tecnomatix-post) ✅
        - [VSM](#vsm-post)  ✅
      - [Propuesta automatización](#propuesta-automatización)  ❗ - F
        - [Propuesta](#propuesta) - F
@@ -217,7 +217,7 @@ Luego de implementar la propuesta de automatizacion se espera obtener los siguie
 
 #### Tecnomatix
 
-Al igual que el diseño de la planta antes de automatizarla, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, un robot de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se pudo evidenciar que el cuello de botella se supera con las automatizaciones propuestas.
+Al igual que el diseño de la planta antes de automatizarla, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, un robot de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se pudo evidenciar que el cuello de botella se supera con las automatizaciones propuestas. Sin embargo, como en la planta pre-automatizada, considerando la cantidad de materia prima que ingresa a la planta, la simulación debería correr por 8 horas, pues así lo señalan los indicadores, no obstante, el proceso tiene una duración de 3 horas y media, por lo tanto, los indicadores y la simulación de la tabla se siguen revisando y corrigiendo.
 
 ![image](https://github.com/user-attachments/assets/07043485-836e-46d8-9817-ae692a2e4691)
 
