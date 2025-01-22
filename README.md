@@ -299,7 +299,7 @@ Para saber cuántos juguetes deben producirse (gestión de la producción), se r
 
 ![jriuks3j](https://github.com/user-attachments/assets/2edbc954-bf87-42d0-88a0-b72ed7f55f59)
 
-El archivo [Analisis_Mercado.xlsx]("Files/Analisis_Mercado.xlsx") se puede usar para generar las gráficas, cambiar estimados y suposiciones.
+El archivo [Analisis_Mercado.xlsx](Files/Analisis_Mercado.xlsx) se puede usar para generar las gráficas, cambiar estimados y suposiciones.
 
 ### Sistema MES
 
