@@ -24,7 +24,6 @@
        - [Tecnomatix](#tecnomatix-post)
        - [VSM](#vsm-post)
      - [Propuesta automatización](#propuesta-automatización)
-       - [Propuesta](#propuesta)
      - [Análisis de Mercado](#análisis-de-mercado)
      - [Sistema MES](#sistema-mes)
 
