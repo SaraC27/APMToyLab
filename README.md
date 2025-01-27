@@ -688,6 +688,9 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 #### Simulación
 
 ## Módulo 7: Controladores industriales (PLC)
+- Marco de IndDX, I4.0
+- Progrmación Ladder & Grafcet
+- Modos de Arranque/Parada (GEMMA)
 ### Selección de controladores
 ### Desglose de la lógica
 #### Etapas
