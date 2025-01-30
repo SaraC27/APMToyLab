@@ -691,6 +691,8 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 - Marco de IndDX, I4.0
 - Progrmación Ladder & Grafcet
 - Modos de Arranque/Parada (GEMMA)
+
+- Spare del 20-30%: $Spare = \frac{\#I/O\ no\ usados}{\#I/O\ usados}$
 ### Selección de controladores
 ### Desglose de la lógica
 #### Etapas
