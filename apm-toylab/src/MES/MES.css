@@ -1,0 +1,138 @@
+/* Estilos generales */
+.mes-container {
+  width: 100%;
+  height: 80vh; /* Ocupa toda la altura de la pantalla */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  background-color: #f4f4f4;
+}
+
+/* Caja de inicio de sesión */
+.mes-login-box, .mes-dashboard {
+  width: 350px;
+  padding: 100px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* Campos de entrada */
+.mes-input-field {
+  width: 300px;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.mes-input-field:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+/* Botón de inicio de sesión */
+.mes-login-btn {
+  width: 150px;
+  padding: 10px;
+  background-color: #C9373B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.mes-login-btn:hover {
+  background-color: #a62c30;
+}
+
+/* Mensaje de error */
+.mes-error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Dashboard después del inicio de sesión */
+.mes-dashboard {
+  height: 60%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+/* Spinner */
+.mes-spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid white;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: mes-spin 1s linear infinite;
+}
+
+@keyframes mes-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Deshabilitar botón mientras carga */
+.mes-login-btn:disabled {
+  background-color: #a62c30;
+  cursor: not-allowed;
+}
+
+.mes-token-container{
+  width: 500px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.mes-icon-btn {
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #C9373B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.mes-icon-btn:hover {
+  background-color: #a62c30;
+}
+
+/* Campo de token */
+.mes-token-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mes-token-input:focus {
+  border-color: #C9373B;
+  outline: none;
+}

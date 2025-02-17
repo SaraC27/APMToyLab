@@ -5,8 +5,9 @@ import Inicio from './Inicio';
 import Productos from './Productos';
 import Integrantes from './Integrantes';
 import Modulos from './Modulos';
+import MES from './MES/MES';
 
-export type pages = 'home' | 'productos' | 'integrantes' | 'modulos'
+export type pages = 'home' | 'productos' | 'integrantes' | 'modulos' | 'mes'
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<pages>('home');
@@ -14,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header setSelectedPage={setSelectedPage} resetMod={setResetMod}/>
+      <Header setSelectedPage={setSelectedPage} resetMod={setResetMod} />
       {selectedPage === 'home' ?
         <Inicio /> :
         selectedPage === 'productos' ?
@@ -22,8 +23,10 @@ function App() {
           selectedPage === 'integrantes' ?
             <Integrantes /> :
             selectedPage === 'modulos' ?
-              <Modulos reset={resetMod}/> :
-              (<></>)}
+              <Modulos reset={resetMod} /> :
+              selectedPage === 'mes' ?
+                <MES /> :
+                (<></>)}
     </div>
   );
 }

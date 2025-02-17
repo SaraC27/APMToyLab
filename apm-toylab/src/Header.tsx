@@ -25,6 +25,7 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
             props.resetMod(prev=>!prev)
             props.setSelectedPage('modulos')
             }}>Módulos</button>
+          <button onClick={() => props.setSelectedPage('mes')}>Sistema MES</button>
         </div>
       </nav>
     </header>
