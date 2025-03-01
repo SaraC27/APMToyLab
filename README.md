@@ -681,6 +681,7 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 #### Simulación
 
 ## Módulo 6: Digital Factory
+La implementación de una fábrica digital mediante el software NX de Siemens ha permitido modelar y simular procesos clave en la automatización de la planta de fabricación de juguetes de plástico. A través de esta herramienta, se han representado virtualmente sistemas de producción, permitiendo analizar el desempeño de distintos componentes automatizados. Dados los cambios sugeridos en la propuesta de automatizacion (compra de maquina de pulido por vibracion, instalacion de celda robotizada e intalacion de arreglo de bandas transportadoras completamente automatizado), la fabrica digital realizada en Siemens NX inlcuye todas las etapas anteriores al inicio de la celda robotizada ya que este proceso sera simulado en RobotStudio. Para una correcta integracion de ambos software se implementa comunicacion entre ellos mediante servidor OPC UA.
 ### Siemens NX
 #### Entorno y modelamiento
 #### Actuadores virtuales
