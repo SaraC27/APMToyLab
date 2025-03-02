@@ -696,7 +696,7 @@ Siguiendo el layout propuesto anteriormente en el software Tecnomatix, se implem
 
 Además, se incluyen bandas transportadoras que funcionan como medio de transporte entre las distintas etapas.
 #### Actuadores virtuales
-# Actuadores Utilizados en la Fábrica Digital
+
 
 * **Banda transportadora principal**  
   Se trata de una banda transportadora de 26 m de longitud y 0.6 m de ancho, encargada de conectar las bandas secundarias provenientes de cada una de las inyectoras y llevar las piezas hacia las estaciones de desbarbado. Se desplaza a una velocidad constante de 2 m/s y recibe una señal desde el PLC que permite encenderla o apagarla.  
@@ -711,7 +711,7 @@ Además, se incluyen bandas transportadoras que funcionan como medio de transpor
   Estos actuadores bloquean el paso hacia la banda principal cuando se detectan piezas de un tipo diferente, evitando que sean enviadas a una estación de desbarbado incorrecta. En la simulación, su funcionamiento se representa mediante un número entero enviado desde el PLC, el cual indica la posición (expresada en grados) a la que debe desplazarse el actuador.
 #### Sensores virtuales
  **Sensores infrarrojos**
-En simulación, se utilizan como sensores de colisión, permitiendo detectar si una pieza ha llegado a una posición determinada y, con base en ello, tomar una acción. En la fábrica digital, estos sensores permiten identificar si las piezas están próximas a ingresar a la banda principal o si se acercan a la banda secundaria, que las conducirá hacia la estación de desbarbado.
+   En simulación, se utilizan como sensores de colisión, permitiendo detectar si una pieza ha llegado a una posición determinada y, con base en ello, tomar una acción. En la fábrica digital, estos sensores permiten identificar si las piezas están próximas a ingresar a la banda principal o si se acercan a la banda secundaria, que las conducirá hacia la estación de desbarbado.
 #### Simulación
 
 ## Módulo 7: Controladores industriales (PLC)
