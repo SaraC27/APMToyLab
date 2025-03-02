@@ -15,46 +15,45 @@
 
 1. [Módulos](#módulos)  
    - [Módulo 1: Gestión de Producción y Automatización](#módulo-1-gestión-de-producción-y-automatización)  
-     - [Pre-Automatización](#pre-automatización)
+     - [Pre-Automatización](#pre-automatización) MODIFICAR: J/S
        - [Indicadores](#indicadores)
        - [Tecnomatix](#tecnomatix)
        - [VSM](#vsm-pre)
-     - [Post-Automatización](#post-automatización) 
+     - [Post-Automatización](#post-automatización) MODIFICAR: J/S
        - [Indicadores](#indicadores-post)
        - [Tecnomatix](#tecnomatix-post)
        - [VSM](#vsm-post)
-     - [Propuesta automatización](#propuesta-automatización)
-     - [Análisis de Mercado](#análisis-de-mercado)
-     - [Sistema MES](#sistema-mes)
+     - [Propuesta automatización](#propuesta-automatización) MODIFICAR: J/S
+     - [Análisis de Mercado](#análisis-de-mercado) YA
+     - [Sistema MES](#sistema-mes) FALTA: F
 
    - [Módulo 2: Industria 4.0 en la Automatización](#módulo-2-industria-40-en-la-automatización)  
      - [Pre-Automatización](#pre-automatización-40)  
-       - [Diagramas P&ID](#diagramas-pid)
-       - [Diagrama Arquitectura](#diagrama-arquitectura)
-       - [Tecnologías 4.0](#tecnologías-40)
+       - [Diagramas P&ID](#diagramas-pid) FALTA: S
+       - [Diagrama Arquitectura / Tecnologías 4.0](#diagrama-arquitectura) FALTA: F
      - [Post-Automatización](#post-automatización-40)  
-       - [Diagramas P&ID](#diagramas-pid-post)
-       - [Diagrama Arquitectura](#diagrama-arquitectura-post)
-       - [Tecnologías 4.0](#tecnologías-40-post)
+       - [Diagramas P&ID](#diagramas-pid-post) FALTA: S
+       - [Diagrama Arquitectura / Tecnologías 4.0](#diagrama-arquitectura-post) FALTA: F
+       
 
    - [Módulo 3: Planeación del Proyecto](#módulo-3-planeación-del-proyecto)  
-     - [ERP](#erp)
-     - [EDT](#edt)
-     - [Cronograma](#cronograma)
-     - [Bitácoras](#bitácoras)
+     - [MES/ERP](#erp) FALTA: FELIPE
+     - [EDT](#edt) YA
+     - [Cronograma](#cronograma) YA
+     - [Bitácoras](#bitácoras) FALTA: F
 
-   - [Módulo 4: Evaluación Económica de Proyectos](#módulo-4-evaluación-económica-de-proyectos)  
-     - [Economía del Proyecto](#economía-del-proyecto)  
+   - [Módulo 4: Evaluación Económica de Proyectos](#módulo-4-evaluación-económica-de-proyectos)  FALTA: F (REVISAR ENTRE TODOS)
+     - [Economía del Proyecto](#economía-del-proyecto) 
        - [Presupuesto](#presupuesto)  
        - [Costos](#costos)  
        - [Flujo de Caja](#flujo-de-caja)  
-     - [Análisis rentabilidad](#análisis-rentabilidad)  
+     - [Análisis rentabilidad](#análisis-rentabilidad)   
        - [VPN](#vpn)  
        - [TIR](#tir)  
        - [Payback](#payback)  
      - [Oferta comercial](#oferta-comercial)
 
-   - [Módulo 5: Celda de Manufactura Robotizada](#módulo-5-celda-de-manufactura-robotizada)  
+   - [Módulo 5: Celda de Manufactura Robotizada](#módulo-5-celda-de-manufactura-robotizada) MODIFICAR: M  
      - [Justificación y valor agregado](#justificación-y-valor-agregado) 
      - [Diseño](#diseño)  
        - [Relación con el proceso de manufactura](#relación-con-el-proceso-de-manufactura)
@@ -67,14 +66,14 @@
        - [Programación](#programación)
        - [Simulación](#simulación)  
 
-   - [Módulo 6: Digital Factory](#módulo-6-digital-factory)  
+   - [Módulo 6: Digital Factory](#módulo-6-digital-factory) MODIFICAR: J 
      - [Siemens NX](#siemens-nx)  
        - [Entorno y modelamiento](#entorno-y-modelamiento)
        - [Actuadores virtuales](#actuadores-virtuales)
        - [Sensores virtuales](#sensores-virtuales)
        - [Simulación](#simulación-digital-factory)  
 
-   - [Módulo 7: Controladores industriales (PLC)](#módulo-7-controladores-industriales-plc)  
+   - [Módulo 7: Controladores industriales (PLC)](#módulo-7-controladores-industriales-plc) FALTA: F
      - [Selección de controladores](#selección-de-controladores)  
      - [Desglose de la lógica](#desglose-de-la-lógica)
        - [Etapas](#etapas)
@@ -87,7 +86,7 @@
        - [Programación e integración](#programación-e-integración)  
        - [Simulación](#simulación-plc)  
 
-   - [Módulo 8: SCADA](#módulo-8-scada)  
+   - [Módulo 8: SCADA](#módulo-8-scada) FALTA: S 
      - [HMI](#hmi)  
        - [Variables clave](#variables-clave)  
        - [Diseño](#diseño-hmi)  
@@ -98,7 +97,7 @@
        - [Integración control](#integración-control)  
        - [Integración supervisión](#integración-supervisión)  
 
-2. [Resultados](#resultados)  
+2. [Resultados](#resultados) FALTA: TODOS  
    - [Resultados de aprendizaje](#resultados-de-aprendizaje)  
      - [Grupal](#grupal)  
      - [Individual](#individual)  
