@@ -1,6 +1,6 @@
 # Equipo: APM - ToyLab
 
-- **Página web:** [APM ToyLab](https://apmtoylab.fcruzv.com/)
+- **Página web:** [APM ToyLab](https://apmtoylab.fcruzv.com/) FALTA: MODIFICAR FOTOS
 - **Repositorio GitHub:** [GitHub - APMToyLab](https://github.com/SaraC27/APMToyLab)
 - **Video presentación proyecto:** [Enlace Youtube]() (*no disponible aún*)
 
@@ -13,7 +13,7 @@
 
 # Tabla de Contenido
 
-1. [Módulos](#módulos)  
+1. [Módulos](#módulos) 
    - [Módulo 1: Gestión de Producción y Automatización](#módulo-1-gestión-de-producción-y-automatización)  
      - [Pre-Automatización](#pre-automatización) MODIFICAR: J/S
        - [Indicadores](#indicadores)
