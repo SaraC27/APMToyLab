@@ -681,9 +681,20 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 #### Simulación
 
 ## Módulo 6: Digital Factory
-La implementación de una fábrica digital mediante el software NX de Siemens ha permitido modelar y simular procesos clave en la automatización de la planta de fabricación de juguetes de plástico. A través de esta herramienta, se han representado virtualmente sistemas de producción, permitiendo analizar el desempeño de distintos componentes automatizados. Dados los cambios sugeridos en la propuesta de automatizacion (compra de maquina de pulido por vibracion, instalacion de celda robotizada e intalacion de arreglo de bandas transportadoras completamente automatizado), la fabrica digital realizada en Siemens NX inlcuye todas las etapas anteriores al inicio de la celda robotizada ya que este proceso sera simulado en RobotStudio. Para una correcta integracion de ambos software se implementa comunicacion entre ellos mediante servidor OPC UA.
+La implementación de una fábrica digital mediante el software NX de Siemens ha permitido modelar y simular procesos clave en la automatización de la planta de fabricación de juguetes de plástico. A través de esta herramienta, se han representado virtualmente los sistemas de producción, lo que permite analizar el desempeño de distintos componentes automatizados.
+Dado los cambios sugeridos en la propuesta de automatización (compra de una máquina de pulido por vibración, instalación de una celda robotizada e instalación de un sistema de bandas transportadoras completamente automatizado), la fábrica digital desarrollada en Siemens NX incluye todas las etapas previas al inicio de la celda robotizada, ya que este proceso será simulado en RobotStudio. Para lograr una integración eficiente entre ambos softwares, se implementa la comunicación mediante un servidor OPC UA.
 ### Siemens NX
 #### Entorno y modelamiento
+Siguiendo el layout propuesto anteriormente en el software Tecnomatix, se implementaron las distintas estaciones que conforman el proceso de manufactura. Finalmente, la fábrica digital cuenta con las siguientes etapas y estaciones de producción:
+- **Mezcla de plástico**  
+- **Dosificación**  
+- **Inyección**  
+- **Desbarbado**  
+- **Ensamble parcial**  
+- **Ensamble final**  
+- **Etapa de salida hacia la celda robótica**  
+
+Además, se incluyen las etapas de transporte entre las estaciones mencionadas.
 #### Actuadores virtuales
 #### Sensores virtuales
 #### Simulación
