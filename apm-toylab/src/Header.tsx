@@ -25,6 +25,9 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
             props.resetMod(prev=>!prev)
             props.setSelectedPage('modulos')
             }}>Módulos</button>
+          <button onClick={() => window.open('https://github.com/SaraC27/APMToyLab', '_blank')}>
+              Repositorio
+          </button>
           <button onClick={() => props.setSelectedPage('mes')}>Sistema MES</button>
         </div>
       </nav>
