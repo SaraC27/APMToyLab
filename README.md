@@ -694,8 +694,13 @@ Siguiendo el layout propuesto anteriormente en el software Tecnomatix, se implem
 - **Ensamble final**  
 - **Etapa de salida hacia la celda robótica**  
 
-Además, se incluyen las etapas de transporte entre las estaciones mencionadas.
+Además, se incluyen bandas transportadoras que funcionan como medio de transporte entre las distintas etapas.
 #### Actuadores virtuales
+Para la elaboracion de la fabrica digital se usaron los siguientes actuadores:
+Banda transportadora principal: Una banda transportadora de 26m de longitud y 0.6m de ancho que se encarga de conectar las bandas secundarias que vienen desde cada una de las inyectoras y van hacia las estaciones de desbarbado, se mueve a una velocidad constante de 2 m/s y recibe una señal desde el PLC que permite encenderla o apagarla.
+Bandas transportadoras secundarias: Un total de 6 bandas transportadoras divididas en 2 grupos de 3. Tienen dimensiones de 4.5 m de largo y 0.6 m de ancho. El primer grupo de bandas se encarga de llevar las piezas que salen de las inyectoras hasta la banda principal, mientras que el segundo lleva las piezas desde la banda principal hasta sus respectivas estaciones de desbarbado. Todas estas bandas se mueven constantemente a una velocidad de 2 m/s y reciben una señal del PLC que permite encenderlas o apagarlas.
+Cilindros neumaticos: Su funcion es empujar las piezas que se transportan por la banda principal hacia distintas bandas secundarias las cuales se encargan de transportarlas hasta sus respectivas estaciones de desbarbado. En terminos de simulacion se representan como una articulacion prismatica la cual recibe un numero entero desde el PLC, este numero corresponde a la posicion (expresada en mm) a la cual se debe desplazar el cilindro. Una vez las piezas respectivas se encuentran en sus respectivas bandas secundarias el cilindro vuelve a su posicion de origen para permitir el paso de las demas piezas que se mueven a lo largo de la banda transportadora principal.
+Actuadores angulares: 
 #### Sensores virtuales
 #### Simulación
 
