@@ -476,7 +476,6 @@ dateFormat YYYY-MM-DD
    <img style="width: 60vw;" alt="Screenshot 2025-03-03 at 10 03 14" src="https://github.com/user-attachments/assets/4abcc6bb-56da-4795-be61-05ede2e75f9d" />
 </div>
 
-
 ### Proceso de creación de la celda
 <p align="justify"> 
 La creación de la celda robotizada sigue una hoja de ruta estructurada que guía cada etapa del proceso, desde la orientación inicial hasta la validación final. Este diagrama de flujo detalla los pasos necesarios para analizar, diseñar, implementar y evaluar la celda, asegurando que cumpla con los objetivos del proyecto de manera eficiente y segura.
@@ -552,16 +551,16 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 - Se seleccionaron robots con capacidad suficiente para manejar las cargas sin comprometer la velocidad ni precisión.
 
 ***Área de trabajo:***
-- **Tamaño de los pallets:** 1,2 m x 1,2 m.
+- **Tamaño de los pallets:** 0,8 m x 1,2 m.
 - Se seleccionaron robots con áreas de alcance adecuadas para cubrir el movimiento requerido en el proceso.
 
 ***Aplicación específica:***
 - **Empaque:** Requiere alta velocidad y precisión para manejar objetos ligeros, ideal para el IRB 360.
-- **Paletizado:** Requiere fuerza y un alcance mayor para manejar cajas y pallets completos, ideal para el IRB 660.
+- **Paletizado:** Requiere fuerza y un alcance mayor para manejar cajas y pallets completos, ideal para el IRB 1520.
 
 **Características técnicas de los robots seleccionados**
 
-***IRB 360 (Delta Robot):***
+***IRB 360 (Robot Delta):***
 
 - **Carga útil máxima (Payload):** Hasta 3 kg.
 - **Área de trabajo (Radio):** Hasta 1,6 m.
@@ -569,10 +568,10 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 - **Velocidad máxima:** Alta velocidad para aplicaciones de empaquetado rápido.
 - **Aplicaciones:** Ideal para empaquetado, pick and place, y tareas de alta precisión.
 
-***IRB 660 (Paletizado):***
+***IRB 1520 (Robot Antropomorfico):***
 
-- **Carga útil máxima (Payload):** Hasta 250 kg.
-- **Área de trabajo (Alcance):** Hasta 3,15 m.
+- **Carga útil máxima (Payload):** Hasta 4 kg.
+- **Área de trabajo (Alcance):** Hasta 1,8 m.
 - **Repetibilidad:** ±0,1 mm.
 - **Velocidad:** Optimizado para paletizado con ciclos rápidos y eficientes.
 - **Aplicaciones:** Perfecto para manejar cajas y pallets en tareas de paletizado industrial.
@@ -582,17 +581,17 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
  - **Justificación:** Diseñado para manejar cargas ligeras, como juguetes de 1,2 kg, con precisión y alta velocidad, ideal para procesos de empaque rápido.
 
 <div align="center">
-  <img style="width: 21vw;" alt="IRB 360-2" src="https://github.com/user-attachments/assets/33997a38-2937-438c-be1e-9ae0356c42d7" />
-  <img style="width: 19vw;" alt="IRB 360-1" src="https://github.com/user-attachments/assets/dbe4080f-74bc-4d21-a0ac-b1f1475627ba" />
+  <img style="width: 31vw;" alt="Screenshot 2025-03-03 at 11 21 55" src="https://github.com/user-attachments/assets/6d456f17-4298-4f9e-a7f4-0cbe64723898" />
+  <img style="width: 40vw;" alt="Screenshot 2025-03-03 at 11 23 07" src="https://github.com/user-attachments/assets/1716d25d-d8a1-4441-8738-1c1f5c198ea2" />
 </div>
 
-***IRB 660 (Paletizado):***
-- **Función principal:** Encargado de paletizar cajas o productos terminados (juguetes ya empaquetados) en pallets de tamaño estándar de 1,2 m x 1,2 m.
+***IRB 1520 (Paletizado):***
+- **Función principal:** Encargado de paletizar cajas o productos terminados (juguetes ya empaquetados) en pallets de tamaño estándar de 0,8 m x 1,2 m.
 - **Justificación:** Su capacidad de carga y área de trabajo lo convierten en la elección ideal para manipular pallets y organizar grandes volúmenes de productos.
 
 <div align="center">
-  <img style="width: 27vw;" alt="IRB 660-1" src="https://github.com/user-attachments/assets/d1385a1c-aeab-4a7e-b7bf-bc383fabb4b5" />
-  <img style="width: 30vw;" alt="IRB 660-2" src="https://github.com/user-attachments/assets/1cb6cc29-fe77-4be1-ae99-bec89961eadc" />
+  <img style="width: 31vw;" alt="Screenshot 2025-03-03 at 11 19 04" src="https://github.com/user-attachments/assets/2d9e2d25-5b5f-4757-bcdf-012071535c8d" />
+   <img style="width: 40vw;" alt="Screenshot 2025-03-03 at 11 20 30" src="https://github.com/user-attachments/assets/41a1cd6c-7cb4-4064-86ab-c67b9bb173a0" />
 </div>
 
 #### Interacción con operarios
@@ -734,9 +733,59 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 | R15    | SIL 3                             | SIL 2                               |
 
 ### RobotStudio
+#### Descripción del Layout
+
+**1. Entrada de Cajas**
+- Las cajas ingresan a la línea de producción a través de una banda transportadora.
+- El flujo está marcado con flechas rojas indicando la dirección del movimiento.
+
+**2. Entrada de Juguetes y Papel Panal**
+- Los juguetes y el papel panal llegan desde líneas verticales a puntos de intersección con la banda principal.
+- Estos materiales son manipulados por robots en los puntos señalados con líneas azules diagonales.
+
+**3. Proceso de Empacado**
+- Se observa la interacción de robots en la integración de juguetes y papel panal dentro de las cajas.
+- La presencia de estos robots mejora la precisión y la velocidad del empacado.
+
+**4. Estación Manual de Sellado**
+- Después del empacado, las cajas se dirigen a una estación de sellado manual, identificada con color rosa.
+- Aquí, los operarios sellan las cajas antes de continuar al proceso de almacenamiento y paletizado.
+
+**5. Almacén de Producto en Proceso**
+- Se encuentra identificado en color verde.
+- Sirve como un área temporal antes de la siguiente fase del proceso.
+
+**6. Proceso de Paletizado**
+- Un robot, representado nuevamente con líneas diagonales azules, se encarga de organizar las cajas en pallets.
+- La salida de los pallets está claramente definida con una flecha roja descendente.
+
+**Características y Ventajas del Diseño**
+**Flujo optimizado:** El diseño minimiza desplazamientos innecesarios y permite una transición eficiente entre las etapas.  
+**Automatización con robots:** La manipulación de juguetes y papel panal por robots reduce errores y mejora la velocidad de empacado.  
+**Interacción humana y robótica:** Se mantiene un equilibrio entre estaciones automatizadas y tareas manuales, como el sellado.  
+**Claridad en las zonas de trabajo:** Las diferentes secciones están bien identificadas, lo que facilita la supervisión y el mantenimiento.  
+
+Este diseño contribuye a la eficiencia de la celda de manufactura, asegurando un flujo de producción fluido desde la llegada de materiales hasta la salida de pallets listos para distribución.
+
+<div align="center">
+<img style="width: 50vw;" alt="Screenshot 2025-03-03 at 11 47 08" src="https://github.com/user-attachments/assets/781c1010-f31f-466a-b7fb-fdea6c0b224f" />
+</div>
+
+
 #### Modelado
 #### Programación
 #### Simulación
+
+
+
+
+
+
+
+
+
+
+
 
 ## Módulo 6: Digital Factory
 La implementación de una fábrica digital mediante el software NX de Siemens ha permitido modelar y simular procesos clave en la automatización de la planta de fabricación de juguetes de plástico. A través de esta herramienta, se han representado virtualmente los sistemas de producción, lo que permite analizar el desempeño de distintos componentes automatizados.
