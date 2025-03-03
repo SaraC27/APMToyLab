@@ -473,7 +473,8 @@ dateFormat YYYY-MM-DD
 ### Productos de entrada y salida de la celda
 
 <div align="center">
-   <img style="width: 40vw;" alt="productos de Entrada y Salida" src="https://github.com/user-attachments/assets/339c7808-8252-4327-9eaa-f9f6e8b1ad23" />
+   <img style="width: 80vw;" alt="productos de Entrada y Salida" src="https://github.com/user-attachments/assets/339c7808-8252-4327-9eaa-f9f6e8b1ad23" />
+   
 </div>
 
 
@@ -483,23 +484,35 @@ La creación de la celda robotizada sigue una hoja de ruta estructurada que guí
 </p>
 
 ```mermaid
-flowchart LR
-    A[Orientación del Proyecto] --> B[Definir objetivos, alcance, recursos y cronograma]
-    B --> C[Identificación de Procesos]
-    C --> D[Analizar operaciones, identificar mejoras y calcular indicadores actuales]
-    D --> E[Definición del Diagrama de Flujo]
-    E --> F[Elaborar un diagrama que incluya espacios, acciones, flujo de materiales y herramientas]
-    F --> G[Análisis del Espacio]
-    G --> H[Determinar necesidades de espacio y restricciones, considerando el robot]
-    H --> I[Proponer Layout 1]
-    H --> J[Proponer Layout N]
-    I & J --> K{¿Layouts cumplen requisitos mínimos?}
-    K -->|Sí| L[Seleccionar el mejor layout]
-    K -->|No| M[Ajustar y mejorar los layouts]
-    L & M --> N[Seguridad]
-    N --> O[Identificar riesgos, definir protecciones y protocolos de emergencia]
-    O --> P[Simulación]
-    P --> Q[Simular la celda en RobotStudio para obtener indicadores y probar programación]
+flowchart TD
+    A[Inicio: Definir etapa del proceso] --> B[Identificación y selección de la aplicación del robot]
+    B --> C[Analizar estado de entrada y salida de materiales]
+    C --> D[Definir duty cycle y throughput time requerido]
+    
+    D --> E[Selección de Componentes]
+    E --> E1[Elegir robots, herramientas y séptimos ejes]
+    E --> E2[Seleccionar máquinas de proceso y sistemas de transporte]
+    E --> E3[Incluir componentes de control de calidad]
+
+    E1 & E2 & E3 --> F[Definir layout de la celda]
+    F --> G[Dimensionar espacio y establecer entradas/salidas]
+    
+    G --> H[Gestión de Riesgos]
+    H --> H1[Identificar al menos 10 peligros según ISO 10218-1]
+    H --> H2[Calcular nivel de riesgo: daño y frecuencia]
+    H --> H3[Definir medidas de mitigación y componentes de seguridad]
+    
+    H1 & H2 & H3 --> I[Evaluar cumplimiento de normas de seguridad]
+    I --> J{¿Cumple requisitos mínimos?}
+    J -- Sí --> K[Validación del diseño]
+    J -- No --> L[Ajustar diseño y mitigar riesgos]
+
+    K & L --> M[Simulación de la celda en RobotStudio]
+    M --> N[Obtener indicadores y probar programación]
+    N --> O[Generar video de simulación y documentación]
+    O --> P[Entrega final en GitHub y página del proyecto]
+
+    P --> Q[Fin]
 ```
 
 
