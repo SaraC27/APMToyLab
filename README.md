@@ -473,8 +473,7 @@ dateFormat YYYY-MM-DD
 ### Productos de entrada y salida de la celda
 
 <div align="center">
-   <img style="width: 100vw;" alt="productos de Entrada y Salida" src="https://github.com/user-attachments/assets/339c7808-8252-4327-9eaa-f9f6e8b1ad23" />
-   
+   <img style="width: 60vw;" alt="Screenshot 2025-03-03 at 10 03 14" src="https://github.com/user-attachments/assets/4abcc6bb-56da-4795-be61-05ede2e75f9d" />
 </div>
 
 
