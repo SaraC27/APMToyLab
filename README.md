@@ -436,7 +436,7 @@ La creación de la celda robotizada sigue una hoja de ruta estructurada que guí
 </p>
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[Orientación del Proyecto] --> B[Definir objetivos, alcance, recursos y cronograma]
     B --> C[Identificación de Procesos]
     C --> D[Analizar operaciones, identificar mejoras y calcular indicadores actuales]
