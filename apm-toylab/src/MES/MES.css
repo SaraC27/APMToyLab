@@ -1,7 +1,6 @@
 /* Estilos generales */
 .mes-container {
   width: 100%;
-  height: 80vh;
   /* Ocupa toda la altura de la pantalla */
   display: flex;
   justify-content: center;
@@ -88,8 +87,8 @@
 }
 
 .mes-token-container {
-  width: 500px;
-  height: 70px;
+  width: 250px;
+  height: 100px;
   display: flex;
   flex-direction: row;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -100,6 +99,47 @@
   top: 20px;
   right: 20px;
   padding-right: 10px;
+}
+
+.mes-kpis-container {
+  width: 800px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 350px;
+  padding-right: 10px;
+  gap: 20px;
+}
+
+.kpi-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.kpi-card {
+  background: #aaa;
+  border-radius: 8px;
+  text-align: center;
+  width: 120px;
+  height: 90px;
+}
+
+.kpi-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.kpi-value {
+  font-weight: 900;
+  font-size: 20px;
+  color: #000;
 }
 
 .mes-icon-btn {
@@ -128,6 +168,7 @@
   background-color: #f9f9f9;
   text-align: center;
   cursor: pointer;
+  width: 50px;
 }
 
 .mes-token-input:focus {
@@ -157,7 +198,7 @@
 
 .mes-dashboard-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
@@ -175,7 +216,7 @@
   font-weight: bold;
   color: #333;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  height: 90%;
+  width: 100%;
 }
 
 .mes-produccion-container {
@@ -183,6 +224,7 @@
   flex-direction: row;
   align-items: center;
   height: 100%;
+  width: 100%;
   padding: 10px;
   gap: 10px;
 }
@@ -193,13 +235,23 @@
   color: #333;
 }
 
-.mes-produccion-content {
+.mes-produccion-content1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 90%;
+  flex: 1;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.mes-produccion-content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
   border-radius: 20px;
   border: 1px solid #ccc;
   padding: 5px;
@@ -210,7 +262,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   border-radius: 5px;
 }
 
@@ -338,22 +389,6 @@
   color: #000;
 }
 
-.mes-historico-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-}
-
-.mes-historico-title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
-
 /* Dropdown */
 .dropdown-container {
   position: relative;
@@ -402,6 +437,7 @@
 }
 
 .mes-historico-chart {
+  display: flex;
   width: 100%;
   height: 100%;
 }

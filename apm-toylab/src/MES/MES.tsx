@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./MES.css";
 import Produccion from "./Produccion";
 import Supervision from "./Supervision";
+import avion from '../Img/avion.jpeg'
+import carro from '../Img/carro.jpeg'
+import submarino from '../Img/submarino.jpeg'
 
 export interface IRealTime {
   // Inyectoras
@@ -144,6 +147,20 @@ export interface IHistorico {
   Contador_Aviones: number;
 }
 
+interface KpiCardProps {
+  title: string;
+  value: number;
+}
+
+const KpiCard = ({ title, value }: KpiCardProps) => {
+  return (
+      <div className="kpi-card">
+          <p className="kpi-title">{title}</p>
+          <p className="kpi-value">{(100*value).toFixed(2)}%</p>
+      </div>
+  );
+};
+
 const dummyData: IHistorico[] = [
   {
     SK: new Date().valueOf().toString(),
@@ -238,6 +255,40 @@ const MES = () => {
   const [showToken, setShowToken] = useState<boolean>(false);
   const [info, setInfo] = useState<IRealTime | undefined>(undefined);
   const [hist, setHist] = useState<IHistorico[]>([]);
+  const [kpis, setKpis] = useState({
+    Ocupacion: 0,
+    Eficiencia: 0,
+    Disponibilidad: 0,
+    Calidad: 0,
+    OEE: 0,
+  })
+  const [produccion, setProduccion] = useState([
+    { imgSrc: avion, producidas: 0, objetivo: 0 },
+    { imgSrc: carro, producidas: 0, objetivo: 0 },
+    { imgSrc: submarino, producidas: 0, objetivo: 0 },
+  ]);
+
+  useEffect(()=>{
+    let tiempoCiclo = 0;
+    const tiempoInicial = Number(hist.at(0)?.SK)
+    for(let i of hist){
+      if(i.Contador_Celda > 1){
+        tiempoCiclo = Number(i.SK) - tiempoInicial;
+        break;
+      }
+    }
+    const tiempoTotal = (Number(hist.at(-1)?.SK) - Number(hist.at(0)?.SK)) / (60 * 60 * 1000) // horas
+    tiempoCiclo /= (60 * 1000); // minutos
+    const kpisUpdate = {...kpis};
+    const totalProduccion = 45 * (produccion[0].producidas + produccion[1].producidas + produccion[2].producidas);
+    kpisUpdate.Ocupacion = totalProduccion / 4613;
+    kpisUpdate.Eficiencia = totalProduccion * tiempoCiclo * 1.75 / (60 * 45);
+    kpisUpdate.Disponibilidad = 36 / (45*tiempoTotal);
+    kpisUpdate.Calidad = 0.9;
+    kpisUpdate.OEE = kpisUpdate.Eficiencia * kpisUpdate.Disponibilidad * kpisUpdate.Calidad;
+    setKpis(kpisUpdate);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hist, produccion])
 
   function handleLogin() {
     if (!loading) {
@@ -355,10 +406,21 @@ const MES = () => {
           <h1 className="mes-title">Sistema MES</h1>
           <div className="mes-dashboard-container">
             <div className="mes-card">
-              <Produccion token={token} info={info} hist={dummyData}/>
+              <Produccion token={token} info={info} hist={hist} data={produccion} setData={setProduccion}/>
             </div>
             <div className="mes-card">
-              <Supervision token={token} info={info}/>
+              <Supervision token={token} info={info} hist={hist}/>
+            </div>
+          </div>
+
+          <div className="mes-kpis-container">
+            <h4>KPIs</h4>
+            <div className="kpi-grid">
+                <KpiCard title="Ocupación" value={kpis.Ocupacion} />
+                <KpiCard title="Eficiencia" value={kpis.Eficiencia} />
+                <KpiCard title="Disponibilidad" value={kpis.Disponibilidad} />
+                <KpiCard title="Calidad" value={kpis.Calidad} />
+                <KpiCard title="OEE" value={kpis.OEE} />
             </div>
           </div>
 

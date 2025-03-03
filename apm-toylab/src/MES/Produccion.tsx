@@ -1,7 +1,4 @@
 import { FocusEvent, useEffect, useState } from 'react';
-import avion from '../Img/avion.jpeg'
-import carro from '../Img/carro.jpeg'
-import submarino from '../Img/submarino.jpeg'
 import { IHistorico, IRealTime } from './MES';
 import Chart from "react-apexcharts";
 
@@ -9,14 +6,19 @@ interface ProduccionProps {
   token: string
   info: IRealTime | undefined
   hist: IHistorico[]
+  data: {
+    imgSrc: any;
+    producidas: number;
+    objetivo: number;
+  }[],
+  setData: React.Dispatch<React.SetStateAction<{
+    imgSrc: any;
+    producidas: number;
+    objetivo: number;
+  }[]>>
 }
 
 const Produccion = (props: ProduccionProps) => {
-  const [data, setData] = useState([
-    { imgSrc: avion, producidas: 0, objetivo: 0 },
-    { imgSrc: carro, producidas: 0, objetivo: 0 },
-    { imgSrc: submarino, producidas: 0, objetivo: 0 },
-  ]);
   const [error, setError] = useState<string | null>(null)
   const [historic, setHistoric] = useState<Partial<IHistorico>[]>([])
 
@@ -29,8 +31,8 @@ const Produccion = (props: ProduccionProps) => {
     "Objetivo_Aviones"
   ]
 
-  const castKey = (key:string):string=>{
-    switch(key){
+  const castKey = (key: string): string => {
+    switch (key) {
       case "Contador_Carros":
         return "Total de carros producidos"
       case "Contador_Submarinos":
@@ -76,7 +78,7 @@ const Produccion = (props: ProduccionProps) => {
     dataLabels: { enabled: false },
     markers: { size: 4 },
     yaxis: { title: { text: "Valores" } },
-    legend: { show: false },
+    legend: { show: true },
   };
 
   // Manejar cambios en la selección de series
@@ -87,14 +89,14 @@ const Produccion = (props: ProduccionProps) => {
   };
 
   useEffect(() => {
-    const updatedData = [...data];
+    const updatedData = [...props.data];
     const updatedHist: Partial<IHistorico>[] = [];
     let prevProd: 'Aviones' | 'Carros' | 'Submarinos' | undefined = undefined
     let prevCount: number = 0;
     let actualProd: 'Aviones' | 'Carros' | 'Submarinos' | undefined = undefined
     for (let i of props.hist) {
       updatedHist.push({
-        SK: i.SK, 
+        SK: i.SK,
         Contador_Carros: i.Producir_Carros ? i.Contador_Celda : 0,
         Contador_Submarinos: i.Producir_Submarinos ? i.Contador_Celda : 0,
         Contador_Aviones: i.Producir_Aviones ? i.Contador_Celda : 0,
@@ -122,27 +124,27 @@ const Produccion = (props: ProduccionProps) => {
     updatedData[0].objetivo = props.info?.Objetivo_Aviones ?? 0
     updatedData[1].objetivo = props.info?.Objetivo_Carros ?? 0
     updatedData[2].objetivo = props.info?.Objetivo_Submarinos ?? 0
-    setData(updatedData);
+    props.setData(updatedData);
     setHistoric(updatedHist);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.info, props.hist])
 
   const handleChange = (index: number, event: FocusEvent<HTMLInputElement, Element>) => {
     const newObjetivo = event.target.value;
-    const updatedData = [...data];
+    const updatedData = [...props.data];
     const num = Number(newObjetivo)
     updatedData[index].objetivo = num;
     setError(null);
-    setData(updatedData);
-    if (isNaN(data[0].objetivo) || data[0].objetivo < 0) {
+    props.setData(updatedData);
+    if (isNaN(props.data[0].objetivo) || props.data[0].objetivo < 0) {
       setError('Objetivo de aviones inválido')
       return;
     }
-    if (isNaN(data[1].objetivo) || data[1].objetivo < 0) {
+    if (isNaN(props.data[1].objetivo) || props.data[1].objetivo < 0) {
       setError('Objetivo de carros inválido')
       return;
     }
-    if (isNaN(data[2].objetivo) || data[2].objetivo < 0) {
+    if (isNaN(props.data[2].objetivo) || props.data[2].objetivo < 0) {
       setError('Objetivo de submarinos inválido')
       return;
     }
@@ -152,9 +154,9 @@ const Produccion = (props: ProduccionProps) => {
       },
       method: 'POST',
       body: JSON.stringify({
-        Objetivo_Carros: data[1].objetivo,
-        Objetivo_Submarinos: data[2].objetivo,
-        Objetivo_Aviones: data[0].objetivo,
+        Objetivo_Carros: props.data[1].objetivo,
+        Objetivo_Submarinos: props.data[2].objetivo,
+        Objetivo_Aviones: props.data[0].objetivo,
       }),
     })
       .then(async r => {
@@ -172,10 +174,10 @@ const Produccion = (props: ProduccionProps) => {
 
   return (
     <div className="mes-produccion-container">
-      <div className="mes-produccion-content">
+      <div className="mes-produccion-content1">
         <h2 className="mes-produccion-title">Producción</h2>
         <p className="mes-produccion-error">{error}</p>
-        {data.map((item, index) => (
+        {props.data.map((item, index) => (
           <div key={index} className="mes-produccion-row">
             <img src={item.imgSrc} alt={`Machine ${index + 1}`} className="mes-produccion-image" />
             <div className="mes-produccion-info">
@@ -196,7 +198,7 @@ const Produccion = (props: ProduccionProps) => {
           </div>
         ))}
       </div>
-      <div className="mes-produccion-content">
+      <div className="mes-produccion-content2">
         <h2 className="mes-produccion-title">Histórico</h2>
         <div className="dropdown-container">
           <button className="dropdown-button" onClick={() => setDropdownOpen(!dropdownOpen)}>
@@ -218,7 +220,7 @@ const Produccion = (props: ProduccionProps) => {
           )}
         </div>
         <div className="mes-historico-chart">
-          <Chart options={options} series={series} type="line" height={'100%'} width={'120%'} />
+          <Chart options={options} series={series} type="line" height={'175%'} width={'300%'} />
         </div>
       </div>
     </div>
