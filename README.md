@@ -732,6 +732,30 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 | R14    | SIL 1                             | OM                                  |
 | R15    | SIL 3                             | SIL 2                               |
 
+#### Eleementos de Seguridad
+
+# **Matriz de Riesgos (Basada en GUDELINE for Safeguarding Machinery and Equipment)**
+
+| **Tarea**  | **Riesgo** | **Estimación del riesgo** | **Nivel** | **Método de reducción de riesgo** | **Equipo necesario** | **Foto** |
+|------------|-----------|---------------------------|-----------|------------------------------------|----------------------|-----------|
+| **Funcionamiento del robot (Pick and Place y Paletizado)** | El robot podría moverse de manera inesperada y golpear a un operario. | - Seriedad: alta  <br> - Frecuencia: media <br> - Difícil de evitar | D | Instalación de **barreras láser** que detengan el robot al detectar presencia en la zona de trabajo. | **Barreras láser de seguridad** | <img width="275" alt="Screenshot 2025-03-03 at 12 29 35" src="https://github.com/user-attachments/assets/c7691094-e3b0-4952-83b6-7540948cac47" /> |
+| **Movimiento de objetos en el transportador** | Posible caída de productos por un mal posicionamiento del robot en Pick and Place. | - Seriedad: media  <br> - Frecuencia: alta <br> - Fácil de evitar | C | Revisión continua del sistema de sujeción del robot y ajuste periódico de la presión del gripper. | **Sensores de presión en el gripper.** | <img width="431" alt="Screenshot 2025-03-03 at 12 31 24" src="https://github.com/user-attachments/assets/d186d5e4-8cbf-427d-83fa-a96e98d52559" /> |
+| **Señalización de estado de la celda** | Falta de advertencias visuales sobre el estado del proceso puede provocar accidentes. | - Seriedad: media  <br> - Frecuencia: alta <br> - Difícil de evitar | C | Uso de **Industrial Tower Light** para indicar estados de peligro, alerta y operación normal. | **Industrial Tower Light.** | <img width="123" alt="Screenshot 2025-03-03 at 12 32 07" src="https://github.com/user-attachments/assets/46addf13-8356-4544-9901-6a032ee41ca6" />  |
+| **Interacción con operarios en la estación manual de sellado** | Un operario podría ingresar accidentalmente al área de trabajo del robot. | - Seriedad: alta  <br> - Frecuencia: baja <br> - Difícil de evitar | D | Instalación de **barreras físicas** y delimitación del área de trabajo del robot. | **Barreras físicas de protección.** | <img width="352" alt="Screenshot 2025-03-03 at 12 33 04" src="https://github.com/user-attachments/assets/045e0f21-d486-4dac-a92c-c46178428f04" /> |
+| **Emergencias en la celda** | En caso de fallo del sistema, el operario podría no tener una forma rápida de detener el proceso. | - Seriedad: alta  <br> - Frecuencia: baja <br> - Fácil de evitar | C | Implementación de **botones de parada de emergencia** en puntos estratégicos. | **Botón de parada de emergencia.** | <img width="243" alt="Screenshot 2025-03-03 at 12 33 35" src="https://github.com/user-attachments/assets/3248f172-3a02-4b7e-8977-bd40547d1989" /> |
+| **Zona de trabajo del operario** | Riesgo de tropiezos o resbalones en áreas críticas. | - Seriedad: media  <br> - Frecuencia: media <br> - Fácil de evitar | C | Instalación de **Safety Mats** que detengan el robot si alguien pisa la zona de riesgo. | **Safety Mats (alfombras de seguridad).** | <img width="404" alt="Screenshot 2025-03-03 at 12 35 37" src="https://github.com/user-attachments/assets/2edcb1ee-79e9-4ee2-b930-156989c32070" />  |
+
+
+**Explicación de la Matriz de Riesgos**
+**Barreras láser:** Previenen el acceso no autorizado a la zona del robot.  
+**Sensores en el gripper:** Aseguran una correcta sujeción de los productos en el Pick and Place.  
+**Industrial Tower Light:** Proporciona alertas visuales sobre el estado del sistema.  
+**Barreras físicas:** Evitan el ingreso involuntario a zonas de riesgo.  
+**Botones de parada de emergencia:** Permiten detener la celda rápidamente en caso de problemas.  
+**Safety Mats:** Detectan la presencia de un operario en zonas peligrosas y detienen el robot automáticamente.  
+
+Este análisis garantiza un entorno de trabajo **seguro y eficiente**, protegiendo a los operarios mientras se mantiene un flujo óptimo en la celda robotizada.
+
 ### RobotStudio
 #### Descripción del Layout
 
@@ -768,11 +792,11 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 Este diseño contribuye a la eficiencia de la celda de manufactura, asegurando un flujo de producción fluido desde la llegada de materiales hasta la salida de pallets listos para distribución.
 
 <div align="center">
-<img style="width: 50vw;" alt="Screenshot 2025-03-03 at 11 47 08" src="https://github.com/user-attachments/assets/781c1010-f31f-466a-b7fb-fdea6c0b224f" />
+<img style="width: 50vw;" alt="Screenshot 2025-03-03 at 11 53 56" src="https://github.com/user-attachments/assets/ada72fa8-d240-4114-b2d6-ebe24815fd15" />
 </div>
 
-
 #### Modelado
+
 #### Programación
 #### Simulación
 
