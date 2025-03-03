@@ -795,7 +795,62 @@ Este diseño contribuye a la eficiencia de la celda de manufactura, asegurando u
 <img style="width: 50vw;" alt="Screenshot 2025-03-03 at 11 53 56" src="https://github.com/user-attachments/assets/ada72fa8-d240-4114-b2d6-ebe24815fd15" />
 </div>
 
+**iagrama de Flujo**
+```mermaid
+flowchart TD
+    A[Inicio] --> B[Entrada de Cajas en Transportador]
+    B --> C[Entrada de Juguetes]
+    B --> D[Entrada de Papel Panal]
+    
+    C & D --> E[Robot Pick & Place posiciona juguetes y papel en cajas]
+    E --> F[Transporte de cajas al área de sellado]
+    
+    F --> G[Estación Manual de Sellado]
+    G --> H[Inspección de calidad]
+    
+    H --> I{¿Caja correcta?}
+    I -- No --> J[Desechar o Retrabajar]
+    I -- Sí --> K[Almacén Temporal de Producto]
+    
+    K --> L[Transporte de cajas hacia Robot de Paletizado]
+    L --> M[Robot de Paletizado organiza las cajas en un pallet]
+    M --> N[Salida de Pallet a Logística]
+    
+    N --> O[Fin]
+```
+
+**1. Inicio del Proceso**
+- Se introducen **cajas, juguetes y papel panal** en la celda a través de transportadores.
+
+**2. Proceso de Empacado**
+- Un **robot Pick & Place** posiciona juguetes y papel panal dentro de cada caja.
+- Las cajas son transportadas automáticamente hacia la **estación de sellado**.
+
+**3. Estación de Sellado e Inspección de Calidad**
+- **Los operarios sellan las cajas manualmente**.
+- Se realiza una **inspección de calidad** para verificar que el producto esté correctamente empaquetado.
+
+**4. Rama de Decisión: ¿Caja correcta?**
+- **Si la caja no cumple los estándares**, se **rechaza o se retrabaja** antes de continuar.
+- **Si la caja está en buenas condiciones**, se **almacena temporalmente** antes del paletizado.
+
+**5. Proceso de Paletizado**
+- **El transportador lleva las cajas al robot de paletizado**.
+- **El robot organiza las cajas en pallets** para su almacenamiento y distribución.
+
+**6. Salida del Pallet a Logística**
+- **El pallet es transportado fuera de la celda robotizada**, concluyendo el proceso.
+
+**7. Fin del Proceso**
+- **El ciclo finaliza cuando las cajas ya están listas para su distribución**.
+
 #### Modelado
+
+
+<div align="center">
+<img style="width: 50vw;" alt="Screenshot 2025-03-03 at 12 39 02" src="https://github.com/user-attachments/assets/e40f5c5b-d9a5-4bef-93ca-af1d11747067" />
+</div>
+
 
 #### Programación
 #### Simulación
