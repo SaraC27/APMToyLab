@@ -779,11 +779,32 @@ Para la simulación en la fábrica digital de Siemens NX, se implementa la rutin
 #### Programación e integración
 #### Simulación
 
+
 ## Módulo 8: SCADA
+
+
 ### HMI
+
+La interfaz gráfica del SCADA se diseñó en el software Ignition de Inductive Automation. La interfaz cuenta con 7 pestañas que permiten adquirir datos, supervisar, operar, historizar y alarmar.
+
+![image](https://github.com/user-attachments/assets/1417605a-6acb-4564-bca0-9ea2c4a55358)
+
+
 #### Variables clave
+
+Las principales variables que se tuvieron en cuenta para el SCADA corresponden a las cantidades procesadas en cada estación y al estado de operación de cada estación.
+
+![image](https://github.com/user-attachments/assets/c3b7ab5d-26f7-4d75-9802-15d23e565516)
+![image](https://github.com/user-attachments/assets/716578e2-8fda-4d30-ae03-c0298e67373c)
+
+
 #### Diseño
+
+En el diseño de utilizaron botones, labels, displays, switches toogle, gráficas, tablas de alarmas, símbolos de sensores.
+
 #### Desarrollo
+
+
 #### Validación
 #### Elementos de alto desempeño
 ### Ignition
