@@ -304,19 +304,23 @@ El archivo [Analisis_Mercado.xlsx](Files/Analisis_Mercado.xlsx) se puede usar pa
 
 ## Módulo 2: Industria 4.0 en la Automatización
 ### Pre-Automatización
+
+
 #### Diagrama P&ID
 
 El diagrama PI&D de la planta pre-automatizada, que se observa en la siguiente imagen, se desarrolló haciendo uso del programa drawio. Cabe resaltar que en esta planta no se cuenta con sensores y la mayoría se procesos se ejecutan de forma manual.
 A continuación se especifican los modos de operación de cada estación.
 
-| **Estación**               | **Modo de operación** |
-|----------------------------|-----------------------|
-| **Dosificadoras**          | Manual                |
-| **Inyectoras**             | Automático            |
-| **Bandas transportadoras** | Automático            |
-| **Desbarbado**             | Manual                |
-| **Ensambles**              | Manual                |
-| **Empaquetado**            | Manual                |
+| **Estación**             | **Modo de operación** |
+| :---: | :---: |
+| Mezcladoras              | Manual                |
+| Dosificadoras            | Manual                |
+| Inyectoras               | Automático            |
+| Bandas transportadoras   | Automático            |
+| Desbarbado               | Manual                |
+| Ensambles                | Manual                |
+| Empaquetado              | Manual                |
+| Paletizado               | Manual                |
 
 ![P ID Planta Pre drawio](https://github.com/user-attachments/assets/c73dac85-7b08-4e81-aabc-8c2db0dc9a57)
 
@@ -324,7 +328,34 @@ A continuación se especifican los modos de operación de cada estación.
 #### Diagrama Arquitectura
 #### Tecnologías 4.0
 ### Post-Automatización
-#### Diagramas P&ID
+
+
+#### Diagrama P&ID
+
+El diagrama P&ID de la planta automatizada también se graficó en drawio. Esta planta ya cuenta con sensores y actuadores, como se evidencia en la siguiente imagen, y aumentó la cantidad de procesos que se ejecutan de forma automática.
+A continuación se especifican los modos de operación de cada estación y las convenciones.
+
+| **Estación**             | **Modo de operación** |
+| :---: | :---: |
+| Mezcladoras              | Manual                |
+| Dosificadoras            | Manual                |
+| Inyectoras               | Automático            |
+| Bandas transportadoras   | Automático            |
+| Desbarbado               | Manual                |
+| Ensambles                | Manual                |
+| Empaquetado              | Automático            |
+| Paletizado               | Automático            |
+
+| **Símbolo**             | **Modo de operación** |
+| :---: | :---: |
+| Sensor "IQI"            | Sensor " Infrared Quantity Indicator" |
+| Línea "-----"           | Conexión eléctrica                    |
+
+
+![P ID Planta Post drawio](https://github.com/user-attachments/assets/db57b834-2bf3-4915-84d3-dd35b44c8ffb)
+
+
+
 #### Diagrama Arquitectura
 #### Tecnologías 4.0
 ## Módulo 3: Planeación del Proyecto
