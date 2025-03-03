@@ -183,7 +183,7 @@ A partir de la planta previa a la automatizacion, se obtienen solo siguientes KP
 
 #### Tecnomatix
 
-El diseño inicial de la planta pre-automatizada se llevó a cabo en el software de fabricación digital Tecnomatix Plant Simulation de Siemens (como se evidencia en la imagen a continuación), debido a que este software permitió la simulación de las diferentes etapas del proceso de manufactura incluyendo, asimismo, los tiempos de proceso de cada una de las máquinas. Esto último facilitó observar que en la estación de empaque con papel burbuja se presetó un cuello de botella.
+El diseño inicial de la planta pre-automatizada se llevó a cabo en el software de fabricación digital Tecnomatix Plant Simulation de Siemens (como se evidencia en la imagen a continuación), debido a que este software permitió la simulación de las diferentes etapas del proceso de manufactura incluyendo, asimismo, los tiempos de proceso de cada una de las máquinas. Esto último facilitó observar que en la estación de empaque con papel panal se presetó un cuello de botella.
 
 De la misma manera, teniendo en cuenta los indicadores calculados, se configuró la cantidad de materia prima necesaria para la producción de un día de trabajo (8 horas), sin embargo, la simulación indicó que con dicha cantidad de materia prima la planta solo funcionaría 3 horas y media, razón por la cual los indicadores y la planta se siguen ajustando.
 
@@ -304,7 +304,23 @@ El archivo [Analisis_Mercado.xlsx](Files/Analisis_Mercado.xlsx) se puede usar pa
 
 ## Módulo 2: Industria 4.0 en la Automatización
 ### Pre-Automatización
-#### Diagramas P&ID
+#### Diagrama P&ID
+
+El diagrama PI&D de la planta pre-automatizada, que se observa en la siguiente imagen, se desarrolló haciendo uso del programa drawio. Cabe resaltar que en esta planta no se cuenta con sensores y la mayoría se procesos se ejecutan de forma manual.
+A continuación se especifican los modos de operación de cada estación.
+
+| **Estación**               | **Modo de operación** |
+|----------------------------|-----------------------|
+| **Dosificadoras**          | Manual                |
+| **Inyectoras**             | Automático            |
+| **Bandas transportadoras** | Automático            |
+| **Desbarbado**             | Manual                |
+| **Ensambles**              | Manual                |
+| **Empaquetado**            | Manual                |
+
+![P ID Planta Pre drawio](https://github.com/user-attachments/assets/c73dac85-7b08-4e81-aabc-8c2db0dc9a57)
+
+
 #### Diagrama Arquitectura
 #### Tecnologías 4.0
 ### Post-Automatización
