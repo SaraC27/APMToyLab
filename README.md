@@ -329,10 +329,14 @@ Indicadores:
 - Calidad
 - OEE
 
+*Nota: Más detalle sobre los indicadores en la sección [Gestión de producción y automatización](#diagrama-arquitectura-post)*.
+
 Funciones:
 - Visualizar los indicadores calculados con los datos.
 
-*Nota: Más detalle sobre los indicadores en la sección [Gestión de producción y automatización](#diagrama-arquitectura-post)*.
+<img width="840" alt="Screenshot 2025-03-03 at 9 20 19 PM" src="https://github.com/user-attachments/assets/80a7a2b9-bca2-4d7b-9964-e186a443c38f" />
+
+*Nota: Los datos presentados en la imagen no son reales y se colocaron con fines netamente ilustrativos.*
 
 #### Módulo de gestión de producción
 El sistema MES cuenta con un módulo para la supervisión y control de la producción.
@@ -342,7 +346,8 @@ Funciones:
 - Visualizar cuántos juguetes de cada tipo se han producido.
 - Visualizar serie de tiempo de la producción real y la producción objetivo (permite filtrar por tipo de juguete).
 
-imagen
+<img width="1295" alt="Screenshot 2025-03-03 at 9 21 00 PM" src="https://github.com/user-attachments/assets/7ff9f370-b0b6-4357-84f1-b7cedd15fd7c" />
+
 *Nota: Los datos presentados en la imagen no son reales y se colocaron con fines netamente ilustrativos.*
 
 #### Módulo de supervisión
@@ -370,7 +375,8 @@ Estados posibles para cada sección:
 - **Falla:** La sección presenta una falla que requiere atención.
 - **Setup:** La sección se encuentra en proceso de acondicionamiento para producir un juguete de un tipo específico.
 
-imagen
+<img width="1260" alt="Screenshot 2025-03-03 at 9 25 09 PM" src="https://github.com/user-attachments/assets/7c7e103a-4fd0-4825-9913-db262ed1f296" />
+
 *Nota: Los datos presentados en la imagen no son reales y se colocaron con fines netamente ilustrativos.*
 
 ## Módulo 2: Industria 4.0 en la Automatización
