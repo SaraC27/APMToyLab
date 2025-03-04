@@ -1247,6 +1247,16 @@ El módulo nos proporcionó herramientas clave para organizar eficazmente el gru
 ### Resultados Módulo 4: Evaluación Económica de Proyectos
 El módulo nos llevó a cuestionarnos aspectos que antes no habíamos considerado en otros proyectos, especialmente en lo referente a la viabilidad económica. La ejecución de un proyecto real no solo implica el diseño y la implementación técnica, sino que también conlleva implicaciones financieras que pueden limitar o potenciar su desarrollo. Comprender estos factores es fundamental para una planificación efectiva, ya que permite evaluar costos, optimizar recursos y buscar estrategias de financiación que aseguren la sostenibilidad del proyecto. Este enfoque nos brindó una perspectiva más integral, resaltando la importancia de equilibrar la innovación con la gestión financiera para lograr soluciones viables y escalables.
 ### Resultados Módulo 5: Celda de Manufactura Robotizada
+En este módulo, desarrollamos el diseño, modelado y simulación de una celda robotizada para empacado y paletizado, aplicando conocimientos en automatización, seguridad y optimización de procesos.  
+
+Se trabajó en la integración de robots IRB 360 e IRB 1520, junto con un sistema de transportadores y estaciones de trabajo manual, para asegurar un flujo eficiente de producción.  
+
+Para validar el diseño, se utilizó RobotStudio, lo que permitió optimizar trayectorias, minimizar tiempos de ciclo y validar la interacción entre los robots y los demas componentes de la celda. Además, se implementaron medidas de seguridad industrial, como barreras físicas, cortinas láser, safety mats y paradas de emergencia, asegurando el cumplimiento de normativas industriales de seguridad.  
+
+Uno de los principales logros fue la simulación completa de la celda, verificando su rendimiento y viabilidad antes de una posible implementación real. Esto facilita la identificación y corrección de posibles problemas, garantizando una solución eficiente, segura y escalable.  
+
+Este módulo nos permitió aplicar conocimientos teóricos en un entorno práctico, brindándonos herramientas clave para el desarrollo de sistemas automatizados en entornos industriales.
+
 ### Resultados Módulo 6: Digital Factory
 Este módulo nos presentó Siemens NX, una herramienta que hasta ahora no había sido muy utilizada por ninguno de los miembros del grupo. Por ello, fue necesario aprender a usar este software en paralelo al desarrollo del proyecto, lo que impidió profundizar en todas las funcionalidades que ofrece NX. Sin embargo, se logró explorar la librería Mechatronics Concept Designer (MCD), que resultó de gran utilidad para la implementación de la fábrica digital. MCD permitió crear un entorno virtual en el que sensores y actuadores pueden comunicarse con un controlador (PLC) virtual, con el fin de realizar pruebas de funcionamiento de la solución propuesta y así determinar su viabilidad.
 
@@ -1255,5 +1265,18 @@ Como resultado de este módulo, se obtuvo un gemelo digital de la fábrica, enfo
 Esta herramienta puede ser de gran importancia para futuros proyectos en entornos académicos o profesionales, ya que permite realizar distintos tipos de pruebas, simulaciones y análisis de procesos sin la necesidad de disponer físicamente de todos los elementos involucrados. Esto brinda una gran versatilidad para explorar nuevas soluciones, optimizar diseños y validar conceptos antes de su implementación real, lo que puede traducirse en ahorro de recursos y una mayor eficiencia en el desarrollo de proyectos de automatización.
 
 ### Resultados Módulo 7: Controladores industriales (PLC)
-Gracias al módulo de controladores industriales, pudimos entender cómo estos dispositivos gestionan y regulan distintos procesos dentro de la industria, garantizando su estabilidad y eficiencia. Además, exploramos diferentes enfoques para abordar problemas relacionados con la programación de rutinas en PLC, lo que nos permitió adquirir diversas perspectivas para enfrentarlos de manera más efectiva.
+Este módulo permitió comprender el funcionamiento y la programación de controladores lógicos programables (PLC), fundamentales en la automatización industrial.  
+
+Se trabajó con PLC de marcas como Allen Bradley, utilizando entornos de programación como Studio 5000. A través de esta herramienta, se desarrollaron lógicas de control para los diferentes sectores de la planta, gestionando el flujo de productos, la activación de actuadores y la lectura de sensores.  
+
+Uno de los principales logros fue la simulación y validación de los programas de control, asegurando que las señales de entrada y salida del PLC operaran correctamente antes de la implementación virtual.  
+
+Este módulo nos brindó conocimiento sólido sobre el diseño, programación y diagnóstico de sistemas automatizados, permitiéndonos mejorar la eficiencia y confiabilidad de los procesos industriales.
 ### Resultados Módulo 8: SCADA
+En este módulo, trabajamos en la implementación y configuración de un sistema SCADA para la supervisión y control de los procesos automatizados.  
+
+Se exploraron herramientas como Ignition, permitiendo diseñar interfaces gráficas para la visualización en tiempo real de datos clave como el estado de los diferentes elementos de la planta.  
+
+Además, se configuraron alarmas y registros históricos para facilitar la detección de fallos y la trazabilidad del proceso. La integración con PLC a través de protocolos de comunicaciones permitió una comunicación eficiente entre el sistema SCADA y los equipos industriales.  
+
+Este módulo nos brindó una visión práctica sobre la supervisión remota de procesos industriales, destacando la importancia del SCADA en la optimización, y supervisión de una planta industrial.
