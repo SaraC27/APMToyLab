@@ -1503,7 +1503,7 @@ Como se mencionó anteriormente, los tags definidos en el SCADA se enviaron a la
 
 
 #### Validación
-VIDEO
+![video](https://github.com/SaraC27/APMToyLab/blob/bc4f1da1ab1feabf50e69793039d78cc0caa46c1/Files/Video%20SCADA.mp4)
 
 
 # Resultados
