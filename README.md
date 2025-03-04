@@ -479,10 +479,28 @@ La arquitectura se despliega en la nube de `AWS`, donde se cuenta con una base d
 - *API AWS:* Conjunto de funciones/protocolos/reglas que AWS dispone para la utilización de sus servicios dentro de la nube AWS.
 
 #### Nodos de la arquitectura y relación con la pirámide de automatización
+
+La pirámide de automatización es un estándar que consta de 5 niveles:
+- **Planta:** Sensores, Actuadores.
+- **Control:** PLC, PAC, DCS
+- **SCADA:** Supervisión, Operación, Adquisición de datos, Alarmas, Históricos.
+- **MES:** Gestión de la producción.
+- **ERP:** Gestión empresarial.
+
 <img width="329" alt="Screenshot 2025-03-03 at 10 48 05 PM" src="https://github.com/user-attachments/assets/c7798407-5330-4b57-8db2-cfc99255ea09" />
 
 *Pirámide de Automatización. [Fuente](https://www.seika.com.mx/5-niveles-de-la-automatizacion-industrial/)*
 
+Esta perspectiva se basa en una comunicación vertical entre los niveles. Para la implementación de la `Industria 4.0` se busca horizontalizar la pirámide al permitir la comunicación de todas las etapas hacia un sistema centralizado (`nube`) que gestione y almacene los datos de cada nivel y los comunique a cualquiera de los otros niveles sin tener que pasar estrictamente por cada nivel intermedio.
+
+En nuestra arquitectura se presenta cada uno de los niveles mediante cada uno de los 6 nodos del diagrama de arquitectura:
+- **Planta:** Es el nodo del `Gemelo Digital` (Siemens NX) y el nodo de la `Celda Robotizada` (RobotStudio). Mediante `Ignition + Node Red`, envía valores de los sensores digitales y recibe acciones para los actuadores digitales, a través del sistema AWS para una arquitectura de Industria 4.0.
+- **Control:** Es el nodo del `PLC` (RSLinx + Studio 5000). Mediante `Ignition + Node Red`, recibe valores de los sensores digitales y acciones del sistema SCADA; y envía acciones para los actuadores digitales, a través del sistema AWS para una arquitectura de Industria 4.0.
+- **SCADA:** Es el nodo del `SCADA` (Ignition + Navegador Web). Mediante `Ignition + Node Red`, recibe valores de los sensores digitales y estados generales del sistema; y envía acciones para los actuadores digitales y variables globales de proceso, a través del sistema AWS para una arquitectura de Industria 4.0.
+- **MES + ERP:** Es el nodo del `Sistema MES` (React + Navegador Web). Mediante `HTTPS`, recibe valores de producción y estados generales del sistema; y envía variables globales de proceso, a través del sistema AWS para una arquitectura de Industria 4.0.
+- **Nube:** Es el nodo de `AWS` (API + Base de datos + Autenticación). Mediante `HTTPS`, recibe y envía valores de todos los otros nodos/niveles del sistema, siendo la pieza central para lograr una arquitectura de Industria 4.0.
+
+La arquitectura propuesta es `ESCALABLE`. Al tener el sistema centralizado en `AWS`, se pueden interconectar nuevos servicios como `Análisis de datos`, `Inteligencia artificial`, `etc` y nuevas funciones de la `API` como `Registro de ventas`, `Registro de inventario`, `etc`. Y utilizar toda la información disponible para tomar decisiones más rápidas que interfieren directamente con el proceso real de la planta.
 
 ## Módulo 3: Planeación del Proyecto
 ### EDT
