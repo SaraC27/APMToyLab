@@ -25,7 +25,7 @@
        - [VSM](#vsm-post)
      - [Propuesta automatización](#propuesta-automatización) MODIFICAR: J/S
      - [Análisis de Mercado](#análisis-de-mercado) YA
-     - [Sistema MES](#sistema-mes) FALTA: F
+     - [Sistema MES](#sistema-mes) YA
 
    - [Módulo 2: Industria 4.0 en la Automatización](#módulo-2-industria-40-en-la-automatización)  
      - [Pre-Automatización](#pre-automatización-40)  
@@ -35,7 +35,6 @@
        - [Diagramas P&ID](#diagramas-pid-post) FALTA: S
        - [Diagrama Arquitectura / Tecnologías 4.0](#diagrama-arquitectura-post) FALTA: F
        
-
    - [Módulo 3: Planeación del Proyecto](#módulo-3-planeación-del-proyecto)  
      - [MES/ERP](#erp) FALTA: FELIPE
      - [EDT](#edt) YA
@@ -317,6 +316,62 @@ Para saber cuántos juguetes deben producirse (gestión de la producción), se r
 El archivo [Analisis_Mercado.xlsx](Files/Analisis_Mercado.xlsx) se puede usar para generar las gráficas, cambiar estimados y suposiciones.
 
 ### Sistema MES
+
+El sistema MES propuesto consta de una aplicación Web conectada a la arquitectura que se presenta más adelante en la sección [Diagrama Arquitectura / Tecnologías 4.0](#diagrama-arquitectura-post). El sistema MES cuenta con acceso a la base de datos que conecta los diferentes módulos/sistemas donde se registran valores históricos relacionados con la producción, operación y supervisión de la planta. **Los datos presentados en el sistema MES se actualizan cada minuto.**
+
+#### Módulo de indicadores
+El sistema MES cuenta con un módulo para el cálculo de indicadores.
+
+Indicadores:
+- Ocupación
+- Eficiencia
+- Disponibilidad
+- Calidad
+- OEE
+
+Funciones:
+- Visualizar los indicadores calculados con los datos.
+
+*Nota: Más detalle sobre los indicadores en la sección [Gestión de producción y automatización](#diagrama-arquitectura-post)*.
+
+#### Módulo de gestión de producción
+El sistema MES cuenta con un módulo para la supervisión y control de la producción.
+
+Funciones:
+- Definir objetivo de producción para cada tipo de juguete.
+- Visualizar cuántos juguetes de cada tipo se han producido.
+- Visualizar serie de tiempo de la producción real y la producción objetivo (permite filtrar por tipo de juguete).
+
+imagen
+*Nota: Los datos presentados en la imagen no son reales y se colocaron con fines netamente ilustrativos.*
+
+#### Módulo de supervisión
+El sistema MES cuenta con un módulo para la supervisión del estado de las secciones más importantes de la planta.
+
+Secciones importantes de la planta:
+- **Inyectora A:** Cuenta con una inyectora, una banda y una compuerta.
+- **Inyectora B:** Cuenta con una inyectora, una banda y una compuerta.
+- **Inyectora C:** Cuenta con una inyectora, una banda y una compuerta.
+- **Estación A:** Cuenta con una compuerta, una banda y una zona de almacenamiento.
+- **Estación B:** Cuenta con una compuerta, una banda y una zona de almacenamiento.
+- **Estación C:** Cuenta con una compuerta, una banda y una zona de almacenamiento.
+- **Celda robotizada:** Cuenta con 3 robots, una mesa de trabajo y varias bandas.
+- **Banda Principal:** Es la banda principal de la planta por la que toda pieza fabricada por inyección debe pasar.
+
+Funciones:
+- Visualizar el estado actual de cada sección importante de la planta.
+- Visualizar el porcentaje de tiempo que cada sección ha estado en cada estado (a partir del histórico).
+
+Estados posibles para cada sección:
+- **Offline:** No hay conexión de la sección con el sistema, no se recibe información.
+- **Stop:** La sección se encuentra detenida, no realiza sus tareas.
+- **Funcionando:** La sección se encuentra funcionando correctamente, realiza sus tareas de producción.
+- **Mantenimiento:** La sección se encuentra en mantenimiento.
+- **Falla:** La sección presenta una falla que requiere atención.
+- **Setup:** La sección se encuentra en proceso de acondicionamiento para producir un juguete de un tipo específico.
+
+imagen
+*Nota: Los datos presentados en la imagen no son reales y se colocaron con fines netamente ilustrativos.*
 
 ## Módulo 2: Industria 4.0 en la Automatización
 ### Pre-Automatización

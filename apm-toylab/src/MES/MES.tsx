@@ -161,89 +161,68 @@ const KpiCard = ({ title, value }: KpiCardProps) => {
   );
 };
 
-const dummyData: IHistorico[] = [
-  {
-    SK: new Date().valueOf().toString(),
-    Contador_Inyectora_A: 120,
-    Estado_Inyectora_A: 1,
-    Contador_Inyectora_B: 150,
-    Estado_Inyectora_B: 0,
-    Contador_Inyectora_C: 170,
-    Estado_Inyectora_C: 1,
-    Contador_Estacion_A: 200,
-    Estado_Estacion_A: 1,
-    Contador_Estacion_B: 220,
-    Estado_Estacion_B: 0,
-    Contador_Estacion_C: 180,
-    Estado_Estacion_C: 1,
-    Estado_Banda_Principal: 1,
-    Estado_Celda: 0,
-    Contador_Celda: 190,
-    Producir_Carros: true,
+const dummyData: IHistorico[] = [];
+const baseTimestamp = new Date().valueOf();
+
+for (let i = 0; i < 100; i++) {
+  dummyData.push({
+    SK: (baseTimestamp + i * 100000).toString(),
+    Contador_Inyectora_A: 2 * (i+1),
+    Estado_Inyectora_A: 2,
+    Contador_Inyectora_B: 3 * (i+1),
+    Estado_Inyectora_B: 2,
+    Contador_Inyectora_C: 0,
+    Estado_Inyectora_C: 4,
+    Contador_Estacion_A: 2 * i,
+    Estado_Estacion_A: 2,
+    Contador_Estacion_B: 3 * i,
+    Estado_Estacion_B: 2,
+    Contador_Estacion_C: 0,
+    Estado_Estacion_C: 0,
+    Estado_Banda_Principal: 2,
+    Estado_Celda: 2,
+    Contador_Celda: 10 * i,
+    Producir_Carros: false,
     Producir_Submarinos: false,
     Producir_Aviones: true,
-    Objetivo_Carros: 300,
-    Objetivo_Submarinos: 250,
-    Objetivo_Aviones: 280,
+    Objetivo_Carros: 500,
+    Objetivo_Submarinos: 0,
+    Objetivo_Aviones: 1000,
     Contador_Carros: 0,
-    Contador_Aviones: 0,
     Contador_Submarinos: 0,
-  },
-  {
-    SK: (new Date().valueOf() + 60000).toString(), // +1 minuto
-    Contador_Inyectora_A: 130,
-    Estado_Inyectora_A: 0,
-    Contador_Inyectora_B: 160,
-    Estado_Inyectora_B: 1,
-    Contador_Inyectora_C: 180,
-    Estado_Inyectora_C: 1,
-    Contador_Estacion_A: 210,
-    Estado_Estacion_A: 1,
-    Contador_Estacion_B: 230,
-    Estado_Estacion_B: 1,
-    Contador_Estacion_C: 190,
+    Contador_Aviones: 0,
+  });
+}
+
+for (let i = 0; i < 100; i++) {
+  dummyData.push({
+    SK: (baseTimestamp + 100 * i * 100000).toString(),
+    Contador_Inyectora_A: 2 * (i+1),
+    Estado_Inyectora_A: 2,
+    Contador_Inyectora_B: 3 * (i+1),
+    Estado_Inyectora_B: 2,
+    Contador_Inyectora_C: 0,
+    Estado_Inyectora_C: 4,
+    Contador_Estacion_A: 2 * i,
+    Estado_Estacion_A: 2,
+    Contador_Estacion_B: 3 * i,
+    Estado_Estacion_B: 2,
+    Contador_Estacion_C: 0,
     Estado_Estacion_C: 0,
-    Estado_Banda_Principal: 1,
-    Estado_Celda: 1,
-    Contador_Celda: 200,
-    Producir_Carros: false,
-    Producir_Submarinos: true,
-    Producir_Aviones: true,
-    Objetivo_Carros: 320,
-    Objetivo_Submarinos: 260,
-    Objetivo_Aviones: 290,
-    Contador_Carros: 0,
-    Contador_Aviones: 0,
-    Contador_Submarinos: 0,
-  },
-  {
-    SK: (new Date().valueOf() + 120000).toString(), // +2 minutos
-    Contador_Inyectora_A: 140,
-    Estado_Inyectora_A: 1,
-    Contador_Inyectora_B: 170,
-    Estado_Inyectora_B: 0,
-    Contador_Inyectora_C: 190,
-    Estado_Inyectora_C: 1,
-    Contador_Estacion_A: 220,
-    Estado_Estacion_A: 1,
-    Contador_Estacion_B: 240,
-    Estado_Estacion_B: 0,
-    Contador_Estacion_C: 200,
-    Estado_Estacion_C: 1,
-    Estado_Banda_Principal: 0,
-    Estado_Celda: 1,
-    Contador_Celda: 210,
+    Estado_Banda_Principal: 2,
+    Estado_Celda: 2,
+    Contador_Celda: 5 * i,
     Producir_Carros: true,
-    Producir_Submarinos: true,
+    Producir_Submarinos: false,
     Producir_Aviones: false,
-    Objetivo_Carros: 330,
-    Objetivo_Submarinos: 270,
-    Objetivo_Aviones: 300,
+    Objetivo_Carros: 500,
+    Objetivo_Submarinos: 0,
+    Objetivo_Aviones: 1000,
     Contador_Carros: 0,
-    Contador_Aviones: 0,
     Contador_Submarinos: 0,
-  },
-];
+    Contador_Aviones: 0,
+  });
+}
 
 
 const MES = () => {
@@ -393,7 +372,7 @@ const MES = () => {
     load()
     const interval = setInterval(() => {
       load()
-    }, 600000); // 10 min
+    }, 60000); // 1 min
 
     return () => clearInterval(interval);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -406,10 +385,10 @@ const MES = () => {
           <h1 className="mes-title">Sistema MES</h1>
           <div className="mes-dashboard-container">
             <div className="mes-card">
-              <Produccion token={token} info={info} hist={hist} data={produccion} setData={setProduccion}/>
+              <Produccion token={token} info={info} hist={dummyData} data={produccion} setData={setProduccion}/>
             </div>
             <div className="mes-card">
-              <Supervision token={token} info={info} hist={hist}/>
+              <Supervision token={token} info={info} hist={dummyData}/>
             </div>
           </div>
 

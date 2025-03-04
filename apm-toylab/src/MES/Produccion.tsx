@@ -94,16 +94,11 @@ const Produccion = (props: ProduccionProps) => {
     let prevProd: 'Aviones' | 'Carros' | 'Submarinos' | undefined = undefined
     let prevCount: number = 0;
     let actualProd: 'Aviones' | 'Carros' | 'Submarinos' | undefined = undefined
+    const lastProd = props.hist.at(-1)?.Producir_Aviones ? 'Aviones' : props.hist.at(-1)?.Producir_Carros ? 'Carros' : props.hist.at(-1)?.Producir_Submarinos ? 'Submarinos' : undefined
+    updatedData[0].producidas = 0;
+    updatedData[1].producidas = 0;
+    updatedData[2].producidas = 0;
     for (let i of props.hist) {
-      updatedHist.push({
-        SK: i.SK,
-        Contador_Carros: i.Producir_Carros ? i.Contador_Celda : 0,
-        Contador_Submarinos: i.Producir_Submarinos ? i.Contador_Celda : 0,
-        Contador_Aviones: i.Producir_Aviones ? i.Contador_Celda : 0,
-        Objetivo_Carros: i.Objetivo_Carros,
-        Objetivo_Submarinos: i.Objetivo_Submarinos,
-        Objetivo_Aviones: i.Objetivo_Aviones,
-      })
       actualProd = i.Producir_Aviones ? 'Aviones' : i.Producir_Carros ? 'Carros' : i.Producir_Submarinos ? 'Submarinos' : undefined
       if (prevProd !== actualProd) {
         switch (prevProd) {
@@ -118,8 +113,30 @@ const Produccion = (props: ProduccionProps) => {
             break
         }
       }
+      updatedHist.push({
+        SK: i.SK,
+        Contador_Carros: i.Producir_Carros ? i.Contador_Celda : updatedData[1].producidas,
+        Contador_Submarinos: i.Producir_Submarinos ? i.Contador_Celda : updatedData[2].producidas,
+        Contador_Aviones: i.Producir_Aviones ? i.Contador_Celda : updatedData[0].producidas,
+        Objetivo_Carros: i.Objetivo_Carros,
+        Objetivo_Submarinos: i.Objetivo_Submarinos,
+        Objetivo_Aviones: i.Objetivo_Aviones,
+      })
       prevCount = i.Contador_Celda;
       prevProd = actualProd;
+    }
+    if(actualProd === lastProd){
+      switch (actualProd) {
+        case 'Aviones':
+          updatedData[0].producidas += Math.max(prevCount, props.hist.at(-1)?.Contador_Celda ?? 0);
+          break
+        case 'Carros':
+          updatedData[1].producidas += Math.max(prevCount, props.hist.at(-1)?.Contador_Celda ?? 0);
+          break
+        case 'Submarinos':
+          updatedData[2].producidas += Math.max(prevCount, props.hist.at(-1)?.Contador_Celda ?? 0);
+          break
+      }
     }
     updatedData[0].objetivo = props.info?.Objetivo_Aviones ?? 0
     updatedData[1].objetivo = props.info?.Objetivo_Carros ?? 0
