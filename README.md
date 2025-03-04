@@ -1353,12 +1353,13 @@ Su rutina de movimiento es **cíclica** y optimizada para maximizar la eficienci
 
 - [Rutina del IRB 1520 (Paletizado)](RobotStudio/Module1_IRB1520.mod)
 
-**Programación Smart Components**
 
 
 
 #### Simulación
 
+**Simulación etapa de empacado - Parte 1**
+[yt-dlp]([https://github.com/yt-dlp/yt-dlp](https://youtu.be/QGcvFe9bYNo))
 
 
 
