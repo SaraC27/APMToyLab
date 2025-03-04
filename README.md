@@ -32,13 +32,12 @@
        - [Diagramas P&ID](#diagramas-pid) FALTA: S
      - [Post-Automatización](#post-automatización-40)  
        - [Diagramas P&ID](#diagramas-pid-post) FALTA: S
-       - [Diagrama Arquitectura / Tecnologías 4.0](#diagrama-arquitectura-post) FALTA: F
+       - [Diagrama Arquitectura / Tecnologías 4.0](#diagrama-arquitectura-post) YA
        
    - [Módulo 3: Planeación del Proyecto](#módulo-3-planeación-del-proyecto)  
-     - [MES/ERP](#erp) FALTA: FELIPE
      - [EDT](#edt) YA
      - [Cronograma](#cronograma) YA
-     - [Bitácoras](#bitácoras) FALTA: F
+     - [Bitácoras](#bitácoras) YA
 
    - [Módulo 4: Evaluación Económica de Proyectos](#módulo-4-evaluación-económica-de-proyectos)  FALTA: F (REVISAR ENTRE TODOS)
      - [Economía del Proyecto](#economía-del-proyecto) 
@@ -615,16 +614,287 @@ dateFormat YYYY-MM-DD
 ```
 ### Bitácoras
 
+Para la supervisión del trabajo del equipo, se llevó a cabo un registro de bitácora donde cada uno agregaba horas de trabajo realizadass y en qué módulo del curso se enfocaron.
+
+| Persona  | Horas  | Producción | Industria 4.0 | Planeación | Economía | Robótica | Gemelo Digital | PLC  | SCADA | Web o Github | Otro |
+|----------|--------|------------|---------------|------------|----------|---------|---------------|------|-------|--------------|------|
+| Sara     | 169.5  | 45         | 6             | 8          | 0        | 0       | 0             | 0    | 27.5  | 13           | 70   |
+| Juan     | 198.5  | 49.5       | 16            | 6          | 3        | 0       | 32            | 0    | 0     | 21           | 71   |
+| Manuel   | 164    | 6          | 3             | 8          | 6        | 53      | 4             | 0    | 0     | 18           | 66   |
+| Felipe   | 168    | 8          | 22.5          | 7.5        | 11       | 0       | 0             | 20   | 0     | 32           | 67   |
+| **Porcentaje tiempo** |        | **31.7**  | **13.9**  | **8.6**  | **5.8**  | **15.5** | **10.5** | **5.8**  | **8.0**  | **-**  | **-**  |
+| **Porcentaje tiempo total** |        | **15.5**  | **6.8**  | **4.2**  | **2.9**  | **7.6**  | **5.1**  | **2.9**  | **3.9**  | **12.0**  | **39.1**  |
+
+La fila de `Porcentaje tiempo` indica el porcentaje de tiempo dedicado a cada módulo sin tener en cuenta tareas que no forman parte de algún módulo como asistir a clase (capacitación equipo), realizar los videos, documentar el proyecto, etc.
+
+La fila `Porcentaje tiempo total` incluye el porcentaje de tiempo total dedicado a cada parte del curso.
+
 ## Módulo 4: Evaluación Económica de Proyectos
+El proyecto se propone para una duración de 5 años a partir de la fecha de iniciación.
+
+Se estima un precio de venta para los juguetes de acuerdo a la siguiente tabla:
+|Juguete|Precio de venta (COP)|
+|-|-|
+|Carro|$100.000|
+|Avión|$75.000|
+|Submarino|$85.000|
+
 ### Economía del Proyecto
+El componente económico del proyecto consta de 3 items principales:
+- Presupuesto para contratar el servicio del proyecto, las licencias asociadas a las tecnologías implementadas y compra de maquinaria nueva para la automatización.
+- Costos mensuales asociados a la operación de la planta.
+- Flujo de caja del proyecto que incluye los ingresos por producción y venta de juguetes, los gastos mensuales de operación y el valor de la inversión inicial para llevar a cabo el proyecto.
 #### Presupuesto
+Para llevar a cabo el proyecto se requiere de un presupuesto inicial representado en las siguientes tablas:
+
+##### Honorarios + Licencias
+| Concepto                  | Costo Unitario    | Concepto Cantidad     | Cantidad | Costo Total       |
+|---------------------------|------------------|----------------------|----------|------------------|
+| Salario Ingeniero 1       | $40.000          | Precio x hora        | 169,5    | $6.780.000       |
+| Salario Ingeniero 2       | $40.000          | Precio x hora        | 198,5    | $7.940.000       |
+| Salario Ingeniero 3       | $40.000          | Precio x hora        | 164      | $6.560.000       |
+| Salario Ingeniero 4       | $55.000          | Precio x hora        | 168      | $9.240.000       |
+| Licencia Ignition         | $33.200.000      | Licencia 1 año       | 1        | $33.200.000      |
+| Licencia Siemens NX       | $62.250.000      | Licencia por siempre | 1        | $62.250.000      |
+| Licencia Studio 5000      | $41.500.000      | Licencia 1 año       | 1        | $41.500.000      |
+| Licencia Robot Studio     | $6.225.000       | Licencia 1 año       | 1        | $6.225.000       |
+
+**TOTAL HONORARIOS:** $30.520.000
+
+**TOTAL LICENCIAS:** $143.175.000 
+
+##### Maquinaria + Puesta en marcha e imprevistos de montaje
+| Concepto                         | Costo Unitario    | Concepto Cantidad                | Cantidad | Costo Total        |
+|----------------------------------|------------------|--------------------------------|----------|------------------|
+| Bandas transportadoras          | $95.706.940     | Cotización completa            | 1        | $95.706.940      |
+| Bandas transportadoras celda    | $47.853.470     | Cotización completa            | 1        | $47.853.470      |
+| Cilíndro neumático              | $2.000.000      | Por cilíndro                   | 3        | $6.000.000       |
+| Compuerta neumática             | $1.600.000      | Por compuerta                   | 5        | $8.000.000       |
+| Compresor                       | $3.000.000      | Por compresor                   | 1        | $3.000.000       |
+| Sensores bandas y celda         | $887.348        | Por sensor                      | 14       | $12.422.872      |
+| Tumbling machine                | $10.864.700     | Por máquina importada           | 1        | $10.864.700      |
+| Celda robotizada                | $145.250.000    | Por celda                        | 1        | $145.250.000     |
+| Cortinas láser                  | $3.195.500      | Por cortina                      | 6        | $19.173.000      |
+| Barreras físicas                | $868.000        | Por metro de barrera            | 35       | $30.380.000      |
+| Computadores                    | $5.000.000      | Promedio de computadores usados | 4        | $20.000.000      |
+| Tableros de control             | $15.000.000     | Por tablero completo            | 3        | $45.000.000      |
+| PLC CPU                         | $6.225.000      | Por PLC                          | 1        | $6.225.000       |
+| PLC Módulos                     | $2.075.000      | Por Módulo                       | 8        | $16.600.000      |
+| Puesta en marcha                | $139.942.795    | Porcentaje del total            | 1        | $139.942.795     |
+| Imprevistos                     | $60.641.878     | Porcentaje del total            | 1        | $60.641.878      |
+
+**TOTAL MAQUINARIA + PUESTA EN MARCHA:** $667.060.654
+
 #### Costos
+Para mantener el proyecto en funcionamiento se requiere de un gasto mensual estimado en lo definido en la siguiente tabla:
+
+##### Gastos mensuales operativos
+| Concepto                          | Costo Unitario    | Concepto Cantidad                     | Cantidad | Costo Total        |
+|-----------------------------------|------------------|-------------------------------------|----------|------------------|
+| Materia Prima Carro              | $25.000         | 1 juguete                          | 1        | $25.000         |
+| Materia Prima Submarino          | $12.100         | 1 juguete                          | 1        | $12.100         |
+| Materia Prima Avión              | $21.500         | 1 juguete                          | 1        | $21.500         |
+| Cajas                             | $2.400          | 1 caja                             | 1        | $2.400          |
+| Papel panal                       | $124.500        | 1 rollo (121 metros)               | 1        | $124.500        |
+| Salario Operarios + Prestaciones  | $2.400.000      | Por operario                       | 26       | $62.400.000     |
+| Energía                           | $1.026          | kW mes                             | 5670     | $5.817.420      |
+| Arriendo espacio                  | $35.000.000     | Arriendo planta 2300 m² mes        | 1        | $35.000.000     |
+| Mantenimiento                     | $7.774.600      | Repuestos y mantenimiento mensual  | 1        | $7.774.600      |
+| Soporte Sistema                   | $1.000.000      | Valor por mes                      | 1        | $1.000.000      |
+| Sistema AWS                       | $456.500        | Valor por uso al mes               | 1        | $456.500        |
+
 #### Flujo de Caja
-### Análisis rentabilidad
-#### VPN
-#### TIR
-#### Payback
+El flujo de caja consta de los ingresos y costos operativos (teniendo en cuenta las variaciones debido a la cantidad de juguetes producidos y vendidos mes a mes). Además, incluye una columna de inversión que corresponde con el valor de inversión dado en el presupuesto del proyecto (y los gastos anuales debido a las licencias). Se presenta la utilidad neta mes a mes durante los próximos 5 años, arrancando con un primer mes donde la planta se detiene para implementar los cambios y automatizarla. También, se coloca una columna de la ganancia total acumulada que permite visualizar cómo se recupera la inversión y en cuánto tiempo.
+| Mes  | Ingresos       | Costo operativo | Inversión      | Utilidad Neta                                   | Ganancia Total                                 |
+|------|---------------|----------------|---------------|-----------------------------------------------|----------------------------------------------|
+| 1    | $0           | $110,992,020   | $840,755,654  | <span style="color:red;">-$951,747,674</span> | <span style="color:red;">-$951,747,674</span> |
+| 2    | $222,248,000 | $169,909,331   | $0            | <span style="color:green;">$52,338,669</span> | <span style="color:red;">- $899,409,005</span> |
+| 3    | $222,248,000 | $169,909,331   | $0            | <span style="color:green;">$52,338,669</span> | <span style="color:red;">- $847,070,336</span> |
+| 4    | $201,099,000 | $164,441,960   | $0            | <span style="color:green;">$36,657,040</span> | <span style="color:red;">- $810,413,296</span> |
+| 5    | $201,099,000 | $164,441,960   | $0            | <span style="color:green;">$36,657,040</span> | <span style="color:red;">- $773,756,257</span> |
+| 6    | $137,574,500 | $148,016,683   | $0            | <span style="color:red;">- $10,442,183</span> | <span style="color:red;">- $784,198,440</span> |
+| 7    | $137,574,500 | $148,016,683   | $0            | <span style="color:red;">- $10,442,183</span> | <span style="color:red;">- $794,640,623</span> |
+| 8    | $222,248,000 | $169,909,331   | $0            | <span style="color:green;">$52,338,669</span> | <span style="color:red;">- $742,301,954</span> |
+| 9    | $222,248,000 | $169,909,331   | $0            | <span style="color:green;">$52,338,669</span> | <span style="color:red;">- $689,963,285</span> |
+| 10   | $793,699,000 | $317,655,485   | $0            | <span style="color:green;">$476,043,515</span> | <span style="color:red;">- $213,919,770</span> |
+| 11   | $793,699,000 | $317,655,485   | $0            | <span style="color:green;">$476,043,515</span> | <span style="color:green;">$262,123,745</span> |
+| 12   | $96,335,662  | $142,980,645   | $84,971,250   | <span style="color:red;">- $131,616,232</span> | <span style="color:green;">$130,507,513</span> |
+| 13   | $96,335,662  | $142,980,645   | $0            | <span style="color:red;">- $46,644,982</span> | <span style="color:green;">$83,862,530</span> |
+| 14   | $252,739,987 | $183,415,363   | $0            | <span style="color:green;">$69,324,624</span> | <span style="color:green;">$153,187,154</span> |
+| 15   | $252,739,987 | $183,415,363   | $0            | <span style="color:green;">$69,324,624</span> | <span style="color:green;">$222,511,779</span> |
+| 16   | $228,690,000 | $177,197,976   | $0            | <span style="color:green;">$51,492,024</span> | <span style="color:green;">$274,003,802</span> |
+| 17   | $228,690,000 | $177,197,976   | $0            | <span style="color:green;">$51,492,024</span> | <span style="color:green;">$325,495,826</span> |
+| 18   | $156,448,950 | $158,518,744   | $0            | <span style="color:red;">- $2,069,794</span> | <span style="color:green;">$323,426,031</span> |
+| 19   | $156,448,950 | $158,518,744   | $0            | <span style="color:red;">- $2,069,794</span> | <span style="color:green;">$321,356,237</span> |
+| 20   | $252,739,987 | $183,415,363   | $0            | <span style="color:green;">$69,324,624</span> | <span style="color:green;">$390,680,861</span> |
+| 21   | $252,739,987 | $183,415,363   | $0            | <span style="color:green;">$69,324,624</span> | <span style="color:green;">$460,005,485</span> |
+| 22   | $902,582,625 | $351,429,297   | $0            | <span style="color:green;">$551,153,328</span> | <span style="color:green;">$1,011,158,814</span> |
+| 23   | $902,582,625 | $351,429,297   | $0            | <span style="color:green;">$551,153,328</span> | <span style="color:green;">$1,562,312,142</span> |
+| 24   | $108,916,526 | $152,137,561   | $89,219,813   | <span style="color:red;">- $132,440,847</span> | <span style="color:green;">$1,429,871,295</span> |
+| 25   | $108,916,526 | $152,137,561   | $0            | <span style="color:red;">- $43,221,035</span> | <span style="color:green;">$1,386,650,260</span> |
+| 26   | $285,725,554 | $197,847,226   | $0            | <span style="color:green;">$87,878,328</span> | <span style="color:green;">$1,474,528,588</span> |
+| 27   | $285,725,554 | $197,847,226   | $0            | <span style="color:green;">$87,878,328</span> | <span style="color:green;">$1,562,406,916</span> |
+| 28   | $258,537,352 | $190,818,489   | $0            | <span style="color:green;">$67,718,863</span> | <span style="color:green;">$1,630,125,779</span> |
+| 29   | $258,537,352 | $190,818,489   | $0            | <span style="color:green;">$67,718,863</span> | <span style="color:green;">$1,697,844,642</span> |
+| 30   | $176,866,909 | $169,700,970   | $0            | <span style="color:green;">$7,165,939</span>  | <span style="color:green;">$1,705,010,581</span> |
+| 31   | $176,866,909 | $169,700,970   | $0            | <span style="color:green;">$7,165,939</span>  | <span style="color:green;">$1,712,176,520</span> |
+| 32   | $285,725,554 | $197,847,226   | $0            | <span style="color:green;">$87,878,328</span> | <span style="color:green;">$1,800,054,848</span> |
+| 33   | $285,725,554 | $197,847,226   | $0            | <span style="color:green;">$87,878,328</span> | <span style="color:green;">$1,887,933,176</span> |
+| 34   | $1,020,370,365 | $387,786,351   | $0            | <span style="color:green;">$632,584,014</span> | <span style="color:green;">$2,520,517,190</span> |
+| 35   | $1,020,370,365 | $387,786,351   | $0            | <span style="color:green;">$632,584,014</span> | <span style="color:green;">$3,153,101,204</span> |
+| 36   | $122,514,637 | $161,852,718   | $93,680,803   | <span style="color:red;">- $133,018,883</span> | <span style="color:green;">$3,020,082,321</span> |
+| 37   | $122,514,637 | $161,852,718   | $0            | <span style="color:red;">- $39,338,080</span> | <span style="color:green;">$2,980,744,241</span> |
+| 38   | $321,377,827 | $213,263,736   | $0            | <span style="color:green;">$108,114,091</span> | <span style="color:green;">$3,088,858,332</span> |
+| 39   | $321,377,827 | $213,263,736   | $0            | <span style="color:green;">$108,114,091</span> | <span style="color:green;">$3,196,972,422</span> |
+| 40   | $290,797,715 | $205,358,058   | $0            | <span style="color:green;">$85,439,657</span>  | <span style="color:green;">$3,282,412,079</span> |
+| 41   | $290,797,715 | $205,358,058   | $0            | <span style="color:green;">$85,439,657</span>  | <span style="color:green;">$3,367,851,736</span> |
+| 42   | $198,935,541 | $181,605,121   | $0            | <span style="color:green;">$17,330,420</span>  | <span style="color:green;">$3,385,182,156</span> |
+| 43   | $198,935,541 | $181,605,121   | $0            | <span style="color:green;">$17,330,420</span>  | <span style="color:green;">$3,402,512,576</span> |
+| 44   | $321,377,827 | $213,263,736   | $0            | <span style="color:green;">$108,114,091</span> | <span style="color:green;">$3,510,626,667</span> |
+| 45   | $321,377,827 | $213,263,736   | $0            | <span style="color:green;">$108,114,091</span> | <span style="color:green;">$3,618,740,758</span> |
+| 46   | $1,147,680,422 | $426,900,537   | $0            | <span style="color:green;">$720,779,885</span> | <span style="color:green;">$4,339,520,643</span> |
+| 47   | $1,147,680,422 | $426,900,537   | $0            | <span style="color:green;">$720,779,885</span> | <span style="color:green;">$5,060,300,528</span> |
+| 48   | $137,200,268 | $172,159,046   | $98,364,843   | <span style="color:red;">- $133,323,621</span> | <span style="color:green;">$4,926,976,907</span> |
+| 49   | $137,200,268 | $172,159,046   | $0            | <span style="color:red;">- $34,958,778</span>  | <span style="color:green;">$4,892,018,130</span> |
+| 50   | $359,881,013 | $229,727,279   | $0            | <span style="color:green;">$130,153,734</span> | <span style="color:green;">$5,022,171,864</span> |
+| 51   | $359,881,013 | $229,727,279   | $0            | <span style="color:green;">$130,153,734</span> | <span style="color:green;">$5,152,325,598</span> |
+| 52   | $325,637,771 | $220,874,538   | $0            | <span style="color:green;">$104,763,233</span> | <span style="color:green;">$5,257,088,830</span> |
+| 53   | $325,637,771 | $220,874,538   | $0            | <span style="color:green;">$104,763,233</span> | <span style="color:green;">$5,361,852,063</span> |
+| 54   | $222,768,869 | $194,275,435   | $0            | <span style="color:green;">$28,493,434</span>  | <span style="color:green;">$5,390,345,498</span> |
+| 55   | $222,768,869 | $194,275,435   | $0            | <span style="color:green;">$28,493,434</span>  | <span style="color:green;">$5,418,838,932</span> |
+| 56   | $359,881,013 | $229,727,279   | $0            | <span style="color:green;">$130,153,734</span> | <span style="color:green;">$5,548,992,666</span> |
+| 57   | $359,881,013 | $229,727,279   | $0            | <span style="color:green;">$130,153,734</span> | <span style="color:green;">$5,679,146,400</span> |
+| 58   | $1,285,170,560 | $468,956,677   | $0            | <span style="color:green;">$816,213,883</span> | <span style="color:green;">$6,495,360,283</span> |
+| 59   | $1,285,170,560 | $468,956,677   | $0            | <span style="color:green;">$816,213,883</span> | <span style="color:green;">$7,311,574,166</span> |
+
+
+### Análisis de rentabilidad
+Con base en el flujo de caja presentado, se realiza el análisis de rentabilidad del proyecto. Los siguientes indicadores son calculados:
+
+#### Indicadores Financieros
+
+Las fórmulas utilizadas para calcular cada uno de los indicadores financieros:
+
+##### Tasa Interna de Retorno (TIR)
+La TIR es la tasa de descuento que hace que el VPN sea cero:
+$$
+\sum_{t=0}^{n} \frac{FC_t}{(1 + TIR)^t} = 0
+$$
+Donde:
+- $ FC_t $ es el flujo de caja en el periodo $ t $
+- $ n $ es el número total de periodos
+
+##### Valor Presente Neto (VPN)
+El VPN se calcula como:
+$$
+VPN = \sum_{t=1}^{n} \frac{FC_t}{(1 + r)^t} - FC_0
+$$
+Donde:
+- $ r $ es la tasa de descuento
+- $ FC_0 $ es la inversión inicial
+- $ FC_t $ son los flujos de caja en cada periodo $ t $
+
+##### Payback (Tiempo de Recuperación)
+El tiempo de recuperación ajustado es:
+$$
+Payback = A + \frac{|FC_0| - \sum_{t=1}^{A} FC_t}{FC_{A+1}}
+$$
+Donde:
+- $ A $ es el último periodo con saldo negativo acumulado
+- $ FC_{A+1} $ es el flujo de caja del siguiente periodo positivo
+
+##### Retorno sobre la Inversión (ROI)
+El ROI se define como:
+$$
+ROI = \frac{Utilidad\ Neta}{Inversión\ Inicial} \times 100\%
+$$
+o bien:
+$$
+ROI = \frac{FC_n - |FC_0|}{|FC_0|} \times 100\%
+$$
+Donde:
+- $ FC_n $ es el flujo de caja acumulado al final del periodo
+
+##### ROI Anualizado
+Para calcular el ROI anualizado, se usa:
+$$
+ROI_{anual} = (1 + ROI)^{\frac{1}{n}} - 1
+$$
+Donde:
+- $ n $ es el número de años del proyecto
+
+##### Índice de Rentabilidad (IR)
+El índice de rentabilidad se calcula como:
+$$
+IR = \frac{|FC_0| + VPN}{|FC_0|}
+$$
+Si $ IR > 1 $, el proyecto es rentable.
+
+##### Margen de Utilidad
+El margen de utilidad se calcula como:
+$$
+Margen = \frac{Utilidad\ Neta}{Ingresos\ Totales} \times 100\%
+$$
+o bien:
+$$
+Margen = \frac{\sum FC}{\sum Ingresos} \times 100\%
+$$
+
+**Notas:**
+- $ FC_0 $ es la inversión inicial.
+- $ FC_t $ son los flujos de caja en cada periodo.
+- $ n $ es el número de periodos del proyecto.
+- $ r $ es la tasa de descuento.
+- $ A $ representa el último periodo con saldo acumulado negativo en Payback.
+
+
+#### WACC
+Para el cálculo del `VPN` se requiere una tasa de descuento. En proyectos empresariales es común utilizar el `WACC` (Weighted Average Cost of Capital) de la empresa.
+
+$$
+WACC = \left( \frac{E}{E + D} \times r_e \right) + \left( \frac{D}{E + D} \times r_d \times (1 - T) \right)
+$$
+
+Donde:
+- $ E $ = Capital de la empresa
+- $ D $ = Deuda
+- $ r_e $ = Rentabilidad esperada del capital propio
+- $ r_d $ = Tasa de interés de la deuda
+- $ T $ = Tasa de impuestos
+
+| **Concepto**              | **Valor**         |**Suposición**|
+|---------------------------|-------------------|-|
+| **Capital empresa (E)**   | $500.000.000      |La empresa ya cuenta con este valor ahorrado, disponible para invertir.
+| **Deuda (D)**             | $451.747.674      |Lo faltante para conseguir el total de capital inicial para ejecutar el proyecto.
+| **Rentabilidad esperada ($r_e$)** | 8,00%       |Valor de rentabilidad esperado por la empresa.
+| **Tasa de interés deuda ($r_d$)** | 15,00%      |Tasa de interés del crédito bancario que podría conseguir la empresa.
+| **Tasa de impuestos (T)** | 35,00%            |Tasa aproximada promedio para empresas en Colombia.
+| **WACC**                  | 8,83%             |Valor calculado, utilizado como tasa de descuento para el cálculo de los indicadores
+
+#### Valor de los indicadores
+
+| Indicador         | Valor       | Detalle     |
+|------------------|------------|------------|
+| TIR             | 9,06%       | -          |
+| VPN             | $31.279.676 | COP        |
+| Payback         | 10,4493702  | meses      |
+| ROI             | 668,23%     | -          |
+| ROI anual       | 53,65%      | -          |
+| IR              | 1,032865513 | Rentable   |
+| Margen Utilidad | 34,18%      | -          |
+
+Frente a lo esperado por la empresa, que es `8.83%`, se obtiene una `TIR` de `9.06%`, por lo cual es una buena inversión para la empresa. 
+
+Se recupera la inversión en 10-11 meses, con beneficios estimados por al menos 5 años. 
+
+Se obtiene un `ROI` bastante elevado, debido a que la inversión se recupera rápido (< 1 año) y genera ingresos cada vez mayores por al menos 4 años. Si bien `668%` es un porcentaje que parece ilógico, en realidad lo que nos dice es que por cada `1` peso invertido, se recuperan aproximadamente `7` pesos, ignorando la componente temporal de la inversión.
+
+Se obtiene un `IR` mayor a `1`, por lo que la inversión es rentable.
+
+Se obtiene un margen de utilidad de aproximadamente `34%`. Es decir, de cada `1` peso invertido, se obtiene una ganancia neta de `0.34` pesos.
+
 ### Oferta comercial
+
 
 ## Módulo 5: Celda de Manufactura Robotizada
 ### Productos de entrada y salida de la celda
