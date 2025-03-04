@@ -439,6 +439,9 @@ A continuación se especifican los modos de operación de cada estación y las c
 
 #### Diagrama Arquitectura
 #### Tecnologías 4.0
+<img width="1380" alt="Screenshot 2025-03-03 at 9 35 41 PM" src="https://github.com/user-attachments/assets/c496d881-b20a-46e1-add8-411d45094d12" />
+
+
 ## Módulo 3: Planeación del Proyecto
 ### ERP
 ### EDT
