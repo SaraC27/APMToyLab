@@ -813,7 +813,7 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 
 # **Matriz de Riesgos (Basada en GUDELINE for Safeguarding Machinery and Equipment)**
 
-| **Tarea**  | **Riesgo** | **Estimación del riesgo** | **Nivel** | **Método de reducción de riesgo** | **Equipo necesario** | **Foto** |
+| **Tarea**  | **Riesgo** | **Estimación del riesgo** | **Nivel** | **Método de reducción de riesgo** | **Equipo necesario** | **Imágen** |
 |------------|-----------|---------------------------|-----------|------------------------------------|----------------------|-----------|
 | **Funcionamiento del robot (Pick and Place y Paletizado)** | El robot podría moverse de manera inesperada y golpear a un operario. | - Seriedad: alta  <br> - Frecuencia: media <br> - Difícil de evitar | D | Instalación de **barreras láser** que detengan el robot al detectar presencia en la zona de trabajo. | **Barreras láser de seguridad** | <img width="275" alt="Screenshot 2025-03-03 at 12 29 35" src="https://github.com/user-attachments/assets/c7691094-e3b0-4952-83b6-7540948cac47" /> |
 | **Movimiento de objetos en el transportador** | Posible caída de productos por un mal posicionamiento del robot en Pick and Place. | - Seriedad: media  <br> - Frecuencia: alta <br> - Fácil de evitar | C | Revisión continua del sistema de sujeción del robot y ajuste periódico de la presión del gripper. | **Sensores de presión en el gripper.** | <img width="431" alt="Screenshot 2025-03-03 at 12 31 24" src="https://github.com/user-attachments/assets/d186d5e4-8cbf-427d-83fa-a96e98d52559" /> |
