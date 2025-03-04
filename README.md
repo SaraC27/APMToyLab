@@ -977,6 +977,11 @@ flowchart TD
 </div>
 
 
+<img width="1344" alt="Screenshot 2025-03-03 at 23 10 19" src="https://github.com/user-attachments/assets/6538fa80-3906-4798-aeaa-7ec6f7568430" />
+
+
+
+
 #### Programación
 #### Simulación
 
