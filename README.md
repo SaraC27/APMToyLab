@@ -238,15 +238,23 @@ Consideraciones para el cálculo de indicadores
 
 
 Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los indicadores calculados. Especificamente de la eficiencia y del OEE, aqui pudimos observar que 
+
+
 #### Tecnomatix
 
-Al igual que el diseño de la planta antes de la automatización, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, robots de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se pudo evidenciar que el cuello de botella se superó con las automatizaciones propuestas. Sin embargo, como en la planta pre-automatizada, también se consideró la cantidad de materia prima necesaria para una jornada de 8 horas, según lo señalado por los indicadores, no obstante, el proceso tuvo una duración de 3 horas y media, por lo tanto, los indicadores y la simulación de la planta se siguen revisando y corrigiendo.
+Al igual que el diseño de la planta antes de la automatización, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, robots de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se obtuvo información del proceso para el cálculo del OEE.
 
-![image](https://github.com/user-attachments/assets/07043485-836e-46d8-9817-ae692a2e4691)
+
+![Captura de pantalla 2025-03-03 234906](https://github.com/user-attachments/assets/44e11229-70a6-4d53-a4bb-b218d3826395)
+
+Luego de implementar la simulación, se observaron algunos cambios significativos en ciertas estaciones. En particular, en la estación de empaquetado, se evidenció que el tiempo de espera disminuyó en un 20% en la planta automatizada, lo cual indica que la implementación de la celda robotizada cumple su función.
 
 
 #### VSM Post
-Luego de implementar la propuesta de automatizacion se espera obtener el siguiente [VSM](Files/VSM_Post.pdf).
+
+Con la implementación de la propuesta de automatización se espera obtener el siguiente [VSM](Files/VSM_Post.pdf).
+
+
 ### Propuesta automatización
 
 Se propone implementar un plan de automatización en la planta, enfocado en optimizar tres zonas clave del proceso de producción. A continuación, se detalla la propuesta para cada una de estas áreas:
@@ -438,8 +446,7 @@ A continuación se especifican los modos de operación de cada estación y las c
 | Línea "-----"           | Conexión eléctrica                    |
 
 
-![P ID Planta Post drawio](https://github.com/user-attachments/assets/db57b834-2bf3-4915-84d3-dd35b44c8ffb)
-
+![P ID Planta Post](https://github.com/user-attachments/assets/fc0a5b09-ab7a-452d-b1a5-27e7fe4ac3ed)
 
 
 ### Arquitectura y Tecnologías 4.0
