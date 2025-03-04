@@ -227,6 +227,7 @@ Consideraciones para el cálculo de indicadores
 - Los desplazamientos realizados por bandas transportadoras se suponen con una velocidad de **2 m/s**.  
 - Se evalúa la producción semanal de la planta.  
 - Se supone una calidad del **90%**, es decir, que el **10%** de los juguetes producidos tienen alguna imperfección.
+- 
 | **KPI**                               | **Descripción**                                                                 | **Valor**                             |
 |----------------------------------------|---------------------------------------------------------------------------------|---------------------------------------|
 | **Takt Time (T)**                      | Cadencia con la que se debe fabricar el producto para satisfacer la demanda     | 2,34 min/juguete                      |
