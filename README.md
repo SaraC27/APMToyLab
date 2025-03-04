@@ -446,7 +446,7 @@ A continuación se especifican los modos de operación de cada estación y las c
 
 
 
-#### Arquitectura y Tecnologías 4.0
+### Arquitectura y Tecnologías 4.0
 
 La arquitectura implementada para el sistema se presenta a continuación:
 
@@ -454,7 +454,7 @@ La arquitectura implementada para el sistema se presenta a continuación:
 
 La arquitectura se despliega en la nube de `AWS`, donde se cuenta con una base de datos `NoSQL`, un sistema de autenticación y funciones que se pueden acceder/ejecutar a través de una `API`. La integración de las diferentes tecnologías se realiza mediante esta API, que funge como punto común para escribir y leer datos del sistema. Cada tecnología utilizada debe exponer su información de lectura y escritura, mediante un servidor `OPC` alojado en el software `Ignition`, para posteriormente enviarla/recibirla mediante nodos `HTTPS` dentro de `NodeRed`, los cuales se conectan con la API en AWS. Además, la página web del proyecto (realizada con `React`) cuenta con un módulo para la utilización de la `API` (Application Programming Interface).
 
-##### Características de la arquitectura
+#### Características de la arquitectura
 
 **Tecnologías utilizadas**
 - *Siemens NX:* Implementación del gemelo digital de la planta.
@@ -463,13 +463,22 @@ La arquitectura se despliega en la nube de `AWS`, donde se cuenta con una base d
 - *RobotStudio:* Implementación de la celda robotizada que forma parte de la planta (parte del gemelo digital).
 - *Google Chrome:* Navegador web para el alojamiento de los dashboard SCADA y el sistema MES.
 - *AWS - Api Gateway:* Servicio en la nube de AWS para la implementación de APIs públicas, es como un servidor HTTPS.
-- *AWS - Lambda:* 
-
-**Nodos:**
-- *Gemelo Digital:* En un computador se corre el gemelo digital 
+- *AWS - Lambda:*  Servicio en la nube de AWS para la implementación de funciones de código, se encarga de utilizar otros servicios para autenticar usuarios, leer y escribir en la base de datos y procesar las peticiones de la API.
+- *AWS - DynamoDB:* Servicio en la nube de AWS para almacenamiento de datos en una base de datos NoSQL, donde se guardará un registro para la comunicación en tiempo real entre los nodos del sistema, y se almacenará una copia de dicho registro cada 5 segundos para tener un histórico.
+- *AWS - Cognito:* Servicio en la nube de AWS para el registro y posterior autenticación de usuarios, donde se generan tokens `JWT` para autenticar y proteger las comunicaciones con la API.
+- *React:* Framework de desarrollo de aplicaciones web, donde se utiliza la API para colocar el sistema MES.
+- *Ignition:* Software que permite la comunicación de datos entre diferentes tecnologías y otros servicios de conexión a internet como NodeRed. También, permite la creación de Dashboards SCADA para el sistema.
+- *Node Red:* Software de configuración de red sobre el cual se monta una lógica de lectura y escritura de datos entre Ignition y la API del sistema.
 
 **Protocolos de comunicación:**
-- *OPC (Open Platform Comunications)*: Permite la comunicación de información entre 
+- *OPC (Open Platform Comunications)*: Permite la comunicación de información entre diferentes tecnologías.
+- *Ignition Node:* Para comunicar la información disponible en el servidor OPC con la API en la nube, se requiere de un nodo dentro de Node Red llamado `node-red-contrib-ignition-nodes`.
+- *HTTP (Hyper Text Transfer Protocol):* Protocolo de comunicación web para el envío de información. Al ser un protocolo no seguro (no va encriptado), solamente se utiliza para envío de información con servidores locales.
+- *HTTPS (Hyper Text Transfer Protocol Secured):* Protocolo de comunicación web para el envío de información encriptada por internet, utilizado para la comunicación bidireccional con la API. Mencionar que la API se propone con funcionalidad `WebSocket` para una comunicación fluida y en tiempo real. Sin embargo, por costos reales de la utilización de la nube AWS, montamos la simulación sobre una `API` tipo `request - response` para que fuera menos costoso (lo cual generó delay entre las comunicaciones, pero lo ideal sería utilizar `WebSocket` para reducir el delay).
+- *API AWS:* Conjunto de funciones/protocolos/reglas que AWS dispone para la utilización de sus servicios dentro de la nube AWS.
+
+#### Nodos de la arquitectura y relación con la pirámide de automatización
+
 
 ## Módulo 3: Planeación del Proyecto
 ### EDT
