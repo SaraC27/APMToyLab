@@ -1358,8 +1358,17 @@ Su rutina de movimiento es **cíclica** y optimizada para maximizar la eficienci
 
 #### Simulación
 
-**Simulación etapa de empacado - Parte 1**
-[yt-dlp]([https://github.com/yt-dlp/yt-dlp](https://youtu.be/QGcvFe9bYNo))
+**Simulación etapa de Empacado - Parte 1**
+
+[![Alt text](https://img.youtube.com/vi/QGcvFe9bYNo/0.jpg)](https://www.youtube.com/watch?v=QGcvFe9bYNo)
+
+**Simulación etapa de Empacado - Parte 2**
+
+[![Alt text](https://img.youtube.com/vi/_mCz_oBWl74/0.jpg)](https://www.youtube.com/watch?v=_mCz_oBWl74)
+
+**Simulación etapa de Paletizado**
+
+[![Alt text](https://img.youtube.com/vi/52xJMZ89PiE/0.jpg)](https://www.youtube.com/watch?v=52xJMZ89PiE)
 
 
 
