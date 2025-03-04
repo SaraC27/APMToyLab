@@ -893,8 +893,10 @@ Se obtiene un `IR` mayor a `1`, por lo que la inversión es rentable.
 
 Se obtiene un margen de utilidad de aproximadamente `34%`. Es decir, de cada `1` peso invertido, se obtiene una ganancia neta de `0.34` pesos.
 
+
 ### Oferta comercial
 
+La oferta comercial detallada se encuentra en este [enlace](Files/Propuesta_comercial.pdf).
 
 ## Módulo 5: Celda de Manufactura Robotizada
 ### Productos de entrada y salida de la celda
