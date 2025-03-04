@@ -1164,11 +1164,43 @@ Para la simulación en la fábrica digital de Siemens NX, se implementa la rutin
 ## Módulo 8: SCADA
 
 
-### HMI
+### Diseño de la HMI
 
-La interfaz gráfica del SCADA se diseñó en el software Ignition de Inductive Automation. La interfaz cuenta con 7 pestañas que permiten adquirir datos, supervisar, operar, historizar y alarmar.
+La interfaz gráfica del SCADA se diseñó en el software Ignition de Inductive Automation, como se evidencia en la siguiente imagen, haciendo uso de botones, labels, displays, switches toogle, gráficas, tablas de alarmas y símbolos de sensores.
 
 ![image](https://github.com/user-attachments/assets/1417605a-6acb-4564-bca0-9ea2c4a55358)
+
+La interfaz cuenta con 7 pestañas, que se pueden apreciar a continuación, las cuales permiten adquirir datos, supervisar, operar, historizar y alarmar.
+
+- Pestaña principal "Home": Permite seleccionar qué tipo de juguetes se va a producir, visualizar el objetivo de juguetes a producir enviado desde el MES, iniciar y detener todas las estaciones controladas desde el SCADA (inyectoras, banda principal, desbarbado y celda) y visualizar la cantidad de juguetes empacados.
+
+![Captura de pantalla 2025-03-04 014936](https://github.com/user-attachments/assets/220cbb15-499f-4e5a-8531-1cd79d516775)
+
+- Pestaña "Inyectoras": Posibilita la visualización del estado de operación de cada una de las inyectoras, iniciar y detener cada una de las inyectoras, poner en mantenimiento cada una de las inyectoras y visualizar la cantidad de piezas inyectadas en cada inyectora.
+
+![Captura de pantalla 2025-03-04 015253](https://github.com/user-attachments/assets/1d14812a-cbe0-4ecd-b99a-588efe4bb258)
+
+- Pestaña "Banda principal": Ofrece la visualización del estado de la banda principal y poner en mantenimiento la banda.
+
+![Captura de pantalla 2025-03-04 015302](https://github.com/user-attachments/assets/f9848c9e-b31f-46de-aa6a-959c216f6817)
+
+- Pestaña "Desbarbado": Permite la visualización del estado de operación de cada una de las estaciones de desbarbado, iniciar y detener cada una de las estaciones, poner en mantenimiento cada una de las estaciones y visualizar la cantidad de juguetes ensamblados en cada estación.
+
+![Captura de pantalla 2025-03-04 015313](https://github.com/user-attachments/assets/b15f0abb-ece8-44bd-b55b-115f30402e9c)
+
+- Pestaña "Celda robotizada": Posibilita la visualización del estado de operación de la celda, iniciar y detener la celda, poner en mantenimiento la celda y visualizar la cantidad de juguetes empacados.
+
+![Captura de pantalla 2025-03-04 015325](https://github.com/user-attachments/assets/959b2fd0-cfef-490e-bfa3-0c7d4358f41c)
+
+- Pestana "Históricos": Ofrece la visualización de las variables historizadas para cada una de las estaciones. Las principales variables historizadas corresponden al tipo de juguete producido, al estado de las estaciones y a la cantidad de material procesado en cada estación.
+
+![Captura de pantalla 2025-03-04 015349](https://github.com/user-attachments/assets/32d65b7b-9842-41f6-a3fe-50b6a6d0f225)
+
+Pestaña "Alarmas": Permite la visualización de las alarmas que se generan durante el proceso. Cabe resaltar que, la única alarma de nivel "crítico" se presenta si se detecta una falla en cualquiera de las estaciones, las demás alarmas son de diagnótico y se activan cada vez que las estaciones cambian de estado.
+
+![Captura de pantalla 2025-03-04 015551](https://github.com/user-attachments/assets/aebc56ba-77e8-4537-911a-cfac266efd81)
+
+Adicionalmente, en la parte inferior de la interfaz, también se evidencia un panel de alarmas en todas las pestañas y, a la izquierda, se encuentra el código de colores de los estados de las estaciones. Asimismo, en la parte superior izquierda, se encuentra el logo del proyecto, el cual al ser seleccionado se redirecciona a la página web de éste.
 
 
 #### Variables clave
@@ -1178,19 +1210,12 @@ Las principales variables que se tuvieron en cuenta para el SCADA corresponden a
 ![image](https://github.com/user-attachments/assets/c3b7ab5d-26f7-4d75-9802-15d23e565516)
 ![image](https://github.com/user-attachments/assets/716578e2-8fda-4d30-ae03-c0298e67373c)
 
-
-#### Diseño
-
-En el diseño de utilizaron botones, labels, displays, switches toogle, gráficas, tablas de alarmas, símbolos de sensores.
-
-#### Desarrollo
-
+#### Conexión
+API
 
 #### Validación
-#### Elementos de alto desempeño
-### Ignition
-#### Integración control
-#### Integración supervisión
+VIDEO
+
 
 # Resultados
 ## Resultados de aprendizaje
