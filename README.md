@@ -300,8 +300,8 @@ Con esta mejora, el tiempo necesario para el empacado se reduciría a 10 segundo
 #### Comparación entre la planta PRE y POST Automatización:
 
 <div align="center">
-   <img style="width: 30vw;" alt="Planta PRE" src="![Captura de pantalla 2025-03-04 013037](https://github.com/user-attachments/assets/bfdd4198-3791-4d6b-a145-dd83f91805b9)"/>
-   <img style="width: 30vw;" alt="Planta PRE" src="![Captura de pantalla 2025-03-04 013150](https://github.com/user-attachments/assets/6b6fcf66-b143-4b4a-ac43-0d86bbf7a2f0)"/>
+   <img style="width: 30vw;" alt="Planta PRE" src="https://github.com/user-attachments/assets/bfdd4198-3791-4d6b-a145-dd83f91805b9"/>
+   <img style="width: 30vw;" alt="Planta PRE" src="https://github.com/user-attachments/assets/6b6fcf66-b143-4b4a-ac43-0d86bbf7a2f0"/>
 </div>
 
 
