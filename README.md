@@ -1472,7 +1472,7 @@ La interfaz cuenta con 7 pestañas, que se pueden apreciar a continuación, las 
 
 - Pestaña "Desbarbado": Posibilita la visualización del estado de operación de cada una de las estaciones de desbarbado, iniciar y detener cada una de las estaciones, poner en mantenimiento cada una de las estaciones y visualizar la cantidad de juguetes ensamblados en cada estación.
 
-![image](https://github.com/user-attachments/assets/b15f0abb-ece8-44bd-b55b-115f30402e9c)
+![image](https://github.com/user-attachments/assets/7a7abaa2-eb82-43fd-b418-8de3184f7567)
 
 - Pestaña "Celda robotizada": Permite la visualización del estado de operación de la celda, iniciar y detener la celda, poner en mantenimiento la celda y visualizar la cantidad de juguetes empacados.
 
@@ -1500,10 +1500,6 @@ Las principales variables que se tuvieron en cuenta para el SCADA corresponden a
 Como se mencionó anteriormente, los tags definidos en el SCADA se enviaron a la nube (sistema AWS). Esto se llevó a cabo por medio de la configuración de nodos en Node-Red. Los nodos correspondían a nodos de lectura (recibían información y valores desde la planta y la celda) y de escritura (enviaban informacrión y datos hacia la planta y la celda), lo cual permitió una comunicación bidireccional entre el SCADA y los demás sistemas.
 
 ![image](https://github.com/user-attachments/assets/7763e870-daaa-4e0d-9f38-6e50701c8c1d)
-
-
-#### Validación
-![video](https://github.com/SaraC27/APMToyLab/blob/e64e2c819455fb1d0f02f73d104ea5e046b7b5f7/Files/Video_SCADA.mp4)
 
 
 # Resultados
