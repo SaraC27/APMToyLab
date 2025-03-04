@@ -185,16 +185,16 @@ Consideraciones para el cálculo de indicadores
   
 | **KPI**                               | **Descripción**                                                                 | **Valor**                             |
 |----------------------------------------|---------------------------------------------------------------------------------|---------------------------------------|
-| **Takt Time (T)**                      | Cadencia con la que se debe fabricar el producto para satisfacer la demanda     | 276 seg/juguete                      |
+| **Takt Time (T)**                      | Cadencia con la que se debe fabricar el producto para satisfacer la demanda     | 3.78 min/juguete                      |
 | **Tiempo de ciclo (Tc)**               | Tiempo de proceso en cada estación                                             | Revisar VSM (cada estación es diferente) |
-| **Tasa de producción (Rp)**            | Número de partes producidas por hora                                           | 13 juguetes/hora                     |
-| **Capacidad de producción (Pc)**       | Máxima tasa de salida que la fábrica puede alcanzar                            | 2,288 juguetes/mes                   |
-| **Tiempo total de manufactura (MLT)**  | Tiempo desde la orden de producción hasta la finalización del lote             | 514 minutos                          |
-| **Disponibilidad (A)**                 | Disponibilidad de las máquinas                                                 | 70 %                                 |
-| **Eficiencia**                         | Eficiencia de desempeño                                                         | 75 %                                 |
+| **Tasa de producción (Rp)**            | Número de partes producidas por hora                                           | 18 juguetes/hora                     |
+| **Capacidad de producción (Pc)**       | Máxima tasa de salida que la fábrica puede alcanzar                            | 838 juguetes/semana                   |
+| **Tiempo total de manufactura (MLT)**  | Tiempo desde la orden de producción hasta la finalización del lote (143 juguetes)             | 7,67 horas                          |
+| **Disponibilidad (A)**                 | Disponibilidad de las máquinas                                                 | 80 %                                 |
+| **Eficiencia**                         | Eficiencia de desempeño                                                         | 70 %                                 |
 | **Calidad**                            | Porcentaje de producto defectuoso                                              | 90 %                                 |
-| **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                            | 47 %                                 |
-| **Utilización (U)**                    | Porcentaje de tiempo en que la fábrica está operativa                          | Variable según el mes (máximo 70%)   |
+| **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                            | 50 %                                 |
+| **Utilización (U)**                    | Porcentaje de tiempo en que la fábrica está operativa                          | 85,26 %   |
 
 #### Tecnomatix
 
