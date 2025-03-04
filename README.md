@@ -203,6 +203,8 @@ Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los i
 | **OEE**       | 48%       | 50%        |
 
 A partir de lo anterior se observa que los valores calculados no difieren mucho de los valores obtenidos en simulacion, por esto mismo se considera que los indicadores calculados tienen valores que se acercan a los de la simulacion y se consideran como datos validos para tomar de referencia.
+
+
 #### Tecnomatix
 
 El diseño inicial de la planta pre-automatizada se llevó a cabo en el software de fabricación digital Tecnomatix Plant Simulation de Siemens (como se evidencia en la imagen a continuación), debido a que este software permitió la simulación de las diferentes etapas del proceso de manufactura incluyendo, asimismo, los tiempos de proceso de cada una de las máquinas. Esto último facilitó observar información relevante para calcular el OEE.
@@ -210,11 +212,13 @@ El diseño inicial de la planta pre-automatizada se llevó a cabo en el software
 ![Captura de pantalla 2025-03-03 225601](https://github.com/user-attachments/assets/15fcb0af-0a01-43f5-8df3-99f624dd166d)
 
 
-
 #### VSM Pre
+
 La informacion detallada del diagrama VSM de la planta antes de la automatización se puede encontrar en el siguiente [enlace](Files/VSM_Pre.pdf).
 
+
 ### Post-Automatización
+
 #### Indicadores
 
 ![image](https://github.com/user-attachments/assets/69ccdafe-ccab-45b5-9ace-cff6e5d9dcd5)
@@ -259,14 +263,21 @@ Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los i
 
 A partir de lo anterior se observa que los valores calculados no difieren mucho de los valores obtenidos en simulacion, por esto mismo se considera que los indicadores calculados tienen valores que se acercan a los de la simulacion y se consideran como datos validos para tomar de referencia.
 
+
 #### Tecnomatix
 
-Al igual que el diseño de la planta antes de la automatización, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, robots de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se pudo evidenciar que el cuello de botella se superó con las automatizaciones propuestas. Sin embargo, como en la planta pre-automatizada, también se consideró la cantidad de materia prima necesaria para una jornada de 8 horas, según lo señalado por los indicadores, no obstante, el proceso tuvo una duración de 3 horas y media, por lo tanto, los indicadores y la simulación de la planta se siguen revisando y corrigiendo.
+Al igual que el diseño de la planta antes de la automatización, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, robots de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se obtuvo información del proceso para el cálculo del OEE.
 
-![image](https://github.com/user-attachments/assets/07043485-836e-46d8-9817-ae692a2e4691)
-Luego de implementar la simulación, se observaron algunos cambios significativos en ciertas estaciones. En particular, en la estación de empaquetado, se notó que el tiempo de espera disminuyó en un 20 % en la planta automatizada, lo que indica que la implementación de la celda robotizada cumple su función.
+![Captura de pantalla 2025-03-03 234906](https://github.com/user-attachments/assets/7c6d0c6e-c0dc-44f0-b377-d17bbd2cb1e0)
+
+Luego de implementar la simulación, se observaron algunos cambios significativos en ciertas estaciones. En particular, en la estación de empaquetado, se evidenció que el tiempo de espera disminuyó en un 20% en la planta automatizada, lo cual indica que la implementación de la celda robotizada cumple su función.
+
+
 #### VSM Post
-Luego de implementar la propuesta de automatizacion se espera obtener el siguiente [VSM](Files/VSM_Post.pdf).
+
+Con la implementación de la propuesta de automatización se espera obtener el siguiente [VSM](Files/VSM_Post.pdf).
+
+
 ### Propuesta automatización
 
 Se propone implementar un plan de automatización en la planta, enfocado en optimizar tres zonas clave del proceso de producción. A continuación, se detalla la propuesta para cada una de estas áreas:
