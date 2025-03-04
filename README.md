@@ -1151,7 +1151,7 @@ Para el desarrollo del proyecto, la organización y el compromiso del equipo fue
 El desarrollo de este proyecto me exigió poner en práctica muchas de las habilidades que he aprendido en los últimos años, además de enfrentarme a la necesidad de adquirir nuevos conocimientos para resolver los desafíos que surgieron en el proceso. Esta combinación de experiencia y aprendizaje continuo ha sido muy enriquecedora, y espero que las habilidades desarrolladas durante este proyecto me brinden un impulso y un valor diferencial en mi vida profesional, permitiéndome enfrentar con mayor confianza futuros retos en el ámbito de la automatización industrial.
 ## Resultados de ingeniería
 ### Resultados Módulo 1: Gestión de Producción y Automatización
-El modulo de gestion de produccion y automatizacion 
+El modulo de gestion de produccion y automatizacion nos brindo una vision mas global sobre los procesos de produccion, los indicadores que se manejan para medir su calidad y el porque es importante automatizar estos procesos. Esta perspectiva permitio pensar en el problema mas alla de la incorporacion de nuevas tecnologias sino que tambien en el proposito de incorporarlas.
 ### Resultados Módulo 2: Industria 4.0 en la Automatización
 ### Resultados Módulo 3: Planeación del Proyecto
 ### Resultados Módulo 4: Evaluación Económica de Proyectos
