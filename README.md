@@ -1503,26 +1503,41 @@ Como se mencionó anteriormente, los tags definidos en el SCADA se enviaron a la
 
 
 #### Validación
-![video](https://github.com/SaraC27/APMToyLab/blob/bc4f1da1ab1feabf50e69793039d78cc0caa46c1/Files/Video%20SCADA.mp4)
+![video](https://github.com/SaraC27/APMToyLab/blob/e64e2c819455fb1d0f02f73d104ea5e046b7b5f7/Files/Video_SCADA.mp4)
 
 
 # Resultados
+
 ## Resultados de aprendizaje
+
 ### Grupal
+
 El desarrollo de este proyecto nos permitió acercarnos de manera integral a distintos aspectos que estan presentes en proyectos de automatización industrial, proporcionándonos una visión clara sobre su alcance, desafíos y beneficios. Para alcanzar los objetivos del proyecto, cada integrante aplicó sus habilidades adquiridas y las puso al servicio del equipo. La división de tareas fue clave para optimizar el trabajo, asignando responsabilidades según las fortalezas de cada miembro. Además, la organización y el seguimiento de actividades permitieron mantener el rumbo y cumplir con los plazos establecidos. La comunicación constante facilitó la toma de decisiones y la resolución de problemas, asegurando una colaboración efectiva y un desarrollo fluido del proyecto.
 
 Consideramos que participar en este proyecto fue una gran oportunidad para desarrollar habilidades de resolución de problemas en un entorno mas cercano a la industria, enfrentando situaciones reales que requirieron análisis crítico y adaptabilidad. Además, nos permitió explorar nuevas herramientas de gran utilidad las cuales podran ser usadas posteriormente para enfrentarnos a problemas de nuestra vida profesional.
 
 En conclusión, este proyecto no solo nos permitió aplicar conocimientos adquiridos a lo largo de la carrera, sino que también nos enfrentó a nuevos retos que impulsaron nuestro aprendizaje. La combinación de experiencia, innovación y trabajo en equipo nos ha dejado valiosas lecciones que sin duda contribuirán a nuestro desarrollo profesional en el ámbito de la automatización industrial.
+
+
 ### Individual
-Juan Andrés Barrera Rodríguez
+
+- Juan Andrés Barrera Rodríguez
 
 El proyecto me permitió acercarme a distintos aspectos de lo que puede ser un proyecto de automatización a nivel industrial, dándome la oportunidad de conocer su alcance y los resultados que suelen esperarse en este tipo de iniciativas. Asimismo, considero que, si bien el desarrollo presentó desafíos en algunos aspectos técnicos, los resultados obtenidos fueron muy gratificantes. Esto se debe a que no son únicamente fruto del trabajo realizado durante el semestre, sino el resultado de varios años de aprendizaje de todos los integrantes del grupo, y no solo del mío.
 
 Para el desarrollo del proyecto, la organización y el compromiso del equipo fueron fundamentales para alcanzar los resultados obtenidos. La adecuada distribución de tareas, la comunicación constante y la colaboración entre los integrantes permitieron superar los desafíos técnicos y cumplir con los objetivos planteados. Esta experiencia demuestra la importancia del trabajo en equipo en proyectos de automatización industrial, donde la integración de conocimientos y habilidades diversas es clave para lograr soluciones eficientes y funcionales.
 
 El desarrollo de este proyecto me exigió poner en práctica muchas de las habilidades que he aprendido en los últimos años, además de enfrentarme a la necesidad de adquirir nuevos conocimientos para resolver los desafíos que surgieron en el proceso. Esta combinación de experiencia y aprendizaje continuo ha sido muy enriquecedora, y espero que las habilidades desarrolladas durante este proyecto me brinden un impulso y un valor diferencial en mi vida profesional, permitiéndome enfrentar con mayor confianza futuros retos en el ámbito de la automatización industrial.
+
+- Sara Cardona: Este proyecto me permitió tener una visión más amplia acerca de la realidad de la automatización en la industria, ya que, personalmente, no había dimensionado todo lo que se debe tener en cuenta en este tipo de situaciones. Asimismo, durante el desarrollo del proyecto, tuve la oportunidad de poner en práctica algunos de los conocimientos adquiridos anteriormente en mi carrera pero también aprendí nuevas cosas.
+
+La puesta en marcha y realización del proyecto también me planteó algunos retos, no sólo en relación a habilidades técnicas sino también blandas. Uno de los principales retos técnicos fue el aprender a manejar el software Tecnomatix Plant Simulation y poder obtener los datos necesarios de la simulación para aplicarlos al proyecto. De la misma, algunos de los principales retos en habilidades blandas fueron el lograr comunicar de manera adecuada, tanto escrita como oralmente, todo el desarrollo y las actividades que se llevaron a cabo para el proyecto. Igualmente, del trabajo en equipo, me queda que es de elevada importancia comunicar a los demás integrantes los cambios y los avances, pero también las dificultades y retrocesos, para que entre todos se pueda revisar el tema y tener distintos puntos de vista.
+
+Finalmente, me gustaría mencionar que, aunque en varias ocasiones las cosas no salieron como esperaba, ya fuera porque no sabía bien cómo funcionaba algo o porque esperaba que el software hicicera algo que no hacía, considero que fue una experiencia enriquecedora, ya que estas situaciones me permitieron un acercamiento a un proyecto de ingeniería real en la industria. Además, tuve un buen equipo, lo cual me parece muy importante a la hora de llevar a cabo proyectos de esta envergadura.
+
+
 ## Resultados de ingeniería
+
 ### Resultados Módulo 1: Gestión de Producción y Automatización
 El módulo de gestión de producción y automatización nos proporcionó una visión integral sobre los procesos productivos, destacando la importancia de medir su eficiencia y calidad mediante indicadores clave. A través del análisis de estos factores, comprendimos que la automatización no es solo una cuestión de implementar nuevas tecnologías, sino una estrategia para optimizar recursos, mejorar la trazabilidad y garantizar productos de mayor calidad. Además, se enfatizó la necesidad de considerar el impacto de la automatización en la organización, desde la reducción de costos hasta la flexibilidad en la producción.
 
