@@ -30,7 +30,6 @@
    - [Módulo 2: Industria 4.0 en la Automatización](#módulo-2-industria-40-en-la-automatización)  
      - [Pre-Automatización](#pre-automatización-40)  
        - [Diagramas P&ID](#diagramas-pid) FALTA: S
-       - [Diagrama Arquitectura / Tecnologías 4.0](#diagrama-arquitectura) FALTA: F
      - [Post-Automatización](#post-automatización-40)  
        - [Diagramas P&ID](#diagramas-pid-post) FALTA: S
        - [Diagrama Arquitectura / Tecnologías 4.0](#diagrama-arquitectura-post) FALTA: F
@@ -417,10 +416,7 @@ A continuación se especifican los modos de operación de cada estación.
 ![P ID Planta Pre drawio](https://github.com/user-attachments/assets/c73dac85-7b08-4e81-aabc-8c2db0dc9a57)
 
 
-#### Diagrama Arquitectura
-#### Tecnologías 4.0
 ### Post-Automatización
-
 
 #### Diagrama P&ID
 
@@ -448,13 +444,12 @@ A continuación se especifican los modos de operación de cada estación y las c
 
 
 
-#### Diagrama Arquitectura
-#### Tecnologías 4.0
+#### Arquitectura y Tecnologías 4.0
 <img width="1380" alt="Screenshot 2025-03-03 at 9 35 41 PM" src="https://github.com/user-attachments/assets/c496d881-b20a-46e1-add8-411d45094d12" />
 
 
+
 ## Módulo 3: Planeación del Proyecto
-### ERP
 ### EDT
 El EDT detallado se encuentra disponible [acá](Files/EDT.xlsx).
 ```mermaid
