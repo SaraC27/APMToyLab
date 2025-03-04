@@ -164,9 +164,6 @@ Existen distintos indicadores en una planta de manufactura que permiten medir y 
 ### Pre-Automatización
 #### Indicadores
 
-![image](https://github.com/user-attachments/assets/fd0f0cb0-2a2d-44d4-bbbc-8331b63b0675)
-
-
 
 Consideraciones para el cálculo de indicadores  
 
@@ -220,8 +217,6 @@ La informacion detallada del diagrama VSM de la planta antes de la automatizaci�
 ### Post-Automatización
 
 #### Indicadores
-
-![image](https://github.com/user-attachments/assets/69ccdafe-ccab-45b5-9ace-cff6e5d9dcd5)
 
 
 Luego de implementar la propuesta de automatizacion se espera obtener los siguientes KPI. Para obtener informacion mas detallada sobre el calculo de los mismos, remitirse al siguiente [archivo](Files/Indicadores_Post.xlsx).
