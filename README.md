@@ -445,9 +445,29 @@ A continuación se especifican los modos de operación de cada estación y las c
 
 
 #### Arquitectura y Tecnologías 4.0
+
+La arquitectura implementada para el sistema se presenta a continuación:
+
 <img width="1380" alt="Screenshot 2025-03-03 at 9 35 41 PM" src="https://github.com/user-attachments/assets/c496d881-b20a-46e1-add8-411d45094d12" />
 
+La arquitectura se despliega en la nube de `AWS`, donde se cuenta con una base de datos `NoSQL`, un sistema de autenticación y funciones que se pueden acceder/ejecutar a través de una `API`. La integración de las diferentes tecnologías se realiza mediante esta API, que funge como punto común para escribir y leer datos del sistema. Cada tecnología utilizada debe exponer su información de lectura y escritura, mediante un servidor `OPC` alojado en el software `Ignition`, para posteriormente enviarla/recibirla mediante nodos `HTTPS` dentro de `NodeRed`, los cuales se conectan con la API en AWS. Además, la página web del proyecto (realizada con `React`) cuenta con un módulo para la utilización de la `API` (Application Programming Interface).
 
+##### Características de la arquitectura
+
+**Tecnologías utilizadas**
+- *Siemens NX:* Implementación del gemelo digital de la planta.
+- *Studio 5000:* Implementación de la lógica en lenguaje de programación Ladder.
+- *RSLinx:* Emulador de PLC para ejecución del código en Ladder.
+- *RobotStudio:* Implementación de la celda robotizada que forma parte de la planta (parte del gemelo digital).
+- *Google Chrome:* Navegador web para el alojamiento de los dashboard SCADA y el sistema MES.
+- *AWS - Api Gateway:* Servicio en la nube de AWS para la implementación de APIs públicas, es como un servidor HTTPS.
+- *AWS - Lambda:* 
+
+**Nodos:**
+- *Gemelo Digital:* En un computador se corre el gemelo digital 
+
+**Protocolos de comunicación:**
+- *OPC (Open Platform Comunications)*: Permite la comunicación de información entre 
 
 ## Módulo 3: Planeación del Proyecto
 ### EDT
