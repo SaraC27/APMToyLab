@@ -242,7 +242,13 @@ Consideraciones para el cálculo de indicadores
 | **Utilización (U)**                    | Porcentaje de tiempo en que la fábrica está operativa                          | 61,78 %   |
 
 
-Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los indicadores calculados. Especificamente de la eficiencia y del OEE, aqui pudimos observar que 
+Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los indicadores calculados. Especificamente de la eficiencia y del OEE, aqui pudimos observar que:
+
+ | Métrica       | Pre-Automatización (Calculado) | Pre-Automatización (Simulación) | Post-Automatización (Calculado) | Post-Automatización (Simulación) |
+|--------------|--------------------------------|--------------------------------|--------------------------------|--------------------------------|
+| **Eficiencia** | 67%                          | 70%                          | 68%                          | 72%                          |
+| **OEE**       | 48%                          | 50%                          | 54%                          | 57%                          |
+
 #### Tecnomatix
 
 Al igual que el diseño de la planta antes de la automatización, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, robots de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se pudo evidenciar que el cuello de botella se superó con las automatizaciones propuestas. Sin embargo, como en la planta pre-automatizada, también se consideró la cantidad de materia prima necesaria para una jornada de 8 horas, según lo señalado por los indicadores, no obstante, el proceso tuvo una duración de 3 horas y media, por lo tanto, los indicadores y la simulación de la planta se siguen revisando y corrigiendo.
