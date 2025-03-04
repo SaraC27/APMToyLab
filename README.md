@@ -896,7 +896,7 @@ Se obtiene un margen de utilidad de aproximadamente `34%`. Es decir, de cada `1`
 
 ### Oferta comercial
 
-La oferta comercial detallada se encuentra en este [enlace](Files/Propuesta_comercial.pdf).
+La oferta comercial detallada se encuentra en este [enlace](Files/Oferta_comercial.pdf).
 
 ## Módulo 5: Celda de Manufactura Robotizada
 ### Productos de entrada y salida de la celda
