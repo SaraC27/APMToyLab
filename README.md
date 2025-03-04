@@ -150,7 +150,7 @@ Con el objetivo de identificar y visualizar de manera integral el flujo de mater
 ### Indicadores
 
 Existen distintos indicadores en una planta de manufactura que permiten medir y evaluar el desempeño de los procesos operativos, productivos y estratégicos. A partir del análisis de los indicadores iniciales, se podrán identificar áreas de oportunidad y sugerir cambios específicos en la planta. Para este caso especifico se tendran en cuenta los siguientes indicadores.
-- **Work in Process (WIP)**
+
 - **Takt Time (T)**
 - **Tiempo de ciclo (Tc)**
 - **Tasa de producción (Rp)**
@@ -170,9 +170,17 @@ Existen distintos indicadores en una planta de manufactura que permiten medir y 
 
 
 A partir de la planta previa a la automatizacion, se obtienen solo siguientes KPI. Para obtener informacion mas detallada sobre el calculo de los mismos, remitirse al siguiente [archivo](Files/Indicadores_Pre.xlsx).
+Consideraciones para el calculo de indicadores
+- **Se toma como referencia de produccion la cantidad de juguetes vendidos en el año 2023.**
+- **Se supone que la produccion anual se realiza de manera uniforme todas las semanas, es decir que todas las semanas se produce la misma cantidad de juguetes.**
+- ** Se asume que la planta funciona durante 45 horas a la semana.**
+- ** La distribucion en la produccion de juguetes es la siguiente: Carros 60%; Aviones: 20%; Submarinos 20%**
+- ** Desplazamientos realizados por operadores se suponen con velocidad de 1.5 m/s. Desplazamientos realizados por bandas transportadoras se suponen con velocidad de 2 m/s.**
+- ** Se evalua la produccion semanal de la planta.**
+- ** Se supone una calidad del 90%, es decir el 10% de los juguetes que se producen tienen alguna imperfeccion.**
 | **KPI**                     | **Qué es?**                                                                             | **Cómo se determina?** | **Valor**                     |
 |-----------------------------|-----------------------------------------------------------------------------------------|-------------------------|-------------------------------|
-| **Work in Process (WIP)**   | Contempla el material que se encuentra entre estaciones y está en espera de ser procesado (Wi) o que está siendo procesado en las estaciones (WEi) | Cálculos                | $1.236.560,00                |
+
 | **Takt Time (T)**           | Cadencia con la que se debe fabricar el producto para satisfacer la demanda             | Cálculos                | T = 276 seg / juguete         |
 | **Tiempo de ciclo (Tc)**    | Tiempo de proceso de cada estación                                                      | VSM                     | Revisar VSM (cada estación es diferente) |
 | **Tasa de producción (Rp)** | Número de partes producidas por hora                                                    | Simulación              | 13 juguetes / hora            |
