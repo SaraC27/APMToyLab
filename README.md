@@ -236,9 +236,14 @@ Consideraciones para el cálculo de indicadores
 | **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                            | 57 %                                 |
 | **Utilización (U)**                    | Porcentaje de tiempo en que la fábrica está operativa                          | 61,78 %   |
 
+Además de esto, se usó el software Tecnomatix para validar la exactidud de los indicadores calculados. Específicamente de la eficiencia y del OEE, aquí se pudo observar que:
 
-Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los indicadores calculados. Especificamente de la eficiencia y del OEE, aqui pudimos observar que 
+| Métrica       | Calculado | Simulación |
+|--------------|-----------|------------|
+| **Eficiencia** | 68%       | 72%        |
+| **OEE**       | 54%       | 57%        |
 
+A partir de lo anterior se observa que los valores calculados no difieren mucho de los valores obtenidos en simulación, por esto mismo se considera que los indicadores calculados tienen valores que se acercan a los de la simulación y se consideran como datos válidos para tomar de referencia.
 
 #### Tecnomatix
 
@@ -442,8 +447,8 @@ A continuación se especifican los modos de operación de cada estación y las c
 
 | **Símbolo**             | **Modo de operación** |
 | :---: | :---: |
-| Sensor "IQI"            | Sensor " Infrared Quantity Indicator" |
-| Línea "-----"           | Conexión eléctrica                    |
+| Sensor "IQI"            | Sensor "Infrared Quantity Indicator" |
+| Línea "-----"           | Señal eléctrica                      |
 
 
 ![P ID Planta Post](https://github.com/user-attachments/assets/fc0a5b09-ab7a-452d-b1a5-27e7fe4ac3ed)
