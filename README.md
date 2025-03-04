@@ -113,7 +113,6 @@
 
 ## Módulo 1: Gestión de Producción y Automatización
 
-
 Una fábrica de juguetes de plástico desempeña un papel crucial en la industria manufacturera y en la sociedad en general. Los juguetes no solo son herramientas esenciales para el entretenimiento infantil, sino también para el desarrollo cognitivo, emocional y social de los niños. Estos productos fomentan la creatividad, la imaginación y las habilidades motoras. 
 
 Por esto mismo es fundamental que la planta cumpla con las demandas de producción establecidas para garantizar un suministro constante que satisfaga las necesidades del mercado. Asimismo, mantener las tecnologías actualizadas permite optimizar los procesos, reducir costos operativos y mejorar la eficiencia general. Esto no solo contribuye a la sostenibilidad al minimizar el impacto ambiental, sino que también refuerza la competitividad de la planta, asegurando su relevancia y capacidad para adaptarse a las exigencias de un mercado en constante evolución.
@@ -162,8 +161,8 @@ Existen distintos indicadores en una planta de manufactura que permiten medir y 
 
 
 ### Pre-Automatización
-#### Indicadores
 
+#### Indicadores
 
 Consideraciones para el cálculo de indicadores  
 
@@ -200,13 +199,14 @@ El diseño inicial de la planta pre-automatizada se llevó a cabo en el software
 ![Captura de pantalla 2025-03-03 225601](https://github.com/user-attachments/assets/15fcb0af-0a01-43f5-8df3-99f624dd166d)
 
 
-
 #### VSM Pre
+
 La informacion detallada del diagrama VSM de la planta antes de la automatización se puede encontrar en el siguiente [enlace](Files/VSM_Pre.pdf).
 
-### Post-Automatización
-#### Indicadores
 
+### Post-Automatización
+
+#### Indicadores
 
 Luego de implementar la propuesta de automatizacion se espera obtener los siguientes KPI. Para obtener informacion mas detallada sobre el calculo de los mismos, remitirse al siguiente [archivo](Files/Indicadores_Post.xlsx).
 Consideraciones para el cálculo de indicadores  
@@ -236,17 +236,20 @@ Consideraciones para el cálculo de indicadores
 | **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                            | 57 %                                 |
 | **Utilización (U)**                    | Porcentaje de tiempo en que la fábrica está operativa                          | 61,78 %   |
 
-
 Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los indicadores calculados. Especificamente de la eficiencia y del OEE, aqui pudimos observar que 
+
+
 #### Tecnomatix
 
-Al igual que el diseño de la planta antes de la automatización, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, robots de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se pudo evidenciar que el cuello de botella se superó con las automatizaciones propuestas. Sin embargo, como en la planta pre-automatizada, también se consideró la cantidad de materia prima necesaria para una jornada de 8 horas, según lo señalado por los indicadores, no obstante, el proceso tuvo una duración de 3 horas y media, por lo tanto, los indicadores y la simulación de la planta se siguen revisando y corrigiendo.
+Al igual que el diseño de la planta antes de la automatización, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, robots de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se obtuvo información del proceso para el cálculo del OEE.
 
-![image](https://github.com/user-attachments/assets/07043485-836e-46d8-9817-ae692a2e4691)
+![Captura de pantalla 2025-03-03 234906](https://github.com/user-attachments/assets/26a19374-e962-4bdb-b090-cb0cb4da6d5d)
 
 
 #### VSM Post
-Luego de implementar la propuesta de automatizacion se espera obtener el siguiente [VSM](Files/VSM_Post.pdf).
+
+Después de la implementación de la propuesta de automatización se espera obtener el siguiente [VSM](Files/VSM_Post.pdf).
+
 ### Propuesta automatización
 
 Se propone implementar un plan de automatización en la planta, enfocado en optimizar tres zonas clave del proceso de producción. A continuación, se detalla la propuesta para cada una de estas áreas:
@@ -437,7 +440,7 @@ A continuación se especifican los modos de operación de cada estación y las c
 | Sensor "IQI"            | Sensor "Infrared Quantity Indicator" |
 | Línea "-----"           | Señal eléctrica                      |
 
-![P ID Planta Post drawio](https://github.com/user-attachments/assets/db57b834-2bf3-4915-84d3-dd35b44c8ffb)
+![P ID Planta Post](https://github.com/user-attachments/assets/f7bd3e5c-df8b-473a-830d-593c54427e7e)
 
 
 ### Arquitectura y Tecnologías 4.0
