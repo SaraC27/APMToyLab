@@ -1188,6 +1188,11 @@ En el diseño de utilizaron botones, labels, displays, switches toogle, gráfica
 # Resultados
 ## Resultados de aprendizaje
 ### Grupal
+El desarrollo de este proyecto nos permitió acercarnos de manera integral a distintos aspectos que estan presentes en proyectos de automatización industrial, proporcionándonos una visión clara sobre su alcance, desafíos y beneficios. Para alcanzar los objetivos del proyecto, cada integrante aplicó sus habilidades adquiridas y las puso al servicio del equipo. La división de tareas fue clave para optimizar el trabajo, asignando responsabilidades según las fortalezas de cada miembro. Además, la organización y el seguimiento de actividades permitieron mantener el rumbo y cumplir con los plazos establecidos. La comunicación constante facilitó la toma de decisiones y la resolución de problemas, asegurando una colaboración efectiva y un desarrollo fluido del proyecto.
+
+Consideramos que participar en este proyecto fue una gran oportunidad para desarrollar habilidades de resolución de problemas en un entorno mas cercano a la industria, enfrentando situaciones reales que requirieron análisis crítico y adaptabilidad. Además, nos permitió explorar nuevas herramientas de gran utilidad las cuales podran ser usadas posteriormente para enfrentarnos a problemas de nuestra vida profesional.
+
+En conclusión, este proyecto no solo nos permitió aplicar conocimientos adquiridos a lo largo de la carrera, sino que también nos enfrentó a nuevos retos que impulsaron nuestro aprendizaje. La combinación de experiencia, innovación y trabajo en equipo nos ha dejado valiosas lecciones que sin duda contribuirán a nuestro desarrollo profesional en el ámbito de la automatización industrial.
 ### Individual
 Juan Andrés Barrera Rodríguez
 
@@ -1198,7 +1203,10 @@ Para el desarrollo del proyecto, la organización y el compromiso del equipo fue
 El desarrollo de este proyecto me exigió poner en práctica muchas de las habilidades que he aprendido en los últimos años, además de enfrentarme a la necesidad de adquirir nuevos conocimientos para resolver los desafíos que surgieron en el proceso. Esta combinación de experiencia y aprendizaje continuo ha sido muy enriquecedora, y espero que las habilidades desarrolladas durante este proyecto me brinden un impulso y un valor diferencial en mi vida profesional, permitiéndome enfrentar con mayor confianza futuros retos en el ámbito de la automatización industrial.
 ## Resultados de ingeniería
 ### Resultados Módulo 1: Gestión de Producción y Automatización
-El modulo de gestion de produccion y automatizacion 
+El módulo de gestión de producción y automatización nos proporcionó una visión integral sobre los procesos productivos, destacando la importancia de medir su eficiencia y calidad mediante indicadores clave. A través del análisis de estos factores, comprendimos que la automatización no es solo una cuestión de implementar nuevas tecnologías, sino una estrategia para optimizar recursos, mejorar la trazabilidad y garantizar productos de mayor calidad. Además, se enfatizó la necesidad de considerar el impacto de la automatización en la organización, desde la reducción de costos hasta la flexibilidad en la producción.
+
+Esta perspectiva permitió reflexionar más allá de la incorporación de herramientas tecnológicas, enfocándonos en el propósito de su implementación. La automatización debe responder a objetivos claros, como la mejora en la competitividad, la sostenibilidad y la seguridad en el entorno de trabajo. También se resaltó la importancia de una gestión adecuada del cambio, asegurando que la integración de nuevas tecnologías esté alineada con la capacitación del personal y las necesidades del mercado. 
+
 ### Resultados Módulo 2: Industria 4.0 en la Automatización
 ### Resultados Módulo 3: Planeación del Proyecto
 ### Resultados Módulo 4: Evaluación Económica de Proyectos
