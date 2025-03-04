@@ -434,12 +434,10 @@ A continuación se especifican los modos de operación de cada estación y las c
 
 | **Símbolo**             | **Modo de operación** |
 | :---: | :---: |
-| Sensor "IQI"            | Sensor " Infrared Quantity Indicator" |
-| Línea "-----"           | Conexión eléctrica                    |
-
+| Sensor "IQI"            | Sensor "Infrared Quantity Indicator" |
+| Línea "-----"           | Señal eléctrica                      |
 
 ![P ID Planta Post drawio](https://github.com/user-attachments/assets/db57b834-2bf3-4915-84d3-dd35b44c8ffb)
-
 
 
 ### Arquitectura y Tecnologías 4.0
