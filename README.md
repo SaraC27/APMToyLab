@@ -300,8 +300,8 @@ Con esta mejora, el tiempo necesario para el empacado se reduciría a 10 segundo
 #### Comparación entre la planta PRE y POST Automatización:
 
 <div align="center">
-   <img style="width: 30vw;" alt="Planta PRE" src="https://github.com/user-attachments/assets/c10cb57f-d02b-4472-a99b-f110225ddf2d"/>
-   <img style="width: 30vw;" alt="Planta PRE" src="https://github.com/user-attachments/assets/2ffb4910-22df-4652-8ce5-2d59a4df7857"/>
+   <img style="width: 30vw;" alt="Planta PRE" src="![Captura de pantalla 2025-03-04 013037](https://github.com/user-attachments/assets/bfdd4198-3791-4d6b-a145-dd83f91805b9)"/>
+   <img style="width: 30vw;" alt="Planta PRE" src="![Captura de pantalla 2025-03-04 013150](https://github.com/user-attachments/assets/6b6fcf66-b143-4b4a-ac43-0d86bbf7a2f0)"/>
 </div>
 
 
@@ -458,8 +458,7 @@ A continuación se especifican los modos de operación de cada estación y las c
 | Sensor "IQI"            | Sensor "Infrared Quantity Indicator" |
 | Línea "-----"           | Señal eléctrica                      |
 
-
-![P ID Planta Post](https://github.com/user-attachments/assets/fc0a5b09-ab7a-452d-b1a5-27e7fe4ac3ed)
+![P ID Planta Post](https://github.com/user-attachments/assets/96f85d47-00af-4e06-8527-ed091d1adb8d)
 
 
 ### Arquitectura y Tecnologías 4.0
