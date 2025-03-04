@@ -198,11 +198,10 @@ Consideraciones para el cálculo de indicadores
 
 #### Tecnomatix
 
-El diseño inicial de la planta pre-automatizada se llevó a cabo en el software de fabricación digital Tecnomatix Plant Simulation de Siemens (como se evidencia en la imagen a continuación), debido a que este software permitió la simulación de las diferentes etapas del proceso de manufactura incluyendo, asimismo, los tiempos de proceso de cada una de las máquinas. Esto último facilitó observar que en la estación de empaque con papel panal se presetó un cuello de botella.
+El diseño inicial de la planta pre-automatizada se llevó a cabo en el software de fabricación digital Tecnomatix Plant Simulation de Siemens (como se evidencia en la imagen a continuación), debido a que este software permitió la simulación de las diferentes etapas del proceso de manufactura incluyendo, asimismo, los tiempos de proceso de cada una de las máquinas. Esto último facilitó observar información relevante para calcular el OEE.
 
-De la misma manera, teniendo en cuenta los indicadores calculados, se configuró la cantidad de materia prima necesaria para la producción de un día de trabajo (8 horas), sin embargo, la simulación indicó que con dicha cantidad de materia prima la planta solo funcionaría 3 horas y media, razón por la cual los indicadores y la planta se siguen ajustando.
+![Captura de pantalla 2025-03-03 225601](https://github.com/user-attachments/assets/15fcb0af-0a01-43f5-8df3-99f624dd166d)
 
-![image](https://github.com/user-attachments/assets/b09964cc-4bc6-4098-8eb5-5ade45d120eb)
 
 
 #### VSM Pre
