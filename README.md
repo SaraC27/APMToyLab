@@ -1468,20 +1468,23 @@ La interfaz cuenta con 7 pestañas, que se pueden apreciar a continuación, las 
 
 Pestaña "Alarmas": Permite la visualización de las alarmas que se generan durante el proceso. Cabe resaltar que, la única alarma de nivel "crítico" se presenta si se detecta una falla en cualquiera de las estaciones, las demás alarmas son de diagnótico y se activan cada vez que las estaciones cambian de estado.
 
-![Captura de pantalla 2025-03-04 015551](https://github.com/user-attachments/assets/aebc56ba-77e8-4537-911a-cfac266efd81)
+![image](https://github.com/user-attachments/assets/aebc56ba-77e8-4537-911a-cfac266efd81)
 
 Adicionalmente, en la parte inferior de la interfaz, también se evidencia un panel de alarmas en todas las pestañas y, a la izquierda, se encuentra el código de colores de los estados de las estaciones. Asimismo, en la parte superior izquierda, se encuentra el logo del proyecto, el cual al ser seleccionado se redirecciona a la página web de éste.
 
 
 #### Variables clave
 
-Las principales variables que se tuvieron en cuenta para el SCADA corresponden a las cantidades procesadas en cada estación y al estado de operación de cada estación. Para esto fue necesario crear los tags localmente ...
+Las principales variables que se tuvieron en cuenta para el SCADA corresponden a las cantidades procesadas en cada estación y al estado de operación de cada estación (offline, stopped, funcionamiento, mantenimiento, falla y setup). Estas variables fueron asociadas al SCADA por medio de tags que se definieron localmente y luego se enviaron al sistema de AWS para lograr conexión con la planta en NX y la celda en Robot Studio.
 
 ![image](https://github.com/user-attachments/assets/c3b7ab5d-26f7-4d75-9802-15d23e565516)
 ![image](https://github.com/user-attachments/assets/716578e2-8fda-4d30-ae03-c0298e67373c)
 
 #### Conexión
-API
+Como se mencionó anteriormente, los tags definidos en el SCADA se enviaron a la nube (sistema AWS). Esto se llevó a cabo por medio de la configuración de nodos en Node-Red. Los nodos correspondían a nodos de lectura (recibían información y valores desde la planta y la celda) y de escritura (enviaban informacrión y datos hacia la planta y la celda), lo cual permitió una comunicación bidireccional entre el SCADA y los demás sistemas.
+
+![image](https://github.com/user-attachments/assets/b323dbe8-c0be-4a16-9bc9-8a891ac83277)
+
 
 #### Validación
 VIDEO
