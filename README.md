@@ -113,6 +113,7 @@
 
 ## Módulo 1: Gestión de Producción y Automatización
 
+
 Una fábrica de juguetes de plástico desempeña un papel crucial en la industria manufacturera y en la sociedad en general. Los juguetes no solo son herramientas esenciales para el entretenimiento infantil, sino también para el desarrollo cognitivo, emocional y social de los niños. Estos productos fomentan la creatividad, la imaginación y las habilidades motoras. 
 
 Por esto mismo es fundamental que la planta cumpla con las demandas de producción establecidas para garantizar un suministro constante que satisfaga las necesidades del mercado. Asimismo, mantener las tecnologías actualizadas permite optimizar los procesos, reducir costos operativos y mejorar la eficiencia general. Esto no solo contribuye a la sostenibilidad al minimizar el impacto ambiental, sino que también refuerza la competitividad de la planta, asegurando su relevancia y capacidad para adaptarse a las exigencias de un mercado en constante evolución.
@@ -161,8 +162,8 @@ Existen distintos indicadores en una planta de manufactura que permiten medir y 
 
 
 ### Pre-Automatización
-
 #### Indicadores
+
 
 Consideraciones para el cálculo de indicadores  
 
@@ -199,14 +200,13 @@ El diseño inicial de la planta pre-automatizada se llevó a cabo en el software
 ![Captura de pantalla 2025-03-03 225601](https://github.com/user-attachments/assets/15fcb0af-0a01-43f5-8df3-99f624dd166d)
 
 
-#### VSM Pre
 
+#### VSM Pre
 La informacion detallada del diagrama VSM de la planta antes de la automatización se puede encontrar en el siguiente [enlace](Files/VSM_Pre.pdf).
 
-
 ### Post-Automatización
-
 #### Indicadores
+
 
 Luego de implementar la propuesta de automatizacion se espera obtener los siguientes KPI. Para obtener informacion mas detallada sobre el calculo de los mismos, remitirse al siguiente [archivo](Files/Indicadores_Post.xlsx).
 Consideraciones para el cálculo de indicadores  
@@ -236,20 +236,17 @@ Consideraciones para el cálculo de indicadores
 | **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                            | 57 %                                 |
 | **Utilización (U)**                    | Porcentaje de tiempo en que la fábrica está operativa                          | 61,78 %   |
 
+
 Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los indicadores calculados. Especificamente de la eficiencia y del OEE, aqui pudimos observar que 
-
-
 #### Tecnomatix
 
-Al igual que el diseño de la planta antes de la automatización, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, robots de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se obtuvo información del proceso para el cálculo del OEE.
+Al igual que el diseño de la planta antes de la automatización, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, robots de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se pudo evidenciar que el cuello de botella se superó con las automatizaciones propuestas. Sin embargo, como en la planta pre-automatizada, también se consideró la cantidad de materia prima necesaria para una jornada de 8 horas, según lo señalado por los indicadores, no obstante, el proceso tuvo una duración de 3 horas y media, por lo tanto, los indicadores y la simulación de la planta se siguen revisando y corrigiendo.
 
-![Captura de pantalla 2025-03-03 234906](https://github.com/user-attachments/assets/26a19374-e962-4bdb-b090-cb0cb4da6d5d)
+![image](https://github.com/user-attachments/assets/07043485-836e-46d8-9817-ae692a2e4691)
 
 
 #### VSM Post
-
-Después de la implementación de la propuesta de automatización se espera obtener el siguiente [VSM](Files/VSM_Post.pdf).
-
+Luego de implementar la propuesta de automatizacion se espera obtener el siguiente [VSM](Files/VSM_Post.pdf).
 ### Propuesta automatización
 
 Se propone implementar un plan de automatización en la planta, enfocado en optimizar tres zonas clave del proceso de producción. A continuación, se detalla la propuesta para cada una de estas áreas:
@@ -437,10 +434,12 @@ A continuación se especifican los modos de operación de cada estación y las c
 
 | **Símbolo**             | **Modo de operación** |
 | :---: | :---: |
-| Sensor "IQI"            | Sensor "Infrared Quantity Indicator" |
-| Línea "-----"           | Señal eléctrica                      |
+| Sensor "IQI"            | Sensor " Infrared Quantity Indicator" |
+| Línea "-----"           | Conexión eléctrica                    |
 
-![P ID Planta Post](https://github.com/user-attachments/assets/f7bd3e5c-df8b-473a-830d-593c54427e7e)
+
+![P ID Planta Post drawio](https://github.com/user-attachments/assets/db57b834-2bf3-4915-84d3-dd35b44c8ffb)
+
 
 
 ### Arquitectura y Tecnologías 4.0
@@ -871,18 +870,25 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 | R14    | SIL 1                             | OM                                  |
 | R15    | SIL 3                             | SIL 2                               |
 
-#### Eleementos de Seguridad
+#### Elementos de Seguridad
 
-# **Matriz de Riesgos (Basada en GUDELINE for Safeguarding Machinery and Equipment)**
+**Matriz de Riesgos (Basada en GUIDELINE for Safeguarding Machinery and Equipment)**
 
-| **Tarea**  | **Riesgo** | **Estimación del riesgo** | **Nivel** | **Método de reducción de riesgo** | **Equipo necesario** | **Imágen** |
-|------------|-----------|---------------------------|-----------|------------------------------------|----------------------|-----------|
-| **Funcionamiento del robot (Pick and Place y Paletizado)** | El robot podría moverse de manera inesperada y golpear a un operario. | - Seriedad: alta  <br> - Frecuencia: media <br> - Difícil de evitar | D | Instalación de **barreras láser** que detengan el robot al detectar presencia en la zona de trabajo. | **Barreras láser de seguridad** | <img width="475" alt="Screenshot 2025-03-03 at 12 29 35" src="https://github.com/user-attachments/assets/c7691094-e3b0-4952-83b6-7540948cac47" /> |
-| **Movimiento de objetos en el transportador** | Posible caída de productos por un mal posicionamiento del robot en Pick and Place. | - Seriedad: media  <br> - Frecuencia: alta <br> - Fácil de evitar | C | Revisión continua del sistema de sujeción del robot y ajuste periódico de la presión del gripper. | **Sensores de presión en el gripper.** | <img width="431" alt="Screenshot 2025-03-03 at 12 31 24" src="https://github.com/user-attachments/assets/d186d5e4-8cbf-427d-83fa-a96e98d52559" /> |
-| **Señalización de estado de la celda** | Falta de advertencias visuales sobre el estado del proceso puede provocar accidentes. | - Seriedad: media  <br> - Frecuencia: alta <br> - Difícil de evitar | C | Uso de **Industrial Tower Light** para indicar estados de peligro, alerta y operación normal. | **Industrial Tower Light.** | <img width="123" alt="Screenshot 2025-03-03 at 12 32 07" src="https://github.com/user-attachments/assets/46addf13-8356-4544-9901-6a032ee41ca6" />  |
-| **Interacción con operarios en la estación manual de sellado** | Un operario podría ingresar accidentalmente al área de trabajo del robot. | - Seriedad: alta  <br> - Frecuencia: baja <br> - Difícil de evitar | D | Instalación de **barreras físicas** y delimitación del área de trabajo del robot. | **Barreras físicas de protección.** | <img width="352" alt="Screenshot 2025-03-03 at 12 33 04" src="https://github.com/user-attachments/assets/045e0f21-d486-4dac-a92c-c46178428f04" /> |
-| **Emergencias en la celda** | En caso de fallo del sistema, el operario podría no tener una forma rápida de detener el proceso. | - Seriedad: alta  <br> - Frecuencia: baja <br> - Fácil de evitar | C | Implementación de **botones de parada de emergencia** en puntos estratégicos. | **Botón de parada de emergencia.** | <img width="243" alt="Screenshot 2025-03-03 at 12 33 35" src="https://github.com/user-attachments/assets/3248f172-3a02-4b7e-8977-bd40547d1989" /> |
-| **Zona de trabajo del operario** | Riesgo de tropiezos o resbalones en áreas críticas. | - Seriedad: media  <br> - Frecuencia: media <br> - Fácil de evitar | C | Instalación de **Safety Mats** que detengan el robot si alguien pisa la zona de riesgo. | **Safety Mats (alfombras de seguridad).** | <img width="404" alt="Screenshot 2025-03-03 at 12 35 37" src="https://github.com/user-attachments/assets/2edcb1ee-79e9-4ee2-b930-156989c32070" />  |
+| **Tarea**  | **Riesgo** | **Estimación del riesgo** | **Nivel** | **Método de reducción de riesgo** | **Equipo necesario** | **Imágen** | **Mitigación con Manuales, Entrenamiento y EPP** |
+|------------|-----------|---------------------------|-----------|------------------------------------|----------------------|-----------|-----------------------------------------------|
+| **Funcionamiento del robot (Pick and Place y Paletizado)** | El robot podría moverse de manera inesperada y golpear a un operario. | - Seriedad: alta  <br> - Frecuencia: media <br> - Difícil de evitar | D | Instalación de **barreras láser** que detengan el robot al detectar presencia en la zona de trabajo. | **Barreras láser de seguridad** | ![Barreras láser](https://github.com/user-attachments/assets/c7691094-e3b0-4952-83b6-7540948cac47) | Capacitación en operación segura del robot y protocolos de seguridad. |
+| **Movimiento de objetos en el transportador** | Posible caída de productos por un mal posicionamiento del robot en Pick and Place. | - Seriedad: media  <br> - Frecuencia: alta <br> - Fácil de evitar | C | Revisión continua del sistema de sujeción del robot y ajuste periódico de la presión del gripper. | **Sensores de presión en el gripper.** | ![Sensores de presión](https://github.com/user-attachments/assets/d186d5e4-8cbf-427d-83fa-a96e98d52559) | Manual de calibración y ajuste del gripper, entrenamiento en mantenimiento preventivo. |
+| **Señalización de estado de la celda** | Falta de advertencias visuales sobre el estado del proceso puede provocar accidentes. | - Seriedad: media  <br> - Frecuencia: alta <br> - Difícil de evitar | C | Uso de **Industrial Tower Light** para indicar estados de peligro, alerta y operación normal. | **Industrial Tower Light.** | ![Industrial Tower Light](https://github.com/user-attachments/assets/46addf13-8356-4544-9901-6a032ee41ca6) | Manual de interpretación de señales luminosas y capacitación en protocolos de emergencia. |
+| **Interacción con operarios en la estación manual de sellado** | Un operario podría ingresar accidentalmente al área de trabajo del robot. | - Seriedad: alta  <br> - Frecuencia: baja <br> - Difícil de evitar | D | Instalación de **barreras físicas** y delimitación del área de trabajo del robot. | **Barreras físicas de protección.** | ![Barreras físicas](https://github.com/user-attachments/assets/045e0f21-d486-4dac-a92c-c46178428f04) | Entrenamiento en procedimientos de acceso restringido y uso de señalización de seguridad. |
+| **Emergencias en la celda** | En caso de fallo del sistema, el operario podría no tener una forma rápida de detener el proceso. | - Seriedad: alta  <br> - Frecuencia: baja <br> - Fácil de evitar | C | Implementación de **botones de parada de emergencia** en puntos estratégicos. | **Botón de parada de emergencia.** | ![Botón de parada](https://github.com/user-attachments/assets/3248f172-3a02-4b7e-8977-bd40547d1989) | Capacitación en protocolos de emergencia y simulacros periódicos. |
+| **Zona de trabajo del operario** | Riesgo de tropiezos o resbalones en áreas críticas. | - Seriedad: media  <br> - Frecuencia: media <br> - Fácil de evitar | C | Instalación de **Safety Mats** que detengan el robot si alguien pisa la zona de riesgo. | **Safety Mats (alfombras de seguridad).** | ![Safety Mats](https://github.com/user-attachments/assets/2edcb1ee-79e9-4ee2-b930-156989c32070) | Uso obligatorio de calzado antideslizante y protocolos de orden y limpieza en la zona de trabajo. |
+
+
+
+
+
+
+
 
 
 **Explicación de la Matriz de Riesgos**
@@ -1018,16 +1024,47 @@ flowchart TD
 <img width="1344" alt="Screenshot 2025-03-03 at 23 10 19" src="https://github.com/user-attachments/assets/6538fa80-3906-4798-aeaa-7ec6f7568430" />
 </div>
 
-#### Programación
+#### Rutinas de Movimiento de los Robots
 
-**Programación Robots**
+**Robot 1: Pick & Place de Juguetes**
+Este robot toma el juguete desde la **banda de alimentación de juguetes** y lo coloca dentro de la **caja de cartón** proveniente de la **banda de alimentación de cajas**.  
+
+Su movimiento es **cíclico** y sigue una trayectoria predefinida para garantizar precisión y velocidad en el proceso.
+
+<div align="center">
 <img width="429" alt="Screenshot 2025-03-04 at 00 05 12" src="https://github.com/user-attachments/assets/e6a34b8e-5260-4582-a8cb-c1c9004ae680" />
+</div>
 
+- [Rutina del IRB 360 (Pick & Place de Juguetes)](RobotStudio/Module1_IRB360_1.mod)
+
+**Robot 2: Posicionamiento de Papel Panal**
+Encargado de tomar el **papel panal** y colocarlo sobre el juguete ya alojado en la caja.  
+Este paso es esencial para **proteger el producto** durante su distribución.  
+
+Su rutina de movimiento también es **cíclica**, asegurando una colocación uniforme del material de protección.
+
+<div align="center">
 <img width="433" alt="Screenshot 2025-03-04 at 00 04 48" src="https://github.com/user-attachments/assets/8f85d388-c12a-4cf3-9699-e48f2de5e371" />
+</div>
 
+- [Rutina del IRB 360 (Colocación de Papel Panal)](RobotStudio/Module1_IRB360_2.mod)
+
+**Robot 3: Paletizado de Cajas**
+Este robot organiza las cajas provenientes de la **estación de sellado manual** sobre un **pallet de madera**.  
+
+La **banda de alimentación de cajas selladas** las posiciona con precisión antes de la manipulación.  
+El proceso permite que un **montacargas** retire el pallet listo para su distribución.  
+Su rutina de movimiento es **cíclica** y optimizada para maximizar la eficiencia del almacenamiento.
+
+<div align="center">
 <img width="388" alt="Screenshot 2025-03-04 at 00 04 27" src="https://github.com/user-attachments/assets/027945bb-0ff9-4101-838c-316e25fc8536" />
+</div>
+
+- [Rutina del IRB 1520 (Paletizado)](RobotStudio/Module1_IRB1520.mod)
 
 **Programación Smart Components**
+
+
 
 #### Simulación
 
@@ -1139,11 +1176,6 @@ En el diseño de utilizaron botones, labels, displays, switches toogle, gráfica
 # Resultados
 ## Resultados de aprendizaje
 ### Grupal
-El desarrollo de este proyecto nos permitió acercarnos de manera integral a distintos aspectos que estan presentes en proyectos de automatización industrial, proporcionándonos una visión clara sobre su alcance, desafíos y beneficios. Para alcanzar los objetivos del proyecto, cada integrante aplicó sus habilidades adquiridas y las puso al servicio del equipo. La división de tareas fue clave para optimizar el trabajo, asignando responsabilidades según las fortalezas de cada miembro. Además, la organización y el seguimiento de actividades permitieron mantener el rumbo y cumplir con los plazos establecidos. La comunicación constante facilitó la toma de decisiones y la resolución de problemas, asegurando una colaboración efectiva y un desarrollo fluido del proyecto.
-
-Consideramos que participar en este proyecto fue una gran oportunidad para desarrollar habilidades de resolución de problemas en un entorno mas cercano a la industria, enfrentando situaciones reales que requirieron análisis crítico y adaptabilidad. Además, nos permitió explorar nuevas herramientas de gran utilidad las cuales podran ser usadas posteriormente para enfrentarnos a problemas de nuestra vida profesional.
-
-En conclusión, este proyecto no solo nos permitió aplicar conocimientos adquiridos a lo largo de la carrera, sino que también nos enfrentó a nuevos retos que impulsaron nuestro aprendizaje. La combinación de experiencia, innovación y trabajo en equipo nos ha dejado valiosas lecciones que sin duda contribuirán a nuestro desarrollo profesional en el ámbito de la automatización industrial.
 ### Individual
 Juan Andrés Barrera Rodríguez
 
@@ -1154,7 +1186,7 @@ Para el desarrollo del proyecto, la organización y el compromiso del equipo fue
 El desarrollo de este proyecto me exigió poner en práctica muchas de las habilidades que he aprendido en los últimos años, además de enfrentarme a la necesidad de adquirir nuevos conocimientos para resolver los desafíos que surgieron en el proceso. Esta combinación de experiencia y aprendizaje continuo ha sido muy enriquecedora, y espero que las habilidades desarrolladas durante este proyecto me brinden un impulso y un valor diferencial en mi vida profesional, permitiéndome enfrentar con mayor confianza futuros retos en el ámbito de la automatización industrial.
 ## Resultados de ingeniería
 ### Resultados Módulo 1: Gestión de Producción y Automatización
-El modulo de gestion de produccion y automatizacion nos brindo una vision mas global sobre los procesos de produccion, los indicadores que se manejan para medir su calidad y el porque es importante automatizar estos procesos. Esta perspectiva permitio pensar en el problema mas alla de la incorporacion de nuevas tecnologias sino que tambien en el proposito de incorporarlas.
+El modulo de gestion de produccion y automatizacion 
 ### Resultados Módulo 2: Industria 4.0 en la Automatización
 ### Resultados Módulo 3: Planeación del Proyecto
 ### Resultados Módulo 4: Evaluación Económica de Proyectos
