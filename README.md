@@ -478,6 +478,9 @@ La arquitectura se despliega en la nube de `AWS`, donde se cuenta con una base d
 - *API AWS:* Conjunto de funciones/protocolos/reglas que AWS dispone para la utilización de sus servicios dentro de la nube AWS.
 
 #### Nodos de la arquitectura y relación con la pirámide de automatización
+<img width="329" alt="Screenshot 2025-03-03 at 10 48 05 PM" src="https://github.com/user-attachments/assets/c7798407-5330-4b57-8db2-cfc99255ea09" />
+
+*Pirámide de Automatización. [Fuente](https://www.seika.com.mx/5-niveles-de-la-automatizacion-industrial/)*
 
 
 ## Módulo 3: Planeación del Proyecto
