@@ -1016,6 +1016,16 @@ flowchart TD
 
 
 #### Programación
+
+
+<img width="340" alt="Screenshot 2025-03-03 at 23 43 05" src="https://github.com/user-attachments/assets/9ba09ccd-eb6b-4150-844a-004142f409da" />
+<img width="370" alt="Screenshot 2025-03-03 at 23 43 31" src="https://github.com/user-attachments/assets/5e7245d5-17a8-41a0-9615-86d6cd240c6d" />
+<img width="320" alt="Screenshot 2025-03-03 at 23 43 59" src="https://github.com/user-attachments/assets/fdbdf10b-b8bc-4b4b-8b65-b2ba1a04b2fa" />
+
+
+
+
+
 #### Simulación
 
 
