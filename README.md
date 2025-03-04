@@ -1370,9 +1370,13 @@ Su rutina de movimiento es **cíclica** y optimizada para maximizar la eficienci
 
 [![Alt text](https://img.youtube.com/vi/52xJMZ89PiE/0.jpg)](https://www.youtube.com/watch?v=52xJMZ89PiE)
 
+**Simulación Celda Robotizada**
 
+[![Alt text](https://img.youtube.com/vi/HmR8PSmjFA4/0.jpg)](https://www.youtube.com/watch?v=HmR8PSmjFA4)
 
+**Simulación Celda Robotizada - Realidad Aumentada**
 
+[![Alt text](https://img.youtube.com/vi/Vb6jLjBjM7c/0.jpg)](https://www.youtube.com/watch?v=Vb6jLjBjM7c)
 
 
 
