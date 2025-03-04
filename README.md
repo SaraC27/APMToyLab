@@ -192,15 +192,6 @@ Consideraciones para el cálculo de indicadores
 | **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                            | 50 %                                 |
 | **Utilización (U)**                    | Porcentaje de tiempo en que la fábrica está operativa                          | 85,26 %   |
 
-Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los indicadores calculados. Especificamente de la eficiencia y del OEE
-
-| Métrica       | Calculado | Simulación |
-|--------------|-----------|------------|
-| **Eficiencia** | 67%       | 70%        |
-| **OEE**       | 48%       | 50%        |
-
-A partir de lo anterior se observa que los valores calculados no difieren mucho de los valores obtenidos en simulacion, por esto mismo se considera que los indicadores calculados tienen valores que se acercan a los de la simulacion y se consideran como datos validos para tomar de referencia.
-
 
 #### Tecnomatix
 
@@ -209,13 +200,11 @@ El diseño inicial de la planta pre-automatizada se llevó a cabo en el software
 ![Captura de pantalla 2025-03-03 225601](https://github.com/user-attachments/assets/15fcb0af-0a01-43f5-8df3-99f624dd166d)
 
 
-#### VSM Pre
 
+#### VSM Pre
 La informacion detallada del diagrama VSM de la planta antes de la automatización se puede encontrar en el siguiente [enlace](Files/VSM_Pre.pdf).
 
-
 ### Post-Automatización
-
 #### Indicadores
 
 
@@ -248,31 +237,16 @@ Consideraciones para el cálculo de indicadores
 | **Utilización (U)**                    | Porcentaje de tiempo en que la fábrica está operativa                          | 61,78 %   |
 
 
-Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los indicadores calculados. Especificamente de la eficiencia y del OEE, aqui pudimos observar que:
-
-| Métrica       | Calculado | Simulación |
-|--------------|-----------|------------|
-| **Eficiencia** | 68%       | 72%        |
-| **OEE**       | 54%       | 57%        |
-
-
-A partir de lo anterior se observa que los valores calculados no difieren mucho de los valores obtenidos en simulacion, por esto mismo se considera que los indicadores calculados tienen valores que se acercan a los de la simulacion y se consideran como datos validos para tomar de referencia.
-
-
+Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los indicadores calculados. Especificamente de la eficiencia y del OEE, aqui pudimos observar que 
 #### Tecnomatix
 
-Al igual que el diseño de la planta antes de la automatización, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, robots de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se obtuvo información del proceso para el cálculo del OEE.
+Al igual que el diseño de la planta antes de la automatización, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, robots de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se pudo evidenciar que el cuello de botella se superó con las automatizaciones propuestas. Sin embargo, como en la planta pre-automatizada, también se consideró la cantidad de materia prima necesaria para una jornada de 8 horas, según lo señalado por los indicadores, no obstante, el proceso tuvo una duración de 3 horas y media, por lo tanto, los indicadores y la simulación de la planta se siguen revisando y corrigiendo.
 
-![Captura de pantalla 2025-03-03 234906](https://github.com/user-attachments/assets/7c6d0c6e-c0dc-44f0-b377-d17bbd2cb1e0)
-
-Luego de implementar la simulación, se observaron algunos cambios significativos en ciertas estaciones. En particular, en la estación de empaquetado, se evidenció que el tiempo de espera disminuyó en un 20% en la planta automatizada, lo cual indica que la implementación de la celda robotizada cumple su función.
+![image](https://github.com/user-attachments/assets/07043485-836e-46d8-9817-ae692a2e4691)
 
 
 #### VSM Post
-
-Con la implementación de la propuesta de automatización se espera obtener el siguiente [VSM](Files/VSM_Post.pdf).
-
-
+Luego de implementar la propuesta de automatizacion se espera obtener el siguiente [VSM](Files/VSM_Post.pdf).
 ### Propuesta automatización
 
 Se propone implementar un plan de automatización en la planta, enfocado en optimizar tres zonas clave del proceso de producción. A continuación, se detalla la propuesta para cada una de estas áreas:
@@ -959,7 +933,7 @@ Este diseño contribuye a la eficiencia de la celda de manufactura, asegurando u
 <img style="width: 50vw;" alt="Screenshot 2025-03-03 at 11 53 56" src="https://github.com/user-attachments/assets/ada72fa8-d240-4114-b2d6-ebe24815fd15" />
 </div>
 
-**iagrama de Flujo**
+**Diagrama de Flujo**
 ```mermaid
 flowchart TD
     A[Inicio] --> B[Entrada de Cajas en Transportador]
@@ -1010,27 +984,44 @@ flowchart TD
 
 #### Modelado
 
-
 <div align="center">
 <img style="width: 50vw;" alt="Screenshot 2025-03-03 at 12 39 02" src="https://github.com/user-attachments/assets/e40f5c5b-d9a5-4bef-93ca-af1d11747067" />
 </div>
 
+**Partes de la Celda Robotizada**
 
+**1. Sección de Empacado**
+- **Robot IRB 360 (Empacado):** Realiza Pick & Place de juguetes y papel panal en las cajas.
+- **Banda de Alimentación de Cajas:** Transporta cajas vacías hacia la zona de empaquetado.
+- **Banda de Alimentación de Juguetes:** Suministra los juguetes a los robots IRB 360.
+- **Banda de Alimentación de Papel Panal:** Proporciona material de protección para el empaquetado.
+
+**2. Estación Manual**
+- **Estación de Sellado Manual:** Los operarios sellan las cajas antes del paletizado.
+- **Almacén de Producto en Proceso:** Área de almacenamiento temporal antes del paletizado.
+
+**3. Sección de Paletizado**
+- **Robot IRB 1520 (Paletizado):** Organiza las cajas en los pallets.
+- **Pallet:** Base de almacenamiento antes del transporte fuera de la celda.
+
+**4. Seguridad y Control**
+- **Barreras Físicas:** Delimitan el área de los robots para evitar acceso no autorizado.
+- **Cortina Láser de Seguridad:** Detecta presencia y detiene el sistema si es necesario.
+- **Parada de Emergencia:** Botón para detener el sistema en caso de fallos.
+- **Alfombra de Seguridad:** Detiene el sistema si alguien pisa la zona de peligro.
+- **Torre de Iluminación de Proceso:** Indica el estado operativo de la celda.
+- **Panel de Control Eléctrico:** Gestiona los robots y transportadores.
+- **Controlador del Robot y Teach Pendant:** Permite programar y ajustar los robots.
+
+<div align="center">
 <img width="1344" alt="Screenshot 2025-03-03 at 23 10 19" src="https://github.com/user-attachments/assets/6538fa80-3906-4798-aeaa-7ec6f7568430" />
-
-
-
+</div>
 
 #### Programación
 
+**Programación Robots**
 
-<img width="340" alt="Screenshot 2025-03-03 at 23 43 05" src="https://github.com/user-attachments/assets/9ba09ccd-eb6b-4150-844a-004142f409da" />
-<img width="370" alt="Screenshot 2025-03-03 at 23 43 31" src="https://github.com/user-attachments/assets/5e7245d5-17a8-41a0-9615-86d6cd240c6d" />
-<img width="320" alt="Screenshot 2025-03-03 at 23 43 59" src="https://github.com/user-attachments/assets/fdbdf10b-b8bc-4b4b-8b65-b2ba1a04b2fa" />
-
-
-
-
+**Programación Smart Components**
 
 #### Simulación
 
