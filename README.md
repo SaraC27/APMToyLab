@@ -1020,6 +1020,11 @@ flowchart TD
 #### Programación
 
 **Programación Robots**
+<img width="429" alt="Screenshot 2025-03-04 at 00 05 12" src="https://github.com/user-attachments/assets/e6a34b8e-5260-4582-a8cb-c1c9004ae680" />
+
+<img width="433" alt="Screenshot 2025-03-04 at 00 04 48" src="https://github.com/user-attachments/assets/8f85d388-c12a-4cf3-9699-e48f2de5e371" />
+
+<img width="388" alt="Screenshot 2025-03-04 at 00 04 27" src="https://github.com/user-attachments/assets/027945bb-0ff9-4101-838c-316e25fc8536" />
 
 **Programación Smart Components**
 
