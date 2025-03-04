@@ -204,21 +204,22 @@ A partir de lo anterior se observa que los valores calculados no difieren mucho 
 
 El diseño inicial de la planta pre-automatizada se llevó a cabo en el software de fabricación digital Tecnomatix Plant Simulation de Siemens (como se evidencia en la imagen a continuación), debido a que este software permitió la simulación de las diferentes etapas del proceso de manufactura incluyendo, asimismo, los tiempos de proceso de cada una de las máquinas. Esto último facilitó observar información relevante para calcular el OEE.
 
-![Captura de pantalla 2025-03-03 225601](https://github.com/user-attachments/assets/15fcb0af-0a01-43f5-8df3-99f624dd166d)
-
+![image](https://github.com/user-attachments/assets/15fcb0af-0a01-43f5-8df3-99f624dd166d)
 
 
 #### VSM Pre
+
 La informacion detallada del diagrama VSM de la planta antes de la automatización se puede encontrar en el siguiente [enlace](Files/VSM_Pre.pdf).
 
-### Post-Automatización
-#### Indicadores
 
+### Post-Automatización
+
+#### Indicadores
 
 Luego de implementar la propuesta de automatizacion se espera obtener los siguientes KPI. Para obtener informacion mas detallada sobre el calculo de los mismos, remitirse al siguiente [archivo](Files/Indicadores_Post.xlsx).
 Consideraciones para el cálculo de indicadores  
 
-- Se toma realiza una prediccion de la demanda de juguetes de los proximos años, ya que el proyecto esta previsto para 5 años se usan las predicciones de demana del año 2029 para determinar la produccion que debe cumplir la planta automatizada (55,327 juguetes en total).  
+- Se toma realiza una predicción de la demanda de juguetes de los próximos años, ya que el proyecto esta previsto para 5 años se usan las predicciones de demana del año 2029 para determinar la producción que debe cumplir la planta automatizada (55,327 juguetes en total).  
 - Se supone que la producción anual se realiza de manera uniforme todas las semanas, es decir, que cada semana se produce la misma cantidad de juguetes (1154 juguetes).  
 - Se asume que la planta funciona durante 45 horas a la semana.  
 - La distribución en la producción de juguetes es la siguiente:  
@@ -256,8 +257,7 @@ A partir de lo anterior se observa que los valores calculados no difieren mucho 
 
 Al igual que el diseño de la planta antes de la automatización, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, robots de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se obtuvo información del proceso para el cálculo del OEE.
 
-
-![Captura de pantalla 2025-03-03 234906](https://github.com/user-attachments/assets/44e11229-70a6-4d53-a4bb-b218d3826395)
+![image](https://github.com/user-attachments/assets/44e11229-70a6-4d53-a4bb-b218d3826395)
 
 Luego de implementar la simulación, se observaron algunos cambios significativos en ciertas estaciones. En particular, en la estación de empaquetado, se evidenció que el tiempo de espera disminuyó en un 20% en la planta automatizada, lo cual indica que la implementación de la celda robotizada cumple su función.
 
@@ -1444,27 +1444,27 @@ La interfaz cuenta con 7 pestañas, que se pueden apreciar a continuación, las 
 
 - Pestaña principal "Home": Permite seleccionar qué tipo de juguetes se va a producir, visualizar el objetivo de juguetes a producir enviado desde el MES, iniciar y detener todas las estaciones controladas desde el SCADA (inyectoras, banda principal, desbarbado y celda) y visualizar la cantidad de juguetes empacados.
 
-![Captura de pantalla 2025-03-04 014936](https://github.com/user-attachments/assets/220cbb15-499f-4e5a-8531-1cd79d516775)
+![image](https://github.com/user-attachments/assets/220cbb15-499f-4e5a-8531-1cd79d516775)
 
 - Pestaña "Inyectoras": Posibilita la visualización del estado de operación de cada una de las inyectoras, iniciar y detener cada una de las inyectoras, poner en mantenimiento cada una de las inyectoras y visualizar la cantidad de piezas inyectadas en cada inyectora.
 
-![Captura de pantalla 2025-03-04 015253](https://github.com/user-attachments/assets/1d14812a-cbe0-4ecd-b99a-588efe4bb258)
+![image](https://github.com/user-attachments/assets/1d14812a-cbe0-4ecd-b99a-588efe4bb258)
 
 - Pestaña "Banda principal": Permite la visualización del estado de la banda principal y poner en mantenimiento la banda.
 
-![Captura de pantalla 2025-03-04 015302](https://github.com/user-attachments/assets/f9848c9e-b31f-46de-aa6a-959c216f6817)
+![image](https://github.com/user-attachments/assets/f9848c9e-b31f-46de-aa6a-959c216f6817)
 
 - Pestaña "Desbarbado": Posibilita la visualización del estado de operación de cada una de las estaciones de desbarbado, iniciar y detener cada una de las estaciones, poner en mantenimiento cada una de las estaciones y visualizar la cantidad de juguetes ensamblados en cada estación.
 
-![Captura de pantalla 2025-03-04 015313](https://github.com/user-attachments/assets/b15f0abb-ece8-44bd-b55b-115f30402e9c)
+![image](https://github.com/user-attachments/assets/b15f0abb-ece8-44bd-b55b-115f30402e9c)
 
 - Pestaña "Celda robotizada": Permite la visualización del estado de operación de la celda, iniciar y detener la celda, poner en mantenimiento la celda y visualizar la cantidad de juguetes empacados.
 
-![Captura de pantalla 2025-03-04 015325](https://github.com/user-attachments/assets/959b2fd0-cfef-490e-bfa3-0c7d4358f41c)
+![image](https://github.com/user-attachments/assets/959b2fd0-cfef-490e-bfa3-0c7d4358f41c)
 
 - Pestana "Históricos": Posibilita la visualización de las variables historizadas para cada una de las estaciones. Las principales variables historizadas corresponden al tipo de juguete producido, al estado de las estaciones y a la cantidad de material procesado en cada estación.
 
-![Captura de pantalla 2025-03-04 015349](https://github.com/user-attachments/assets/32d65b7b-9842-41f6-a3fe-50b6a6d0f225)
+![image](https://github.com/user-attachments/assets/32d65b7b-9842-41f6-a3fe-50b6a6d0f225)
 
 Pestaña "Alarmas": Permite la visualización de las alarmas que se generan durante el proceso. Cabe resaltar que, la única alarma de nivel "crítico" se presenta si se detecta una falla en cualquiera de las estaciones, las demás alarmas son de diagnótico y se activan cada vez que las estaciones cambian de estado.
 
@@ -1483,7 +1483,7 @@ Las principales variables que se tuvieron en cuenta para el SCADA corresponden a
 #### Conexión
 Como se mencionó anteriormente, los tags definidos en el SCADA se enviaron a la nube (sistema AWS). Esto se llevó a cabo por medio de la configuración de nodos en Node-Red. Los nodos correspondían a nodos de lectura (recibían información y valores desde la planta y la celda) y de escritura (enviaban informacrión y datos hacia la planta y la celda), lo cual permitió una comunicación bidireccional entre el SCADA y los demás sistemas.
 
-![image](https://github.com/user-attachments/assets/b323dbe8-c0be-4a16-9bc9-8a891ac83277)
+![image](https://github.com/user-attachments/assets/7763e870-daaa-4e0d-9f38-6e50701c8c1d)
 
 
 #### Validación
