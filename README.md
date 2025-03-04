@@ -168,14 +168,20 @@ Existen distintos indicadores en una planta de manufactura que permiten medir y 
 ![image](https://github.com/user-attachments/assets/fd0f0cb0-2a2d-44d4-bbbc-8331b63b0675)
 
 
-Consideraciones para el calculo de indicadores
-- Se toma como referencia de produccion la cantidad de juguetes vendidos en el año 2023 (30794 juguetes en total).
-- Se supone que la produccion anual se realiza de manera uniforme todas las semanas, es decir que todas las semanas se produce la misma cantidad de juguetes (714 juguetes).
-- Se asume que la planta funciona durante 45 horas a la semana.
-- La distribucion en la produccion de juguetes es la siguiente: Carros 60%; Aviones: 20%; Submarinos 20%.
-- Desplazamientos realizados por operadores se suponen con velocidad de 1.5 m/s. Desplazamientos realizados por bandas transportadoras se suponen con velocidad de 2 m/s.
-- Se evalua la produccion semanal de la planta.
-- Se supone una calidad del 90%, es decir el 10% de los juguetes que se producen tienen alguna imperfeccion.
+
+Consideraciones para el cálculo de indicadores  
+
+- Se toma como referencia de producción la cantidad de juguetes vendidos en el año 2023 (30,794 juguetes en total).  
+- Se supone que la producción anual se realiza de manera uniforme todas las semanas, es decir, que cada semana se produce la misma cantidad de juguetes (714 juguetes).  
+- Se asume que la planta funciona durante 45 horas a la semana.  
+- La distribución en la producción de juguetes es la siguiente:  
+  - **Carros:** 60%  
+  - **Aviones:** 20%  
+  - **Submarinos:** 20%  
+- Los desplazamientos realizados por operadores se suponen con una velocidad de **1.5 m/s**.  
+- Los desplazamientos realizados por bandas transportadoras se suponen con una velocidad de **2 m/s**.  
+- Se evalúa la producción semanal de la planta.  
+- Se supone una calidad del **90%**, es decir, que el **10%** de los juguetes producidos tienen alguna imperfección.  
   
 | **KPI**                               | **Descripción**                                                                 | **Valor**                             |
 |----------------------------------------|---------------------------------------------------------------------------------|---------------------------------------|
