@@ -1230,4 +1230,5 @@ Como resultado de este módulo, se obtuvo un gemelo digital de la fábrica, enfo
 Esta herramienta puede ser de gran importancia para futuros proyectos en entornos académicos o profesionales, ya que permite realizar distintos tipos de pruebas, simulaciones y análisis de procesos sin la necesidad de disponer físicamente de todos los elementos involucrados. Esto brinda una gran versatilidad para explorar nuevas soluciones, optimizar diseños y validar conceptos antes de su implementación real, lo que puede traducirse en ahorro de recursos y una mayor eficiencia en el desarrollo de proyectos de automatización.
 
 ### Resultados Módulo 7: Controladores industriales (PLC)
+El modulo de controladores insdutriasles contribuyo a la comprension de algunos procesos controlados por estos equipos
 ### Resultados Módulo 8: SCADA
