@@ -195,7 +195,14 @@ Consideraciones para el cálculo de indicadores
 | **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                            | 50 %                                 |
 | **Utilización (U)**                    | Porcentaje de tiempo en que la fábrica está operativa                          | 85,26 %   |
 
+Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los indicadores calculados. Especificamente de la eficiencia y del OEE
 
+| Métrica       | Calculado | Simulación |
+|--------------|-----------|------------|
+| **Eficiencia** | 67%       | 70%        |
+| **OEE**       | 48%       | 50%        |
+
+A partir de lo anterior se observa que los valores calculados no difieren mucho de los valores obtenidos en simulacion, por esto mismo se considera que los indicadores calculados tienen valores que se acercan a los de la simulacion y se consideran como datos validos para tomar de referencia.
 #### Tecnomatix
 
 El diseño inicial de la planta pre-automatizada se llevó a cabo en el software de fabricación digital Tecnomatix Plant Simulation de Siemens (como se evidencia en la imagen a continuación), debido a que este software permitió la simulación de las diferentes etapas del proceso de manufactura incluyendo, asimismo, los tiempos de proceso de cada una de las máquinas. Esto último facilitó observar información relevante para calcular el OEE.
@@ -244,18 +251,20 @@ Consideraciones para el cálculo de indicadores
 
 Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los indicadores calculados. Especificamente de la eficiencia y del OEE, aqui pudimos observar que:
 
-| Métrica       | Pre-Automatización (Calculado) | Pre-Automatización (Simulación) | Post-Automatización (Calculado) | Post-Automatización (Simulación) |
-|--------------|--------------------------------|--------------------------------|--------------------------------|--------------------------------|
-| **Eficiencia** | 67%                          | 70%                          | 68%                          | 72%                          |
-| **OEE**       | 48%                          | 50%                          | 54%                          | 57%                          |
+| Métrica       | Calculado | Simulación |
+|--------------|-----------|------------|
+| **Eficiencia** | 68%       | 72%        |
+| **OEE**       | 54%       | 57%        |
+
+
+A partir de lo anterior se observa que los valores calculados no difieren mucho de los valores obtenidos en simulacion, por esto mismo se considera que los indicadores calculados tienen valores que se acercan a los de la simulacion y se consideran como datos validos para tomar de referencia.
 
 #### Tecnomatix
 
 Al igual que el diseño de la planta antes de la automatización, el modelado de la planta automatizada se desarrolló en Tecnomatix Plant Simulation, aprovechando las opciones que este software ofrece como, por ejemplo, robots de pick and place. Igualmente, se configuraron los tiempos correspondientes en las máquinas y se pudo evidenciar que el cuello de botella se superó con las automatizaciones propuestas. Sin embargo, como en la planta pre-automatizada, también se consideró la cantidad de materia prima necesaria para una jornada de 8 horas, según lo señalado por los indicadores, no obstante, el proceso tuvo una duración de 3 horas y media, por lo tanto, los indicadores y la simulación de la planta se siguen revisando y corrigiendo.
 
 ![image](https://github.com/user-attachments/assets/07043485-836e-46d8-9817-ae692a2e4691)
-
-
+Luego de implementar la simulación, se observaron algunos cambios significativos en ciertas estaciones. En particular, en la estación de empaquetado, se notó que el tiempo de espera disminuyó en un 20 % en la planta automatizada, lo que indica que la implementación de la celda robotizada cumple su función.
 #### VSM Post
 Luego de implementar la propuesta de automatizacion se espera obtener el siguiente [VSM](Files/VSM_Post.pdf).
 ### Propuesta automatización
