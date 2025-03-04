@@ -186,7 +186,7 @@ Consideraciones para el cálculo de indicadores
 | **KPI**                               | **Descripción**                                                                 | **Valor**                             |
 |----------------------------------------|---------------------------------------------------------------------------------|---------------------------------------|
 | **Takt Time (T)**                      | Cadencia con la que se debe fabricar el producto para satisfacer la demanda     | 3.78 min/juguete                      |
-| **Tiempo de ciclo (Tc)**               | Tiempo de proceso en cada estación                                             | Revisar VSM (cada estación es diferente) |
+| **Tiempo de ciclo (Tc)**               | Tiempo de proceso                                              | 3,16 min |
 | **Tasa de producción (Rp)**            | Número de partes producidas por hora                                           | 18 juguetes/hora                     |
 | **Capacidad de producción (Pc)**       | Máxima tasa de salida que la fábrica puede alcanzar                            | 838 juguetes/semana                   |
 | **Tiempo total de manufactura (MLT)**  | Tiempo desde la orden de producción hasta la finalización del lote (143 juguetes)             | 7,67 horas                          |
