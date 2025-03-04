@@ -192,6 +192,14 @@ Consideraciones para el cálculo de indicadores
 | **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                            | 50 %                                 |
 | **Utilización (U)**                    | Porcentaje de tiempo en que la fábrica está operativa                          | 85,26 %   |
 
+Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los indicadores calculados. Especificamente de la eficiencia y del OEE
+
+| Métrica       | Calculado | Simulación |
+|--------------|-----------|------------|
+| **Eficiencia** | 67%       | 70%        |
+| **OEE**       | 48%       | 50%        |
+
+A partir de lo anterior se observa que los valores calculados no difieren mucho de los valores obtenidos en simulacion, por esto mismo se considera que los indicadores calculados tienen valores que se acercan a los de la simulacion y se consideran como datos validos para tomar de referencia.
 
 #### Tecnomatix
 
