@@ -215,20 +215,31 @@ La informacion detallada del diagrama VSM de la planta antes de la automatizaci�
 
 
 Luego de implementar la propuesta de automatizacion se espera obtener los siguientes KPI. Para obtener informacion mas detallada sobre el calculo de los mismos, remitirse al siguiente [archivo](Files/Indicadores_Post.xlsx).
-| **KPI**                     | **Qué es?**                                                                             | **Cómo se determina?** | **Valor**                     |
-|-----------------------------|-----------------------------------------------------------------------------------------|-------------------------|-------------------------------|
-| **Work in Process (WIP)**   | Contempla el material que se encuentra entre estaciones y está en espera de ser procesado (Wi) o que está siendo procesado en las estaciones (WEi) | Cálculos                | $1.249.964,00                |
-| **Takt Time (T)**           | Cadencia con la que se debe fabricar el producto para satisfacer la demanda             | Cálculos                | T = 276 seg / juguete         |
-| **Tiempo de ciclo (Tc)**    | Tiempo de proceso de cada estación                                                      | VSM                     | Revisar VSM (cada estación es diferente) |
-| **Tasa de producción (Rp)** | Número de partes producidas por hora                                                    | Simulación              | 13 juguetes / hora            |
-| **Capacidad de producción (Pc)** | Máxima tasa de salida que una fábrica es capaz de producir                                | Calculado               | 2288 juguetes / mes           |
-| **Tiempo total de manufactura (MLT)** | Tiempo desde la orden de producción hasta finalizar el lote                                   | Cálculos                | 473 minutos                   |
-| **Disponibilidad (A)**      | Disponibilidad de las máquinas                                                          | Definido                | 70 %                          |
-| **Eficiencia**              | Eficiencia de desempeño                                                                                      | Definido                | 75 %                          |
-| **Calidad**                 | % de producto defectuoso                                                                | Definido                | 90 %                          |
-| **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                                      | Cálculos                | 47 %                          |
-| **Utilización (U)**         | % en el que trabaja la fábrica                                                          | Cálculos                | Variable según el mes (70% max) |
+Consideraciones para el cálculo de indicadores  
 
+- Se toma realiza una prediccion de la demanda de juguetes de los proximos años, ya que el proyecto esta previsto para 5 años se usan las predicciones de demana del año 2029 para determinar la produccion que debe cumplir la planta automatizada (55,327 juguetes en total).  
+- Se supone que la producción anual se realiza de manera uniforme todas las semanas, es decir, que cada semana se produce la misma cantidad de juguetes (1154 juguetes).  
+- Se asume que la planta funciona durante 45 horas a la semana.  
+- La distribución en la producción de juguetes es la siguiente:  
+  - **Carros:** 60%  
+  - **Aviones:** 20%  
+  - **Submarinos:** 20%  
+- Los desplazamientos realizados por operadores se suponen con una velocidad de **1.5 m/s**.  
+- Los desplazamientos realizados por bandas transportadoras se suponen con una velocidad de **2 m/s**.  
+- Se evalúa la producción semanal de la planta.  
+- Se supone una calidad del **90%**, es decir, que el **10%** de los juguetes producidos tienen alguna imperfección.
+| **KPI**                               | **Descripción**                                                                 | **Valor**                             |
+|----------------------------------------|---------------------------------------------------------------------------------|---------------------------------------|
+| **Takt Time (T)**                      | Cadencia con la que se debe fabricar el producto para satisfacer la demanda     | 2,34 min/juguete                      |
+| **Tiempo de ciclo (Tc)**               | Tiempo de proceso                                              | 2,28 min |
+| **Tasa de producción (Rp)**            | Número de partes producidas por hora                                           | 25 juguetes/hora                     |
+| **Capacidad de producción (Pc)**       | Máxima tasa de salida que la fábrica puede alcanzar                            | 1157 juguetes/semana                   |
+| **Tiempo total de manufactura (MLT)**  | Tiempo desde la orden de producción hasta la finalización del lote (231 juguetes)             | 8,98 horas                          |
+| **Disponibilidad (A)**                 | Disponibilidad de las máquinas                                                 | 88 %                                 |
+| **Eficiencia**                         | Eficiencia de desempeño                                                         | 71 %                                 |
+| **Calidad**                            | Porcentaje de producto defectuoso                                              | 90 %                                 |
+| **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                            | 57 %                                 |
+| **Utilización (U)**                    | Porcentaje de tiempo en que la fábrica está operativa                          | 61,78 %   |
 
 #### Tecnomatix
 
