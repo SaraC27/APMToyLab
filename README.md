@@ -244,7 +244,7 @@ Consideraciones para el cálculo de indicadores
 
 Ademas de esto, se uso el software Tecnomatix para validar la exactidud de los indicadores calculados. Especificamente de la eficiencia y del OEE, aqui pudimos observar que:
 
- | Métrica       | Pre-Automatización (Calculado) | Pre-Automatización (Simulación) | Post-Automatización (Calculado) | Post-Automatización (Simulación) |
+| Métrica       | Pre-Automatización (Calculado) | Pre-Automatización (Simulación) | Post-Automatización (Calculado) | Post-Automatización (Simulación) |
 |--------------|--------------------------------|--------------------------------|--------------------------------|--------------------------------|
 | **Eficiencia** | 67%                          | 70%                          | 68%                          | 72%                          |
 | **OEE**       | 48%                          | 50%                          | 54%                          | 57%                          |
