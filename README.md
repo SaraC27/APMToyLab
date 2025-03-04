@@ -1136,6 +1136,11 @@ En el diseño de utilizaron botones, labels, displays, switches toogle, gráfica
 # Resultados
 ## Resultados de aprendizaje
 ### Grupal
+El desarrollo de este proyecto nos permitió acercarnos de manera integral a distintos aspectos que estan presentes en proyectos de automatización industrial, proporcionándonos una visión clara sobre su alcance, desafíos y beneficios. Para alcanzar los objetivos del proyecto, cada integrante aplicó sus habilidades adquiridas y las puso al servicio del equipo. La división de tareas fue clave para optimizar el trabajo, asignando responsabilidades según las fortalezas de cada miembro. Además, la organización y el seguimiento de actividades permitieron mantener el rumbo y cumplir con los plazos establecidos. La comunicación constante facilitó la toma de decisiones y la resolución de problemas, asegurando una colaboración efectiva y un desarrollo fluido del proyecto.
+
+Consideramos que participar en este proyecto fue una gran oportunidad para desarrollar habilidades de resolución de problemas en un entorno mas cercano a la industria, enfrentando situaciones reales que requirieron análisis crítico y adaptabilidad. Además, nos permitió explorar nuevas herramientas de gran utilidad las cuales podran ser usadas posteriormente para enfrentarnos a problemas de nuestra vida profesional.
+
+En conclusión, este proyecto no solo nos permitió aplicar conocimientos adquiridos a lo largo de la carrera, sino que también nos enfrentó a nuevos retos que impulsaron nuestro aprendizaje. La combinación de experiencia, innovación y trabajo en equipo nos ha dejado valiosas lecciones que sin duda contribuirán a nuestro desarrollo profesional en el ámbito de la automatización industrial.
 ### Individual
 Juan Andrés Barrera Rodríguez
 
