@@ -195,6 +195,7 @@ Consideraciones para el cálculo de indicadores
 | **Overall Equipment Effectiveness (OEE)** | Indicador general de desempeño                                            | 50 %                                 |
 | **Utilización (U)**                    | Porcentaje de tiempo en que la fábrica está operativa                          | 85,26 %   |
 
+
 #### Tecnomatix
 
 El diseño inicial de la planta pre-automatizada se llevó a cabo en el software de fabricación digital Tecnomatix Plant Simulation de Siemens (como se evidencia en la imagen a continuación), debido a que este software permitió la simulación de las diferentes etapas del proceso de manufactura incluyendo, asimismo, los tiempos de proceso de cada una de las máquinas. Esto último facilitó observar que en la estación de empaque con papel panal se presetó un cuello de botella.
@@ -227,7 +228,7 @@ Consideraciones para el cálculo de indicadores
 - Los desplazamientos realizados por bandas transportadoras se suponen con una velocidad de **2 m/s**.  
 - Se evalúa la producción semanal de la planta.  
 - Se supone una calidad del **90%**, es decir, que el **10%** de los juguetes producidos tienen alguna imperfección.
-- 
+  
 | **KPI**                               | **Descripción**                                                                 | **Valor**                             |
 |----------------------------------------|---------------------------------------------------------------------------------|---------------------------------------|
 | **Takt Time (T)**                      | Cadencia con la que se debe fabricar el producto para satisfacer la demanda     | 2,34 min/juguete                      |
@@ -1084,6 +1085,7 @@ Para el desarrollo del proyecto, la organización y el compromiso del equipo fue
 El desarrollo de este proyecto me exigió poner en práctica muchas de las habilidades que he aprendido en los últimos años, además de enfrentarme a la necesidad de adquirir nuevos conocimientos para resolver los desafíos que surgieron en el proceso. Esta combinación de experiencia y aprendizaje continuo ha sido muy enriquecedora, y espero que las habilidades desarrolladas durante este proyecto me brinden un impulso y un valor diferencial en mi vida profesional, permitiéndome enfrentar con mayor confianza futuros retos en el ámbito de la automatización industrial.
 ## Resultados de ingeniería
 ### Resultados Módulo 1: Gestión de Producción y Automatización
+El modulo de gestion de produccion y automatizacion 
 ### Resultados Módulo 2: Industria 4.0 en la Automatización
 ### Resultados Módulo 3: Planeación del Proyecto
 ### Resultados Módulo 4: Evaluación Económica de Proyectos
