@@ -253,21 +253,21 @@ Luego de implementar la propuesta de automatizacion se espera obtener el siguien
 
 Se propone implementar un plan de automatización en la planta, enfocado en optimizar tres zonas clave del proceso de producción. A continuación, se detalla la propuesta para cada una de estas áreas:
 
-#### Transporte de piezas desde las inyectoras hasta las estaciones de rebaba:
+#### Transporte de piezas desde las inyectoras hasta las estaciones de desbarbado:
 
-Actualmente, las piezas que salen de las inyectoras son transportadas a través de un sistema de bandas transportadoras hasta un almacén intermedio. Desde allí, un operario las recoge manualmente y las lleva a sus respectivas estaciones de eliminación de rebaba. Este proceso toma un total de 28 segundos, distribuidos de la siguiente manera: 12 segundos en el sistema de bandas transportadoras y 16 segundos en el traslado manual realizado por el operario.
+Actualmente, las piezas que salen de las inyectoras son transportadas a través de un sistema de bandas transportadoras hasta un almacén intermedio. Desde allí, un operario las recoge manualmente y las lleva a sus respectivas estaciones de desbarbado. Este proceso toma un total de 28 segundos, distribuidos de la siguiente manera: 10 segundos en el sistema de bandas transportadoras y 18 segundos en el traslado manual realizado por el operario.
 
-Para optimizar este flujo, se propone complementar el sistema existente de bandas transportadoras mediante la instalación de un nuevo conjunto de bandas. Este nuevo sistema permitirá que las piezas sean transportadas directamente desde las inyectoras hasta sus estaciones correspondientes de rebaba, eliminando la necesidad del almacenamiento intermedio y el transporte manual.
+Para optimizar este flujo, se propone complementar el sistema existente de bandas transportadoras mediante la instalación de un nuevo conjunto de bandas. Este nuevo sistema permitirá que las piezas sean transportadas directamente desde las inyectoras hasta sus estaciones correspondientes de desbarbado, eliminando la necesidad del almacenamiento intermedio y el transporte manual.
 
-Con esta mejora, el tiempo total de transporte se reduciría a 21 segundos: 12 segundos en el sistema de bandas original y 9 segundos en el nuevo sistema. Además, esta automatización liberará al operario, quien podrá ser reubicado en otra estación donde sea más necesario, optimizando el uso de los recursos humanos.
+Con esta mejora, el tiempo total de transporte se reduciría a 15 segundos: 10 segundos en el sistema de bandas original y 5 segundos en el nuevo sistema. Además, esta automatización liberará al operario, quien podrá ser reubicado en otra estación donde sea más necesario, optimizando el uso de los recursos humanos.
 
-#### Corte de la ejes de hierro:
+#### Corte de la ejes de acero inoxidable:
 
-Actualmente, los ejes de hierro que salen del proceso de corte láser son sometidos a un pulido manual. Este proceso requiere que un operario pula cada eje individualmente utilizando una esmeriladora de banco, con un tiempo promedio de 10 segundos por eje.
+Actualmente, los ejes de acero inoxidable que salen del proceso de corte láser son sometidos a un pulido manual. Este proceso requiere que un operario pula cada eje individualmente utilizando una esmeriladora de banco, con un tiempo promedio de 10 segundos por eje.
 
-Para optimizar este procedimiento, se propone implementar una máquina de electropulido que permita procesar múltiples ejes de manera simultánea, eliminando la necesidad de realizar el pulido manual uno a uno.
+Para optimizar este procedimiento, se propone implementar una máquina de acabado por vibración que permita procesar múltiples ejes de manera simultánea, eliminando la necesidad de realizar el pulido manual uno a uno.
 
-Con esta mejora, el tiempo de pulido por eje se reduciría drásticamente a 3,75 segundos, lo que representa una optimización significativa del proceso. Además, el operario sería liberado de esta tarea repetitiva, pasando a desempeñar labores de supervisión de la máquina de electropulido, lo que incrementa la eficiencia general del área y mejora la ergonomía del trabajo.
+Con esta mejora, el tiempo de pulido por eje se reduciría drásticamente a 3,75 segundos, lo que representa una optimización significativa del proceso. Además, el operario sería liberado de esta tarea repetitiva, pasando a desempeñar labores de supervisión de la máquina de de acabado por vibración, lo que incrementa la eficiencia general del área y mejora la ergonomía del trabajo.
 
 #### Empacado y paletizado:
 
@@ -275,7 +275,7 @@ Actualmente, el proceso de empacado y paletizado de los juguetes se realiza de m
 
 Para optimizar este flujo, se propone la implementación de una celda robotizada que realice ambas tareas de manera automática, eliminando la necesidad de que los operarios las ejecuten manualmente uno por uno.
 
-Con esta mejora, el tiempo necesario para el empacado se reduciría a 40 segundos por juguete, mientras que el tiempo de paletizado disminuiría a 10 segundos. Esto no solo incrementaría la eficiencia y productividad del proceso, sino que también liberaría a los operarios de estas tareas repetitivas, permitiéndoles asumir funciones de supervisión de la celda robotizada, mejorando así el aprovechamiento de los recursos humanos.
+Con esta mejora, el tiempo necesario para el empacado se reduciría a 10 segundos por juguete, mientras que el tiempo de paletizado disminuiría a 5 segundos. Esto no solo incrementaría la eficiencia y productividad del proceso, sino que también liberaría a los operarios de estas tareas repetitivas, permitiéndoles asumir funciones de supervisión de la celda robotizada, mejorando así el aprovechamiento de los recursos humanos.
 
 
 #### Comparación entre la planta PRE y POST Automatización:
