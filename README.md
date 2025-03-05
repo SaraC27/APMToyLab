@@ -1461,7 +1461,7 @@ Para la simulación en la fábrica digital de Siemens NX, se implementa la rutin
 
 Video de la simulacion:
 
-[![Alt text](https://img.youtu.be/kthOVjm_KSc)](https://youtu.be/kthOVjm_KSc)
+[![Alt text](https://img.youtu.be/kthOVjm_KSc/vi/kthOVjm_KSc.jpg)](https://youtu.be/kthOVjm_KSc)
 
 ## Módulo 7: Controladores industriales (PLC)
 El controlador PLC se encargará de gestionar los siguientes procesos dentro de la planta:
