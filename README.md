@@ -1458,6 +1458,11 @@ Además, se incluyen bandas transportadoras que funcionan como medio de transpor
 
 #### Simulación
 Para la simulación en la fábrica digital de Siemens NX, se implementa la rutina utilizada en el arreglo de bandas automatizadas. De esta manera, es posible validar que los sensores, actuadores y la lógica de programación se integren correctamente, permitiendo que las piezas provenientes de las inyectoras lleguen a sus respectivas estaciones de desbarbado. Una vez en este punto, se simula el paso de las piezas por las distintas estaciones de ensamble hasta obtener un juguete completo, el cual continúa su recorrido por una banda transportadora que lo dirige hacia la celda robotizada, cuya simulación se realizará en RobotStudio.
+
+Video de la simulacion:
+
+[![Alt text](https://img.youtu.be/kthOVjm_KSc)](https://youtu.be/kthOVjm_KSc)
+
 ## Módulo 7: Controladores industriales (PLC)
 El controlador PLC se encargará de gestionar los siguientes procesos dentro de la planta:
 - Proceso de inyección para cada una de las 3 inyectoras
