@@ -1109,7 +1109,7 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 | R5     | Verificación de las rutinas en simulación, no permitir el ingreso al área de trabajo durante la prueba de las rutinas, uso del teach pendant con dead man switch, uso de EPP. |
 | R6     | Apagar todas las fuentes de energía del robot, uso de protecciones dieléctricas, uso de EPP.                                                                                  |
 | R7     | Creación de protocolos de seguridad para limpieza de la celda, apagar todas las fuentes de energía de la celda durante el procedimiento, uso de EPP.                          |
-| R8     | eñalización del espacio de trabajo de cada uno de los robots, uso de EPP.                                                             |
+| R8     | Señalización del espacio de trabajo de cada uno de los robots, uso de EPP.                                                             |
 | R9     | Identificar y señalizar los puntos de atrapamiento, uso de guantes resistentes a químicos, protocolos para limpieza y manejo de productos químicos.                            |
 | R10    | Apagar equipos antes de la verificación de sensores, uso de sistemas de bloqueo y etiquetado (LOTO), uso de EPP.                                                              |
 | R11    | Inspección regular de herramientas, protocolos para el manejo seguro de piezas filosas, uso de guantes de protección.                                                         |
@@ -1461,7 +1461,7 @@ Para la simulación en la fábrica digital de Siemens NX, se implementa la rutin
 
 Video de la simulacion:
 
-[![Alt text](https://img.youtu.be/kthOVjm_KSc/vi/kthOVjm_KSc.jpg)](https://youtu.be/kthOVjm_KSc)
+[![Alt text](https://img.youtu.be/kthOVjm_KSc/vi/kthOVjm_KSc/0.jpg)](https://youtu.be/kthOVjm_KSc)
 
 ## Módulo 7: Controladores industriales (PLC)
 El controlador PLC se encargará de gestionar los siguientes procesos dentro de la planta:
