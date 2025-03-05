@@ -1379,9 +1379,32 @@ Su rutina de movimiento es **cíclica** y optimizada para maximizar la eficienci
 [![Alt text](https://img.youtube.com/vi/Vb6jLjBjM7c/0.jpg)](https://www.youtube.com/watch?v=Vb6jLjBjM7c)
 
 
+**Incursión en la Industria 5.0 - Análisis del Módulo de Detección de Fatiga**
 
+[![Alt text](https://img.youtube.com/vi/smi90RgwqqA/0.jpg)](https://www.youtube.com/watch?v=smi90RgwqqA)
 
+El módulo desarrollado y presentado en el video es un ejemplo de **Industria 5.0**, ya que incorpora tecnología para evaluar el nivel de fatiga de un operario. Cuando este supera el 60%, el sistema apaga la celda robotizada para garantizar su seguridad.  
 
+**¿Por qué es Industria 5.0?**
+A diferencia de la **Industria 4.0**, que se enfoca en la automatización y optimización, la **Industria 5.0** busca integrar la tecnología con el trabajo humano para mejorar las condiciones laborales. Este módulo cumple con varios principios de este enfoque:
+
+**1. Interacción entre humanos y robots**
+- El robot no solo ejecuta tareas, sino que responde al estado del operario.  
+
+**2. Seguridad y bienestar del operario**  
+- Si la fatiga supera el 60%, la celda se detiene para evitar riesgos.  
+
+**3. Uso de sensores e inteligencia artificial**  
+- El sistema puede incluir sensores de visión o análisis de gestos para evaluar el nivel de fatiga.  
+
+**4. Equilibrio entre eficiencia y seguridad**  
+- En lugar de priorizar solo la producción, también se considera la condición del operario.  
+
+**Aplicaciones y futuro**
+Este tipo de sistemas puede ayudar a reducir la fatiga laboral y mejorar la seguridad en entornos industriales. En el futuro, podrían incluir funciones más avanzadas como pausas personalizadas o ajustes en la carga de trabajo según el estado del operario.  
+
+**Conclusión**
+El módulo de detección de fatiga se alinea con la **Industria 5.0**, ya que permite que el robot adapte su funcionamiento según el estado del operario. Este tipo de soluciones pueden mejorar la seguridad en la industria sin comprometer la productividad.  
 
 
 ## Módulo 6: Digital Factory
