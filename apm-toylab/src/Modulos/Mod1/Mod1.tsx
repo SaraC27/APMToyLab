@@ -249,7 +249,7 @@ const TimeSeriesCharts = () => {
         <h3 className="mod1-h3">Empacado y paletizado</h3>
         <p style={{ textAlign: 'start' }}>El proceso manual actual de empacado y paletizado consume tiempo significativo y requiere de varios operarios. Para optimizar este flujo, se propone:</p>
         <ul className="mod1-ul">
-          <li><strong>Instalar una celda robotizada</strong> que automatice las tareas de empacado (envoltura en plástico burbuja y empaque en cajas) y paletizado.</li>
+          <li><strong>Instalar una celda robotizada</strong> que automatice las tareas de empacado (envoltura en papel panal y empaque en cajas) y paletizado.</li>
           <li>Con esta automatización, el tiempo de empacado se reducirá de 60 a 40 segundos, y el tiempo de paletizado de 15 a 10 segundos por juguete. Los operarios, en lugar de realizar estas tareas repetitivas, pasarán a supervisar la celda robotizada.</li>
         </ul>
 

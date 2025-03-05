@@ -107,7 +107,7 @@ const Robot = () => {
         <div className="robot-flujo">
           <p className="parr-graph">
             Productos de Entrada
-            (Juguetes + Cajas Vacías + Plástico Burbuja)
+            (Juguetes + Cajas Vacías + papel panal)
           </p>
           <div className="robot-arrow">➡️</div>
           <p className="parr-graph">

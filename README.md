@@ -294,7 +294,7 @@ Con esta mejora, el tiempo de pulido por eje se reduciría drásticamente a 3,75
 
 #### Empacado y paletizado:
 
-Actualmente, el proceso de empacado y paletizado de los juguetes se realiza de manera manual por operarios. En la etapa de empacado, que incluye envolver cada juguete en plástico burbuja y colocarlo dentro de una caja de cartón, el tiempo requerido por juguete es de 60 segundos. Por otro lado, el proceso de paletizado, también manual, toma 15 segundos adicionales por juguete.
+Actualmente, el proceso de empacado y paletizado de los juguetes se realiza de manera manual por operarios. En la etapa de empacado, que incluye envolver cada juguete en papel panal y colocarlo dentro de una caja de cartón, el tiempo requerido por juguete es de 60 segundos. Por otro lado, el proceso de paletizado, también manual, toma 15 segundos adicionales por juguete.
 
 Para optimizar este flujo, se propone la implementación de una celda robotizada que realice ambas tareas de manera automática, eliminando la necesidad de que los operarios las ejecuten manualmente uno por uno.
 
@@ -1033,11 +1033,11 @@ Los criterios utilizados se basaron en las necesidades específicas del proceso 
 </p>
 
 **Preparación de Materiales**
-- <p align="justify"> Los operarios se encargan de cortar el plástico burbuja al tamaño adecuado, asegurando que cada juguete cuente con la protección necesaria antes de ser empacado.
+- <p align="justify"> Los operarios se encargan de cortar el papel panal al tamaño adecuado, asegurando que cada juguete cuente con la protección necesaria antes de ser empacado.
 - <p align="justify"> Preparan y ensamblan las cajas, colocándolas listas para su llenado en la banda transportadora.
 
 **Colocación y Disposición**
-- <p align="justify"> El personal dispone las cajas y el plástico burbuja sobre las bandas transportadoras para que los robots IRB 360 puedan proceder con la tarea de empacado.
+- <p align="justify"> El personal dispone las cajas y el papel panal sobre las bandas transportadoras para que los robots IRB 360 puedan proceder con la tarea de empacado.
 
 **Supervisión de Operaciones**
 - <p align="justify"> Los operarios supervisan el funcionamiento de los robots, garantizando que las operaciones de empacado y paletizado se desarrollen sin interrupciones.
