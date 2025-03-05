@@ -1726,6 +1726,20 @@ Finalmente, una de las cosas que más valoro de esta experiencia es que nos acer
 
 Este proyecto ha sido mucho más que un simple ejercicio académico. Me ha permitido crecer, no solo como ingeniero, sino también como profesional en formación. Me ha enseñado que la ingeniería va más allá de los números y los cálculos; es un campo donde la visión global, la gestión eficiente y el trabajo en equipo marcan la diferencia.
 
+- Felipe Cruz Vásquez
+
+Este proyecto me permitió aplicar mis amplios conocimientos sobre la nube AWS en un entorno totalmente diferente de los que suelo trabajar, como lo son las aplicaciones web y móviles. Fue muy interesante implementar dichas tecnologías en un entorno industrial simulado y virtual.
+
+El equipo de trabajo fue bastante unido y dedicado con las responsabilidades individuales y grupales que se asignaron desde el comienzo. No tuvimos conflictos y pudimos sacar adelante el proyecto según lo mejor que podíamos dados nuestros conocimientos y limitaciones de tiempo, ya que varios de nosotros estamos terminando la carrera y ya trabajamos o estamos realizando pasantías/prácticas.
+
+Por otro lado, quisiera agradecer por todo el bagaje de conocimiento que nos logran transmitir dentro de la asignatura, tocando temas tanto técnicos como comerciales y económicos, lo cual puede resultar mucho más útil en el futuro que otras habilidades más 'académicas'. 
+
+Finalmente, me gustaría dar algunas recomendaciones en forma de checklist para que sean más fáciles de tener en cuenta:
+- Intentar que cada equipo de trabajo tenga al menos un integrante que haya visto la asignatura de SCADA.
+- Definir mejor los entregables de cada módulo.
+- Hacer 3 sustentaciones a lo largo del semestre, en vez de 2.
+- Distribuir el tiempo para cada módulo de mejor manera. Siento que se le dedica mucho tiempo a los módulos 'empresariales' y de 'gestión', y se deja de lado los módulos de implementación (los cuales terminan siendo los que más tiempo necesitan debido a la validación, corrección de errores, etc.)
+
 ## Resultados de ingeniería
 
 ### Resultados Módulo 1: Gestión de Producción y Automatización
