@@ -87,7 +87,7 @@
        - [Control](#control)
        - [Estados](#estados)
        - [Rutina_Celda](#rutina_celda)
-       - [Rutina_Estaciones](#rutina_estaciones)       - 
+       - [Rutina_Estaciones](#rutina_estaciones)
        - [Rutina_Inyectoras](#rutina_inyectoras)
        - [Sensores](#sensores)
        - [Setup](#setup)
