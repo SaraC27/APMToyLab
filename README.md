@@ -1603,7 +1603,7 @@ Para cada una de las inyectoras `A`, `B`, `C`, se tiene una subrutina en Ladder 
 <img width="439" alt="Screenshot 2025-03-04 at 7 55 15 PM" src="https://github.com/user-attachments/assets/39d57f06-20e9-4d35-93b2-17209a4f5a0c" />
 
 #### Sensores
-se utilizan los bloques `OSR` (One Shot Rising) y `OSF` (One Shot Falling) para detectar flancos de subida y de bajada para cada sensor.
+Se utilizan los bloques `OSR` (One Shot Rising) y `OSF` (One Shot Falling) para detectar flancos de subida y de bajada para cada sensor.
 
 #### Setup
 Esta rutina al detectar un cambio en el tipo de juguete que se debe producir, coloca todos los estados de todos los elementos en `Setup`, espera un tiempo predefinido y finalmente coloca los estados de todos los elementos en `Stop`.
