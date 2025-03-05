@@ -1443,17 +1443,20 @@ Además, se incluyen bandas transportadoras que funcionan como medio de transpor
 
 * **Cilindros neumáticos**  
   Su función es empujar las piezas transportadas por la banda principal hacia las distintas bandas secundarias, que luego las conducen a sus respectivas estaciones de desbarbado. En la simulación, estos cilindros se representan como una articulación prismática que recibe un número entero desde el PLC. Este número corresponde a la posición (expresada en milímetros) a la que debe desplazarse el cilindro. Una vez que las piezas han sido redirigidas a sus respectivas bandas secundarias, el cilindro regresa a su posición de origen para permitir el paso de las demás piezas que se desplazan a lo largo de la banda transportadora principal.
+  
   ![Cilindro](https://github.com/user-attachments/assets/5bcae37d-ebce-4b8a-b74e-837a53fd60f1)
 
 
 * **Actuadores angulares**  
   Estos actuadores bloquean el paso hacia la banda principal cuando se detectan piezas de un tipo diferente, evitando que sean enviadas a una estación de desbarbado incorrecta. En la simulación, su funcionamiento se representa mediante un número entero enviado desde el PLC, el cual indica la posición (expresada en grados) a la que debe desplazarse el actuador.
+  
   ![Actuador_angular](https://github.com/user-attachments/assets/56b31711-ad2b-43c8-8d1d-3f4334f3972f)
 
 #### Sensores virtuales
 * **Sensores infrarrojos**
 
    En simulación, se utilizan como sensores de colisión, permitiendo detectar si una pieza ha llegado a una posición determinada y, con base en ello, tomar una acción. En la fábrica digital, estos sensores permiten identificar si las piezas están próximas a ingresar a la banda principal o si se acercan a la banda secundaria, que las conducirá hacia la estación de desbarbado.
+  
   ![Sensor](https://github.com/user-attachments/assets/a18ccaeb-7a47-477f-9c41-8aaf92930ad0)
 
 #### Simulación
