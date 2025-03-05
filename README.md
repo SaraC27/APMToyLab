@@ -2,7 +2,7 @@
 
 - **Página web:** [APM ToyLab](https://apmtoylab.fcruzv.com/)
 - **Repositorio GitHub:** [GitHub - APMToyLab](https://github.com/SaraC27/APMToyLab)
-- **Video presentación proyecto:** [Enlace Youtube]() (*no disponible aún*)
+- **Video presentación proyecto:** [Enlace Youtube](https://youtu.be/ckp1xatTTac)
 
 ## Integrantes del equipo
 
