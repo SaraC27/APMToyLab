@@ -1592,7 +1592,15 @@ Para que las rutinas de etapas y transiciones se habiliten, se requiere que el e
 
 #### Rutina_Estaciones
 
+Para cada una de las estaciones `A`, `B`, `C`, se tiene una subrutina en Ladder con este proceso definido en `GRAFCET`.
+
+<img width="567" alt="Screenshot 2025-03-04 at 7 45 06 PM" src="https://github.com/user-attachments/assets/9d9f3cad-c560-49f5-a0d9-6c67cbd6d83e" />
+
 #### Rutina_Inyectoras
+
+Para cada una de las inyectoras `A`, `B`, `C`, se tiene una subrutina en Ladder con este proceso definido en `GRAFCET`.
+
+<img width="439" alt="Screenshot 2025-03-04 at 7 55 15 PM" src="https://github.com/user-attachments/assets/39d57f06-20e9-4d35-93b2-17209a4f5a0c" />
 
 #### Sensores
 se utilizan los bloques `OSR` (One Shot Rising) y `OSF` (One Shot Falling) para detectar flancos de subida y de bajada para cada sensor.
