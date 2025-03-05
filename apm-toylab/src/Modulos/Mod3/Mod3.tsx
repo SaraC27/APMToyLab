@@ -272,6 +272,7 @@ const HierarchicalRenderer: React.FC = () => {
   
   return (
     <div className="hierarchical-renderer">
+      <h1>Módulo 3: Planeación de Proyecto</h1>
       <h1>EDT</h1>
       {/* Render text1 keys */}
       <h2>Actividades Principales</h2>

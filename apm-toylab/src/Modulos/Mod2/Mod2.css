@@ -1,17 +1,17 @@
-.mod5-container {
+.mod2-container {
   width: 100%;
   margin: 20px auto;
   padding: 20px;
   text-align: center;
 }
 
-.mod5-h2 {
+.mod2-h2 {
   color: #C9373B;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.mod5-h3 {
+.mod2-h3 {
   background-color: #f9f9f9; 
   border-left: 4px solid #C9373B; 
   border-radius: 5px; 
@@ -55,7 +55,7 @@
   width: 100%;
 }
 
-.mod5-ul {
+.mod2-ul {
   text-align: start;
 }
 

@@ -140,7 +140,7 @@ La planta comprende un espacio total de **40x45 m** y tiene únicamente un nivel
 - Ensamble parcial de cuerpos y detalles específicos de cada juguete.
 - Ensamble parcial de piezas móviles, como ejes con ruedas o hélices.
 - Ensamble final del producto.
-- Empaque del juguete terminado en papel burbuja y cajas individuales.
+- Empaque del juguete terminado en papel panal y cajas individuales.
 - Paletizado de cajas con juguetes para transporte y distribución.
 
 Los procesos de transporte entre las estaciones pueden variar y pueden ser tanto manuales como automáticos. Se darán más detalles en la sección donde se presenta el modelo de la planta.

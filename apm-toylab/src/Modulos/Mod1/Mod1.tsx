@@ -108,7 +108,7 @@ const TimeSeriesCharts = () => {
     D --> E[Ensamble parcial de cuerpos y detalles específicos]
     E --> F[Ensamble parcial de piezas móviles]
     F --> G[Ensamble final del producto]
-    G --> H[Empaque en papel burbuja y cajas individuales]
+    G --> H[Empaque en papel panal y cajas individuales]
     H --> I[Paletizado de cajas para transporte y distribución]
   `
 
@@ -131,6 +131,7 @@ const TimeSeriesCharts = () => {
 
   return (
     <div className="mod1-container">
+      <h1>Módulo 1: Gestión de Producción y Automatización</h1>
       <div className="chart-container">
         <h2 className="mod1-h2">Demanda de Juguetes</h2>
         <p className="parr-graph">La gráfica muestra la demanda para la fábrica de juguetes.
@@ -250,7 +251,7 @@ const TimeSeriesCharts = () => {
         <p style={{ textAlign: 'start' }}>El proceso manual actual de empacado y paletizado consume tiempo significativo y requiere de varios operarios. Para optimizar este flujo, se propone:</p>
         <ul className="mod1-ul">
           <li><strong>Instalar una celda robotizada</strong> que automatice las tareas de empacado (envoltura en papel panal y empaque en cajas) y paletizado.</li>
-          <li>Con esta automatización, el tiempo de empacado se reducirá de 60 a 40 segundos, y el tiempo de paletizado de 15 a 10 segundos por juguete. Los operarios, en lugar de realizar estas tareas repetitivas, pasarán a supervisar la celda robotizada.</li>
+          <li>Con esta automatización, el tiempo de empacado se reducirá de 60 a 10 segundos, y el tiempo de paletizado de 15 a 10 segundos por juguete. Los operarios, en lugar de realizar estas tareas repetitivas, pasarán a supervisar la celda robotizada.</li>
         </ul>
 
         <h3 className="mod1-h3">Beneficios esperados</h3>
@@ -332,13 +333,6 @@ const TimeSeriesCharts = () => {
         </table>
         <h3>VSM</h3>
         <button className="VSM-button" onClick={() => { window.open("PDF/VSM_Post.pdf", '_blank'); }}>PDF</button>
-        <p className="parr-graph" style={{ backgroundColor: '#f86a6f', color: '#444', textAlign: 'center', fontWeight: 'bolder' }}>
-          ANOTACIÓN (WORK IN PROGRESS):<br /> Los indicadores de la planta automatizada son un acercamiento.
-          Seguimos revisando y aprendiendo sobre los valores, ya que se debe
-          lograr mejoras significativas en la planta automatizada. También, somos conscientes de que
-          la demanda y el VSM no concuerdan en la cantidad de juguetes que deben producirse, pero estamos
-          ajustando la planta automatizada para poder lograr lo que la demanda solicita.
-        </p>
       </div>
     </div>
   );

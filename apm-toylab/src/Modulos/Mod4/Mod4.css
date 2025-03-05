@@ -1,0 +1,106 @@
+.investment-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .investment-card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .indicator {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .value {
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .positive {
+    color: #28a745; /* Verde */
+  }
+  
+  .negative {
+    color: #dc3545; /* Rojo */
+  }
+
+  .chart-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mod4-h2 {
+    color: #C9373B;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .mod4-h3 {
+    background-color: #f9f9f9; 
+    border-left: 4px solid #C9373B; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+  }
+
+  .mod4-container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .xlsx-button {
+    background-color: #C9373B;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .xlsx-button::after {
+    content: 'Ver Excel';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: white;
+    color: #C9373B;
+    transition: all 0.3s ease;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .xlsx-button:hover::after {
+    left: 0;
+  }
