@@ -1560,6 +1560,7 @@ Esta rutina simplemente utiliza el bloque `JSR` (Jump to Routine) para llamar a 
 #### Actuadores
 Los actuadores se gestionan según la etapa del proceso en la que se esté. La lógica implementada es la siguiente, suponiendo que el actuador se activa en las etapas `i`, `j`, `k`.
 
+<img width="959" alt="Screenshot 2025-03-04 at 7 30 35 PM" src="https://github.com/user-attachments/assets/02f8669e-f756-41b8-b393-8a9240865b5d" />
 
 #### Contadores
 Se utiliza el bloque `CTU` (Count up), para incrementar un tag interno en `1` cada vez que se detecta un flanco de subida en los sensores de conteo. Si se cambia el tipo de juguete a producir, todos los contadores se resetean a `0`.
@@ -1586,6 +1587,8 @@ Esta rutina gestiona los estados siguiendo las siguientes reglas en orden de pri
 Para que las rutinas de etapas y transiciones se habiliten, se requiere que el estado del elemento correspondiente sea `Funcionando`.
 
 #### Rutina_Celda
+
+<img width="932" alt="Screenshot 2025-03-04 at 7 31 01 PM" src="https://github.com/user-attachments/assets/11e8d29e-40d0-417f-ae42-b2aba41e6165" />
 
 #### Rutina_Estaciones
 
