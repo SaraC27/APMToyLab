@@ -39,41 +39,49 @@ const Supervision = (props: SupervisionProps) => {
     ]);
 
     useEffect(() => {
-        const updatedData = [...data];
-        const totalTime = Number(props.hist.at(-1)?.SK) - Number(props.hist.at(0)?.SK)
-        let prevTime = Number(props.hist.at(0)?.SK)
-        for(let i of props.hist){
-            let actualTime = Number(i.SK)
-            let deltaT = actualTime - prevTime
-            updatedData[0].indicadores[i.Estado_Inyectora_A] += deltaT
-            updatedData[1].indicadores[i.Estado_Inyectora_B] += deltaT
-            updatedData[2].indicadores[i.Estado_Inyectora_C] += deltaT
-            updatedData[3].indicadores[i.Estado_Banda_Principal] += deltaT
-            updatedData[4].indicadores[i.Estado_Estacion_A] += deltaT
-            updatedData[5].indicadores[i.Estado_Estacion_B] += deltaT
-            updatedData[6].indicadores[i.Estado_Estacion_C] += deltaT
-            updatedData[7].indicadores[i.Estado_Celda] += deltaT
-            prevTime = actualTime;
+        if(props.hist.length && props.info){
+            const updatedData = [...data];
+            console.log('FCV',props.hist)
+            const totalTime = Number(props.hist.at(-1)?.SK) - Number(props.hist.at(0)?.SK)
+            console.log(1,totalTime)
+            let prevTime = Number(props.hist.at(0)?.SK)
+            console.log(2, prevTime);
+            for(let i of props.hist){
+                let actualTime = Number(i.SK)
+                let deltaT = actualTime - prevTime
+                updatedData[0].indicadores[i.Estado_Inyectora_A] += deltaT
+                updatedData[1].indicadores[i.Estado_Inyectora_B] += deltaT
+                updatedData[2].indicadores[i.Estado_Inyectora_C] += deltaT
+                updatedData[3].indicadores[i.Estado_Banda_Principal] += deltaT
+                updatedData[4].indicadores[i.Estado_Estacion_A] += deltaT
+                updatedData[5].indicadores[i.Estado_Estacion_B] += deltaT
+                updatedData[6].indicadores[i.Estado_Estacion_C] += deltaT
+                updatedData[7].indicadores[i.Estado_Celda] += deltaT
+                prevTime = actualTime;
+            }
+            console.log(updatedData)
+            updatedData[0].estado = props.info?.Estado_Inyectora_A ?? 0;
+            updatedData[1].estado = props.info?.Estado_Inyectora_B ?? 0;
+            updatedData[2].estado = props.info?.Estado_Inyectora_C ?? 0;
+            updatedData[3].estado = props.info?.Estado_Banda_Principal ?? 0;
+            updatedData[4].estado = props.info?.Estado_Estacion_A ?? 0;
+            updatedData[5].estado = props.info?.Estado_Estacion_B ?? 0;
+            updatedData[6].estado = props.info?.Estado_Estacion_C ?? 0;
+            updatedData[7].estado = props.info?.Estado_Celda ?? 0;
+            console.log(updatedData);
+            [0,1,2,3,4,5].forEach(idx=>{
+                updatedData[0].indicadores[idx] /= 0.01*(totalTime ?? 1)
+                updatedData[1].indicadores[idx] /= 0.01*(totalTime ?? 1)
+                updatedData[2].indicadores[idx] /= 0.01*(totalTime ?? 1)
+                updatedData[3].indicadores[idx] /= 0.01*(totalTime ?? 1)
+                updatedData[4].indicadores[idx] /= 0.01*(totalTime ?? 1)
+                updatedData[5].indicadores[idx] /= 0.01*(totalTime ?? 1)
+                updatedData[6].indicadores[idx] /= 0.01*(totalTime ?? 1)
+                updatedData[7].indicadores[idx] /= 0.01*(totalTime ?? 1)
+            })
+            console.log(updatedData)
+            setData(updatedData);
         }
-        updatedData[0].estado = props.info?.Estado_Inyectora_A ?? 0;
-        updatedData[1].estado = props.info?.Estado_Inyectora_B ?? 0;
-        updatedData[2].estado = props.info?.Estado_Inyectora_C ?? 0;
-        updatedData[3].estado = props.info?.Estado_Banda_Principal ?? 0;
-        updatedData[4].estado = props.info?.Estado_Estacion_A ?? 0;
-        updatedData[5].estado = props.info?.Estado_Estacion_B ?? 0;
-        updatedData[6].estado = props.info?.Estado_Estacion_C ?? 0;
-        updatedData[7].estado = props.info?.Estado_Celda ?? 0;
-        [0,1,2,3,4,5].forEach(idx=>{
-            updatedData[0].indicadores[idx] /= 0.01*(totalTime ?? 1)
-            updatedData[1].indicadores[idx] /= 0.01*(totalTime ?? 1)
-            updatedData[2].indicadores[idx] /= 0.01*(totalTime ?? 1)
-            updatedData[3].indicadores[idx] /= 0.01*(totalTime ?? 1)
-            updatedData[4].indicadores[idx] /= 0.01*(totalTime ?? 1)
-            updatedData[5].indicadores[idx] /= 0.01*(totalTime ?? 1)
-            updatedData[6].indicadores[idx] /= 0.01*(totalTime ?? 1)
-            updatedData[7].indicadores[idx] /= 0.01*(totalTime ?? 1)
-        })
-        setData(updatedData);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [props.info, props.hist]);
 

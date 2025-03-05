@@ -169,83 +169,66 @@ const TimeSeriesCharts = () => {
         <table border={1} style={{ marginTop: 20 }}>
           <thead className="table-header">
             <tr>
-              <th><strong>KPI</strong></th>
-              <th><strong>Qué es?</strong></th>
-              <th><strong>Cómo se determina?</strong></th>
-              <th><strong>Valor</strong></th>
+              <th>KPI</th>
+              <th>Descripción</th>
+              <th>Valor</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>Work in Process (WIP)</strong></td>
-              <td>Contempla el material que se encuentra entre estaciones y está en espera de ser procesado (Wi) o que está siendo procesado en las estaciones (WEi)</td>
-              <td>Cálculos</td>
-              <td>$1.236.560,00</td>
-            </tr>
-            <tr>
-              <td><strong>Takt Time (T)</strong></td>
+              <td>Takt Time (T)</td>
               <td>Cadencia con la que se debe fabricar el producto para satisfacer la demanda</td>
-              <td>Cálculos</td>
-              <td>T = 276 seg / juguete</td>
+              <td>3.78 min/juguete</td>
             </tr>
             <tr>
-              <td><strong>Tiempo de ciclo (Tc)</strong></td>
-              <td>Tiempo de proceso de cada estación</td>
-              <td>VSM</td>
-              <td>Revisar VSM (cada estación es diferente)</td>
+              <td>Tiempo de ciclo (Tc)</td>
+              <td>Tiempo de proceso</td>
+              <td>3,16 min</td>
             </tr>
             <tr>
-              <td><strong>Tasa de producción (Rp)</strong></td>
+              <td>Tasa de producción (Rp)</td>
               <td>Número de partes producidas por hora</td>
-              <td>Simulación</td>
-              <td>13 juguetes / hora</td>
+              <td>18 juguetes/hora</td>
             </tr>
             <tr>
-              <td><strong>Capacidad de producción (Pc)</strong></td>
-              <td>Máxima tasa de salida que una fábrica es capaz de producir</td>
-              <td>Cálculos</td>
-              <td>2288 juguetes / mes</td>
+              <td>Capacidad de producción (Pc)</td>
+              <td>Máxima tasa de salida que la fábrica puede alcanzar</td>
+              <td>838 juguetes/semana</td>
             </tr>
             <tr>
-              <td><strong>Tiempo total de manufactura (MLT)</strong></td>
-              <td>Tiempo desde la orden de producción hasta finalizar el lote</td>
-              <td>Cálculos</td>
-              <td>514 minutos</td>
+              <td>Tiempo total de manufactura (MLT)</td>
+              <td>Tiempo desde la orden de producción hasta la finalización del lote (143 juguetes)</td>
+              <td>7,67 horas</td>
             </tr>
             <tr>
-              <td><strong>Disponibilidad (A)</strong></td>
+              <td>Disponibilidad (A)</td>
               <td>Disponibilidad de las máquinas</td>
-              <td>Definido</td>
+              <td>80 %</td>
+            </tr>
+            <tr>
+              <td>Eficiencia</td>
+              <td>Eficiencia de desempeño</td>
               <td>70 %</td>
             </tr>
             <tr>
-              <td><strong>Eficiencia</strong></td>
-              <td>Eficiencia de desempeño</td>
-              <td>Definido</td>
-              <td>75 %</td>
-            </tr>
-            <tr>
-              <td><strong>Calidad</strong></td>
-              <td>% de producto defectuoso</td>
-              <td>Definido</td>
+              <td>Calidad</td>
+              <td>Porcentaje de producto defectuoso</td>
               <td>90 %</td>
             </tr>
             <tr>
-              <td><strong>Overall Equipment Effectiveness (OEE)</strong></td>
+              <td>Overall Equipment Effectiveness (OEE)</td>
               <td>Indicador general de desempeño</td>
-              <td>Cálculos</td>
-              <td>47 %</td>
+              <td>50 %</td>
             </tr>
             <tr>
-              <td><strong>Utilización (U)</strong></td>
-              <td>% en el que trabaja la fábrica</td>
-              <td>Cálculos</td>
-              <td>Variable según el mes (70% máximo)</td>
+              <td>Utilización (U)</td>
+              <td>Porcentaje de tiempo en que la fábrica está operativa</td>
+              <td>85,26 %</td>
             </tr>
           </tbody>
         </table>
         <h3>VSM</h3>
-        <button className="VSM-button" onClick={()=>{window.open("PDF/VSM_Pre.pdf", '_blank');}}>PDF</button>
+        <button className="VSM-button" onClick={() => { window.open("PDF/VSM_Pre.pdf", '_blank'); }}>PDF</button>
       </div>
       <div className="chart-container" style={{ paddingLeft: 100, paddingRight: 100 }}>
         <h2 className="mod1-h2">Propuesta Automatización</h2>
@@ -253,13 +236,13 @@ const TimeSeriesCharts = () => {
         <p style={{ textAlign: 'start' }}>Actualmente, las piezas moldeadas son trasladadas desde las inyectoras hasta las estaciones de rebaba mediante un sistema de bandas transportadoras y un proceso manual. Para reducir tiempos y eliminar el almacenamiento intermedio, se propone:</p>
         <ul className="mod1-ul">
           <li><strong>Instalar un nuevo sistema de bandas transportadoras</strong> que conecte directamente las inyectoras con las estaciones de rebaba.</li>
-          <li>Con esta mejora, el tiempo total de transporte se reducirá de 28 a 21 segundos, eliminando la necesidad de transporte manual y permitiendo la reubicación del operario a tareas más estratégicas.</li>
+          <li>Con esta mejora, el tiempo total de transporte se reducirá de 28 a 15 segundos, eliminando la necesidad de transporte manual y permitiendo la reubicación del operario a tareas más estratégicas.</li>
         </ul>
 
-        <h3 className="mod1-h3">Corte y pulido de ejes de hierro</h3>
-        <p style={{ textAlign: 'start' }}>En la actualidad, los ejes de hierro cortados mediante láser son pulidos manualmente, requiriendo un operario que realice esta tarea uno a uno. La propuesta incluye:</p>
+        <h3 className="mod1-h3">Pulido de ejes de acero inoxidable</h3>
+        <p style={{ textAlign: 'start' }}>En la actualidad, los ejes de acero inoxidable cortados mediante láser son pulidos manualmente, requiriendo un operario que realice esta tarea uno a uno. La propuesta incluye:</p>
         <ul className="mod1-ul">
-          <li><strong>Implementar una máquina de electropulido</strong> para procesar múltiples ejes de manera simultánea.</li>
+          <li><strong>Implementar una máquina de acabado por vibración</strong> para procesar múltiples ejes de manera simultánea.</li>
           <li>Esta mejora reducirá el tiempo de pulido por eje de 10 a 3,75 segundos y liberará al operario, quien asumirá tareas de supervisión, incrementando la eficiencia y ergonomía del área.</li>
         </ul>
 
@@ -289,87 +272,70 @@ const TimeSeriesCharts = () => {
         <table border={1} style={{ marginTop: 20 }}>
           <thead className="table-header">
             <tr>
-              <th><strong>KPI</strong></th>
-              <th><strong>Qué es?</strong></th>
-              <th><strong>Cómo se determina?</strong></th>
-              <th><strong>Valor</strong></th>
+              <th>KPI</th>
+              <th>Descripción</th>
+              <th>Valor</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>Work in Process (WIP)</strong></td>
-              <td>Contempla el material que se encuentra entre estaciones y está en espera de ser procesado (Wi) o que está siendo procesado en las estaciones (WEi)</td>
-              <td>Cálculos</td>
-              <td>$1.249.964,00</td>
-            </tr>
-            <tr>
-              <td><strong>Takt Time (T)</strong></td>
+              <td>Takt Time (T)</td>
               <td>Cadencia con la que se debe fabricar el producto para satisfacer la demanda</td>
-              <td>Cálculos</td>
-              <td>T = 276 seg / juguete</td>
+              <td>2,34 min/juguete</td>
             </tr>
             <tr>
-              <td><strong>Tiempo de ciclo (Tc)</strong></td>
-              <td>Tiempo de proceso de cada estación</td>
-              <td>VSM</td>
-              <td>Revisar VSM (cada estación es diferente)</td>
+              <td>Tiempo de ciclo (Tc)</td>
+              <td>Tiempo de proceso</td>
+              <td>2,28 min</td>
             </tr>
             <tr>
-              <td><strong>Tasa de producción (Rp)</strong></td>
+              <td>Tasa de producción (Rp)</td>
               <td>Número de partes producidas por hora</td>
-              <td>Simulación</td>
-              <td>13 juguetes / hora</td>
+              <td>25 juguetes/hora</td>
             </tr>
             <tr>
-              <td><strong>Capacidad de producción (Pc)</strong></td>
-              <td>Máxima tasa de salida que una fábrica es capaz de producir</td>
-              <td>Calculado</td>
-              <td>2288 juguetes / mes</td>
+              <td>Capacidad de producción (Pc)</td>
+              <td>Máxima tasa de salida que la fábrica puede alcanzar</td>
+              <td>1157 juguetes/semana</td>
             </tr>
             <tr>
-              <td><strong>Tiempo total de manufactura (MLT)</strong></td>
-              <td>Tiempo desde la orden de producción hasta finalizar el lote</td>
-              <td>Cálculos</td>
-              <td>473 minutos</td>
+              <td>Tiempo total de manufactura (MLT)</td>
+              <td>Tiempo desde la orden de producción hasta la finalización del lote (231 juguetes)</td>
+              <td>8,98 horas</td>
             </tr>
             <tr>
-              <td><strong>Disponibilidad (A)</strong></td>
+              <td>Disponibilidad (A)</td>
               <td>Disponibilidad de las máquinas</td>
-              <td>Definido</td>
-              <td>70 %</td>
+              <td>88 %</td>
             </tr>
             <tr>
-              <td><strong>Eficiencia</strong></td>
+              <td>Eficiencia</td>
               <td>Eficiencia de desempeño</td>
-              <td>Definido</td>
-              <td>75 %</td>
+              <td>71 %</td>
             </tr>
             <tr>
-              <td><strong>Calidad</strong></td>
-              <td>% de producto defectuoso</td>
-              <td>Definido</td>
+              <td>Calidad</td>
+              <td>Porcentaje de producto defectuoso</td>
               <td>90 %</td>
             </tr>
             <tr>
-              <td><strong>Overall Equipment Effectiveness (OEE)</strong></td>
+              <td>Overall Equipment Effectiveness (OEE)</td>
               <td>Indicador general de desempeño</td>
-              <td>Cálculos</td>
-              <td>47 %</td>
+              <td>57 %</td>
             </tr>
             <tr>
-              <td><strong>Utilización (U)</strong></td>
-              <td>% en el que trabaja la fábrica</td>
-              <td>Cálculos</td>
-              <td>Variable según el mes (70% max)</td>
+              <td>Utilización (U)</td>
+              <td>Porcentaje de tiempo en que la fábrica está operativa</td>
+              <td>61,78 %</td>
             </tr>
           </tbody>
         </table>
         <h3>VSM</h3>
-        <button className="VSM-button" onClick={()=>{window.open("PDF/VSM_Post.pdf", '_blank');}}>PDF</button>
-        <p className="parr-graph" style={{backgroundColor:'#f86a6f', color: '#444', textAlign: 'center', fontWeight: 'bolder'}}>
-          ANOTACIÓN (WORK IN PROGRESS):<br/> Los indicadores de la planta automatizada son un acercamiento. 
+        <button className="VSM-button" onClick={() => { window.open("PDF/VSM_Post.pdf", '_blank'); }}>PDF</button>
+        <p className="parr-graph" style={{ backgroundColor: '#f86a6f', color: '#444', textAlign: 'center', fontWeight: 'bolder' }}>
+          ANOTACIÓN (WORK IN PROGRESS):<br /> Los indicadores de la planta automatizada son un acercamiento.
           Seguimos revisando y aprendiendo sobre los valores, ya que se debe
-          lograr mejoras significativas en la planta automatizada. También, somos conscientes de que 
+          lograr mejoras significativas en la planta automatizada. También, somos conscientes de que
           la demanda y el VSM no concuerdan en la cantidad de juguetes que deben producirse, pero estamos
           ajustando la planta automatizada para poder lograr lo que la demanda solicita.
         </p>

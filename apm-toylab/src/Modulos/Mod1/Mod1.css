@@ -26,6 +26,8 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .parr-graph {
@@ -69,6 +71,7 @@
 }
 
 table {
+  width: 100%;
   text-align: center;
 }
 

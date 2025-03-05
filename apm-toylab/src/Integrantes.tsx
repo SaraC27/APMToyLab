@@ -20,7 +20,8 @@ const Integrantes: React.FC<IntegrantesProps> = (props: IntegrantesProps) => {
             imagenSrc: sara,
             descripcion: [
                 'Estudiante de Ingeniería Mecatrónica',
-                'Organización del equipo y Tecnomatix'
+                'Gestión de producción y automatización',
+                'SCADA'
             ],
         },
         {
@@ -28,7 +29,8 @@ const Integrantes: React.FC<IntegrantesProps> = (props: IntegrantesProps) => {
             imagenSrc: juan,
             descripcion: [
                 'Estudiante de Ingeniería Mecatrónica',
-                'Tecnomatix y Siemens NX'
+                'Gestión de producción y automatización',
+                'Digital Factory'
             ],
         },
         {
@@ -36,7 +38,8 @@ const Integrantes: React.FC<IntegrantesProps> = (props: IntegrantesProps) => {
             imagenSrc: manuel,
             descripcion: [
                 'Estudiante de Ingeniería Mecatrónica',
-                'Modelado CAD y Celda Robotizada'
+                'Evaluación económica de proyectos',
+                'Celda de manufactura robotizada'
             ],
         },
         {
@@ -44,7 +47,9 @@ const Integrantes: React.FC<IntegrantesProps> = (props: IntegrantesProps) => {
             imagenSrc: felipe,
             descripcion: [
                 'Matemático y Estudiante de Ingeniería Mecatrónica',
-                'Organización del Proyecto y Análisis de Mercado'
+                'Planeación de proyecto',
+                'Controladores industriales',
+                'Industria 4.0 en la automatización'
             ],
         }
     ]
@@ -55,8 +60,9 @@ const Integrantes: React.FC<IntegrantesProps> = (props: IntegrantesProps) => {
                 <div key={index} className="integrante-card">
                     <img src={integrante.imagenSrc} alt={integrante.nombre} className="integrante-imagen" />
                     <h2 className="integrante-nombre">{integrante.nombre}</h2>
+                    <h4>{integrante.descripcion[0]}</h4>
                     <ul className="integrante-descripcion">
-                        {integrante.descripcion.map((bullet, idx) => (
+                        {integrante.descripcion.slice(1).map((bullet, idx) => (
                             <li key={idx}>{bullet}</li>
                         ))}
                     </ul>

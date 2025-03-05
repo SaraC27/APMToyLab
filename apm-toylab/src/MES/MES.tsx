@@ -259,10 +259,10 @@ const MES = () => {
     const tiempoTotal = (Number(hist.at(-1)?.SK) - Number(hist.at(0)?.SK)) / (60 * 60 * 1000) // horas
     tiempoCiclo /= (60 * 1000); // minutos
     const kpisUpdate = {...kpis};
-    const totalProduccion = 45 * (produccion[0].producidas + produccion[1].producidas + produccion[2].producidas);
+    const totalProduccion = 130 * (produccion[0].producidas + produccion[1].producidas + produccion[2].producidas);
     kpisUpdate.Ocupacion = totalProduccion / 4613;
     kpisUpdate.Eficiencia = totalProduccion * tiempoCiclo * 1.75 / (60 * 45);
-    kpisUpdate.Disponibilidad = 36 / (45*tiempoTotal);
+    kpisUpdate.Disponibilidad = 36 / (250*tiempoTotal);
     kpisUpdate.Calidad = 0.9;
     kpisUpdate.OEE = kpisUpdate.Eficiencia * kpisUpdate.Disponibilidad * kpisUpdate.Calidad;
     setKpis(kpisUpdate);
@@ -385,10 +385,10 @@ const MES = () => {
           <h1 className="mes-title">Sistema MES</h1>
           <div className="mes-dashboard-container">
             <div className="mes-card">
-              <Produccion token={token} info={info} hist={dummyData} data={produccion} setData={setProduccion}/>
+              <Produccion token={token} info={info} hist={hist} data={produccion} setData={setProduccion}/>
             </div>
             <div className="mes-card">
-              <Supervision token={token} info={info} hist={dummyData}/>
+              <Supervision token={token} info={info} hist={hist}/>
             </div>
           </div>
 

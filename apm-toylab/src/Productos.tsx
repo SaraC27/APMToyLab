@@ -20,9 +20,10 @@ const Productos: React.FC<ProductosProps> = (props: ProductosProps) => {
             descripcion: [
                 'Avión de juguete color rojo con blanco',
                 'Dimensiones: 277 x 323 x 72 mm',
-                'Hecho en polipropileno con ejes de hierro',
+                'Hecho en polipropileno con ejes de acero inoxidable',
                 'Cuenta con hélices móviles',
-                'No vuela'
+                'No vuela',
+                'Precio: $85.000 COP'
             ]
         },
         {
@@ -31,8 +32,9 @@ const Productos: React.FC<ProductosProps> = (props: ProductosProps) => {
             descripcion: [
                 'Carro de juguete color rojo con blanco',
                 'Dimensiones: 255 x 112 x 77 mm',
-                'Hecho en polipropileno con ejes de hierro',
-                'Cuenta con ruedas móviles'
+                'Hecho en polipropileno con ejes de acero inoxidable',
+                'Cuenta con ruedas móviles',
+                'Precio: $100.000 COP'
             ]
         },
         {
@@ -41,9 +43,10 @@ const Productos: React.FC<ProductosProps> = (props: ProductosProps) => {
             descripcion: [
                 'Submarino de juguete color rojo con blanco',
                 'Dimensiones: 248 x 69 x 40 mm',
-                'Hecho en polipropileno con ejes de hierro',
+                'Hecho en polipropileno con ejes de acero inoxidable',
                 'Cuenta con hélice móvil',
-                'No apto para sumergir en agua'
+                'No apto para sumergir en agua',
+                'Precio: $75.000 COP'
             ]
         }
     ]
