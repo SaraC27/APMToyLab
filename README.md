@@ -1,6 +1,6 @@
 # Equipo: APM - ToyLab
 
-- **Página web:** [APM ToyLab](https://apmtoylab.fcruzv.com/) FALTA: MODIFICAR FOTOS
+- **Página web:** [APM ToyLab](https://apmtoylab.fcruzv.com/)
 - **Repositorio GitHub:** [GitHub - APMToyLab](https://github.com/SaraC27/APMToyLab)
 - **Video presentación proyecto:** [Enlace Youtube]() (*no disponible aún*)
 
@@ -15,103 +15,107 @@
 
 1. [Módulos](#módulos) 
    - [Módulo 1: Gestión de Producción y Automatización](#módulo-1-gestión-de-producción-y-automatización)  
-     - [Pre-Automatización](#pre-automatización) MODIFICAR: J/S
-       - [Indicadores](#indicadores)
+     - [Pre-Automatización](#pre-automatización)
+       - [Indicadores](#indicadores-1)
        - [Tecnomatix](#tecnomatix)
        - [VSM](#vsm-pre)
-     - [Post-Automatización](#post-automatización) MODIFICAR: J/S
-       - [Indicadores](#indicadores-post)
-       - [Tecnomatix](#tecnomatix-post)
+     - [Post-Automatización](#post-automatización)
+       - [Indicadores](#indicadores-2)
+       - [Tecnomatix](#tecnomatix-1)
        - [VSM](#vsm-post)
-     - [Propuesta automatización](#propuesta-automatización) MODIFICAR: J/S
-     - [Análisis de Mercado](#análisis-de-mercado) YA
-     - [Sistema MES](#sistema-mes) YA
+     - [Propuesta automatización](#propuesta-automatización)
+     - [Análisis de Mercado](#análisis-de-mercado)
+     - [Sistema MES](#sistema-mes)
 
    - [Módulo 2: Industria 4.0 en la Automatización](#módulo-2-industria-40-en-la-automatización)  
-     - [Pre-Automatización](#pre-automatización-40)  
-       - [Diagramas P&ID](#diagramas-pid) FALTA: S
-     - [Post-Automatización](#post-automatización-40)  
-       - [Diagramas P&ID](#diagramas-pid-post) FALTA: S
-       - [Diagrama Arquitectura / Tecnologías 4.0](#diagrama-arquitectura-post) YA
+     - [Pre-Automatización](#pre-automatización-1)  
+       - [Diagramas P&ID](#diagrama-pid)
+     - [Post-Automatización](#post-automatización-1)  
+       - [Diagramas P&ID](#diagrama-pid-1)
+       - [Arquitectura y tecnologías 4.0](#arquitectura-y-tecnologías-40)
        
    - [Módulo 3: Planeación del Proyecto](#módulo-3-planeación-del-proyecto)  
-     - [EDT](#edt) YA
-     - [Cronograma](#cronograma) YA
-     - [Bitácoras](#bitácoras) YA
+     - [EDT](#edt)
+     - [Cronograma](#cronograma)
+     - [Bitácoras](#bitácoras)
 
-   - [Módulo 4: Evaluación Económica de Proyectos](#módulo-4-evaluación-económica-de-proyectos)  FALTA: F (REVISAR ENTRE TODOS)
+   - [Módulo 4: Evaluación Económica de Proyectos](#módulo-4-evaluación-económica-de-proyectos)
      - [Economía del Proyecto](#economía-del-proyecto) 
        - [Presupuesto](#presupuesto)  
        - [Costos](#costos)  
        - [Flujo de Caja](#flujo-de-caja)  
-     - [Análisis rentabilidad](#análisis-rentabilidad)   
-       - [VPN](#vpn)  
-       - [TIR](#tir)  
-       - [Payback](#payback)  
+     - [Análisis de rentabilidad](#análisis-de-rentabilidad)   
+       - [Tasa Interna de Retorno (TIR)](#tasa-interna-de-retorno-tir)  
+       - [Valor Presente Neto (VPN)](#valor-presente-neto-vpn)       
+       - [Payback (Tiempo de Recuperación)](#payback-tiempo-de-recuperación)
+       - [Retorno sobre la Inversión (ROI)](#retorno-sobre-la-inversión-roi)
+       - [Índice de Rentabilidad (IR)](#índice-de-rentabilidad-ir)
+       - [Margen de Utilidad](#margen-de-utilidad)
      - [Oferta comercial](#oferta-comercial)
 
-   - [Módulo 5: Celda de Manufactura Robotizada](#módulo-5-celda-de-manufactura-robotizada) MODIFICAR: M  
+   - [Módulo 5: Celda de Manufactura Robotizada](#módulo-5-celda-de-manufactura-robotizada)
+     - [Productos de entrada y salida de la celda](#productos-de-entrada-y-salida-de-la-celda)
+     - [Proceso de creación de la celda](#proceso-de-creación-de-la-celda)
      - [Justificación y valor agregado](#justificación-y-valor-agregado) 
-     - [Diseño](#diseño)  
-       - [Relación con el proceso de manufactura](#relación-con-el-proceso-de-manufactura)
+     - [Diseño](#diseño)
        - [Funcionalidad del robot](#funcionalidad-del-robot) 
        - [Interacción con operarios](#interacción-con-operarios) 
        - [Análisis y gestión de riesgos](#análisis-y-gestión-de-riesgos) 
-       - [Seguridad](#seguridad) 
+       - [Seguridad](#seguridad)
+       - [Elementos de Seguridad](#elementos-de-seguridad)
      - [RobotStudio](#robotstudio)  
-       - [Modelado](#modelado) 
-       - [Programación](#programación)
+       - [Descripción del Layout](##descripción-del-layout)
+       - [Modelado](#modelado)
        - [Simulación](#simulación)  
 
-   - [Módulo 6: Digital Factory](#módulo-6-digital-factory) MODIFICAR: J 
+   - [Módulo 6: Digital Factory](#módulo-6-digital-factory)
      - [Siemens NX](#siemens-nx)  
        - [Entorno y modelamiento](#entorno-y-modelamiento)
        - [Actuadores virtuales](#actuadores-virtuales)
        - [Sensores virtuales](#sensores-virtuales)
-       - [Simulación](#simulación-digital-factory)  
+       - [Simulación](#simulación-1)  
 
-   - [Módulo 7: Controladores industriales (PLC)](#módulo-7-controladores-industriales-plc) FALTA: F
-     - [Selección de controladores](#selección-de-controladores)  
+   - [Módulo 7: Controladores industriales (PLC)](#módulo-7-controladores-industriales-plc)
+     - [Elementos a controlar](#elementos-a-controlar)
+     - [Definición de las tags](#definición-de-las-tags)
+     - [Selección de controladores](#selección-de-controladores)
      - [Desglose de la lógica](#desglose-de-la-lógica)
-       - [Etapas](#etapas)
-       - [Transiciones](#transiciones)
-       - [Modos](#modos)
-     - [Programación](#programación-plc)  
-       - [Grafcet](#grafcet)  
-       - [Ladder](#ladder)  
-     - [Studio 5000](#studio-5000)  
-       - [Programación e integración](#programación-e-integración)  
-       - [Simulación](#simulación-plc)  
+     - [Detalle de las rutinas](#detalle-de-las-rutinas)
+       - [Main](#main)
+       - [Actuadores](#actuadores)
+       - [Contadores](#contadores)
+       - [Control](#control)
+       - [Estados](#estados)
+       - [Rutina_Celda](#rutina_celda)
+       - [Rutina_Estaciones](#rutina_estaciones)       - 
+       - [Rutina_Inyectoras](#rutina_inyectoras)
+       - [Sensores](#sensores)
+       - [Setup](#setup)
 
-   - [Módulo 8: SCADA](#módulo-8-scada) FALTA: S 
-     - [HMI](#hmi)  
+   - [Módulo 8: SCADA](#módulo-8-scada)
+     - [Diseño de la HMI](#diseño-de-la-hmi)  
        - [Variables clave](#variables-clave)  
-       - [Diseño](#diseño-hmi)  
-       - [Desarrollo](#desarrollo)  
-       - [Validación](#validación)  
-       - [Elementos de alto desempeño](#elementos-de-alto-desempeño)  
-     - [Ignition](#ignition)  
-       - [Integración control](#integración-control)  
-       - [Integración supervisión](#integración-supervisión)  
+       - [Conexión](#conexión)  
+       - [Simulación (video)](#simulación-video)  
 
-2. [Resultados](#resultados) FALTA: TODOS  
+2. [Resultados](#resultados)
    - [Resultados de aprendizaje](#resultados-de-aprendizaje)  
      - [Grupal](#grupal)  
      - [Individual](#individual)  
    - [Resultados de ingeniería](#resultados-de-ingeniería)  
-     - [Módulo 1](#resultados-módulo-1)  
-     - [Módulo 2](#resultados-módulo-2)  
-     - [Módulo 3](#resultados-módulo-3)  
-     - [Módulo 4](#resultados-módulo-4)  
-     - [Módulo 5](#resultados-módulo-5)  
-     - [Módulo 6](#resultados-módulo-6)  
-     - [Módulo 7](#resultados-módulo-7)  
-     - [Módulo 8](#resultados-módulo-8)  
+     - [Módulo 1](#resultados-módulo-1-gestión-de-producción-y-automatización)  
+     - [Módulo 2](#resultados-módulo-2-industria-40-en-la-automatización)  
+     - [Módulo 3](#resultados-módulo-3-planeación-del-proyecto)  
+     - [Módulo 4](#resultados-módulo-4-evaluación-económica-de-proyectos)  
+     - [Módulo 5](#resultados-módulo-5-celda-de-manufactura-robotizada)  
+     - [Módulo 6](#resultados-módulo-6-digital-factory)  
+     - [Módulo 7](#resultados-módulo-7-controladores-industriales-plc)  
+     - [Módulo 8](#resultados-módulo-8-scada)  
+
 
 # Módulos
 
 ## Módulo 1: Gestión de Producción y Automatización
-
 
 Una fábrica de juguetes de plástico desempeña un papel crucial en la industria manufacturera y en la sociedad en general. Los juguetes no solo son herramientas esenciales para el entretenimiento infantil, sino también para el desarrollo cognitivo, emocional y social de los niños. Estos productos fomentan la creatividad, la imaginación y las habilidades motoras. 
 
@@ -161,8 +165,8 @@ Existen distintos indicadores en una planta de manufactura que permiten medir y 
 
 
 ### Pre-Automatización
-#### Indicadores
 
+#### Indicadores
 
 Consideraciones para el cálculo de indicadores  
 
@@ -969,7 +973,7 @@ flowchart TD
 </p>
 
 ### Diseño
-#### Relación con el proceso de manufactura
+
 #### Funcionalidad del robot
 
 **Criterios de selección de los robots**
@@ -1617,11 +1621,8 @@ Se utilizan los bloques `OSR` (One Shot Rising) y `OSF` (One Shot Falling) para 
 #### Setup
 Esta rutina al detectar un cambio en el tipo de juguete que se debe producir, coloca todos los estados de todos los elementos en `Setup`, espera un tiempo predefinido y finalmente coloca los estados de todos los elementos en `Stop`.
 
-### Studio 5000
-Video
 
 ## Módulo 8: SCADA
-
 
 ### Diseño de la HMI
 
@@ -1669,10 +1670,12 @@ Las principales variables que se tuvieron en cuenta para el SCADA corresponden a
 ![image](https://github.com/user-attachments/assets/c3b7ab5d-26f7-4d75-9802-15d23e565516)
 ![image](https://github.com/user-attachments/assets/716578e2-8fda-4d30-ae03-c0298e67373c)
 
+
 #### Conexión
 Como se mencionó anteriormente, los tags definidos en el SCADA se enviaron a la nube (sistema AWS). Esto se llevó a cabo por medio de la configuración de nodos en Node-Red. Los nodos correspondían a nodos de lectura (recibían información y valores desde la planta y la celda) y de escritura (enviaban informacrión y datos hacia la planta y la celda), lo cual permitió una comunicación bidireccional entre el SCADA y los demás sistemas.
 
 ![image](https://github.com/user-attachments/assets/7763e870-daaa-4e0d-9f38-6e50701c8c1d)
+
 
 #### Simulación (video)
 
