@@ -1536,7 +1536,7 @@ Por lo tanto, como los módulos de entradas y salidas de un PLC se consiguen con
 |DO|8|8|16|1
 |AO|12|4|16|0.33
 
-**Nota**: $Spare = \frac{\num I/O\ no\ usados}{\num I/O\ usados}$. 
+**Nota**: $Spare = \frac{num\ I/O\ no\ usados}{num\ I/O\ usados}$. 
 
 Se espera un valor entre 0.2 y 0.3. En esta caso, tenemos un Spare mayor debido a que no hay potencia de 2 que supla los valores requeridos sin agregar muchos slots que queden vacíos. Esto no es malo, dado que permite tener disponibilidad de entradas o salidas en caso de que alguna se dañe.
 
