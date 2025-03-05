@@ -1464,7 +1464,7 @@ Para la simulación en la fábrica digital de Siemens NX, se implementa la rutin
 
 Video de la simulacion:
 
-[![Alt text](https://img.youtu.be/vi/kthOVjm_KSc/0.jpg)](https://youtu.be/kthOVjm_KSc)
+
 [![Alt text](https://img.youtube.com/vi/kthOVjm_KSc/0.jpg)](https://www.youtube.com/watch?v=kthOVjm_KSc)
 
 ## Módulo 7: Controladores industriales (PLC)
