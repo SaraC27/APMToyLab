@@ -1665,6 +1665,10 @@ Como se mencionó anteriormente, los tags definidos en el SCADA se enviaron a la
 
 ![image](https://github.com/user-attachments/assets/7763e870-daaa-4e0d-9f38-6e50701c8c1d)
 
+#### Simulación (video)
+
+[![Alt text](https://img.youtube.com/vi/PRQK__OyAwo/0.jpg)](https://www.youtube.com/watch?v=PRQK__OyAwo)
+
 
 # Resultados
 
