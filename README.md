@@ -1459,23 +1459,146 @@ Además, se incluyen bandas transportadoras que funcionan como medio de transpor
 #### Simulación
 Para la simulación en la fábrica digital de Siemens NX, se implementa la rutina utilizada en el arreglo de bandas automatizadas. De esta manera, es posible validar que los sensores, actuadores y la lógica de programación se integren correctamente, permitiendo que las piezas provenientes de las inyectoras lleguen a sus respectivas estaciones de desbarbado. Una vez en este punto, se simula el paso de las piezas por las distintas estaciones de ensamble hasta obtener un juguete completo, el cual continúa su recorrido por una banda transportadora que lo dirige hacia la celda robotizada, cuya simulación se realizará en RobotStudio.
 ## Módulo 7: Controladores industriales (PLC)
-- Marco de IndDX, I4.0
-- Progrmación Ladder & Grafcet
-- Modos de Arranque/Parada (GEMMA)
+El controlador PLC se encargará de gestionar los siguientes procesos dentro de la planta:
+- Proceso de inyección para cada una de las 3 inyectoras
+- Movilización de los elementos inyectados hacia la banda principal
+- Movilización de los elementos inyectados hacia su respectiva estación de almacenaje para posterior procesamiento manual por parte de los operarios.
+- Movilizar los juguetes terminados hacia la celda robotizada.
 
-- Spare del 20-30%: $Spare = \frac{\#I/O\ no\ usados}{\#I/O\ usados}$
+### Elementos a controlar
+Se clasificaron las secciones de la planta de las cuales se encarga el controlador de la siguiente manera:
+- Inyectora A
+- Inyectora B
+- Inyectora C
+- Banda Principal
+- Estación A
+- Estación B
+- Estación C
+- Celda
+
+Cada `inyectora` cuenta con una banda transportadora, una compuerta y 2 sensores.
+
+La `banda principal` es una única banda transportadora (actuador) por la que pasan todas las piezas inyectadas de manera controlada.
+
+Cada `estación` cuenta con una compuerta (sobre la banda principal), con un cilindro neumático (localizado sobre la banda principal), con un sensor (localizado sobre la banda principal) y con una banda transportadora que moviliza las piezas hacia zonas de almacenaje para posterior intervención manual.
+
+La `celda` robotizada cuenta con varios sensores, actuadores y controladores mencionados su respectiva sección. Desde el punto de vista del controlador PLC de la planta, solo se cuenta con 2 sensores y una banda transportadora que se conecta con la celda.
+
+### Definición de las tags
+Las *tags* son aquellas variables del controlador que se asocian al proceso, como lo son una medida de un sensor, una señal de control para un actuador, un valor de conteo de producción, etc.
+
+Para cada uno de los elementos a controlar `X`, se definieron los siguientes tags:
+- `Contador_X`: Número entero que cuenta la cantidad de items procesados (puede ser juguetes, inyecciones, etc. dependiendo del elemento).
+- `Estado_X`: Valor entre `0` y `5` para determinar el estado en el que se encuentra un elemento:
+  - 0: `Offline` - el elemento no está enviando datos al PLC.
+  - 1: `Stop` - el elemento está detenido.
+  - 2: `Funcionando` - el elemento está funcionando y realizando sus tareas de producción.
+  - 3: `Mantenimiento` - el elemento se encuentra en mantenimiento.
+  - 4: `Falla` - el elemento se encuentra en falla, debe intervenirse para corregir algo.
+  - 5: `Setup` - el elemento se encuentra en proceso de alistamiento para producir un tipo de juguete diferente.
+- `On_X`: Booleano para dar la instrucción de encender el elemento.
+- `Off_X`: Booleano para dar la instrucción de detener el elemento.
+- `Mantenimiento_X`: Booleano para dar la instrucción de poner el elemento en mantenimiento.
+- `Falla_X`: Booleano para reportar una falla en el elemento.
+- `Coneccion_X`: Booleano fijo en `1` que sirve para controlar si el elemento está conectado al sistema del controlador.
+
+Para cada sensor digital `X` se definió el tag `Sensor_X`, para la medida del mismo.
+
+Para cada banda transportadora `X` se definió el tag `Banda_X`, para controlar el funcionamiento de la misma.
+
+Para cada cilindro `X` se definió el tag `Clinidro_X`, para controlar la posición del mismo.
+
+Para cada compuerta `X` se definió el tag `Compuerta_X`, para controlar la posición de la misma.
+
+También, se definen 6 tags relevantes para la gestión de la producción:
+- `Producir_Carros`: Booleano que define que se deben producir carros.
+- `Objetivo_Carros`: Número entero que define cuántos carros se deben producir.
+- `Producir_Aviones`: Booleano que define que se deben producir aviones.
+- `Objetivo_Aviones`: Número entero que define cuántos aviones se deben producir.
+- `Producir_Submarinos`: Booleano que define que se deben producir submarinos.
+- `Objetivo_Submarinos`: Número entero que define cuántos submarinos se deben producir.
+
+El excel de [Tags](Files/Tags.xlsx), muestra cada uno de los `96` tags utilizados. Se define el tipo de variable que guarda el tag (bool, int). Se define si es un tag relevante para llevarle histórico. Se define si es un tag que ejecuta acciones directas sobre actuadores. Y, para cada uno de los componentes de la arquitectura 4.0 (Gemelo Digital, SCADA, PLC, MES, Celda), define cuáles tags se escriben y se leen por cada uno de ellos.
+
 ### Selección de controladores
-### Desglose de la lógica
-#### Etapas
-#### Transiciones
-#### Modos
-### Programación
-#### Grafcet
-#### Ladder
-### Studio 5000
-#### Programación e integración
-#### Simulación
+En total se tienen los siguientes requerimientos en base a los tags definidos:
+- 14 entradas digitales de sensores (`14 DI`)
+- Sin entradas análogas (`0 AI`)
+- 8 salidas digitales de bandas transportadoras (`8 DO`)
+- 12 salidas análogas de compuertas, cilindros y émbolo de inyectoras (`12 AO`)
 
+Por lo tanto, como los módulos de entradas y salidas de un PLC se consiguen con cantidad de I/O en potencias de 2, se requiere de un PLC con `32 DI`, `16 DO` y `16 AO`.
+
+|Tipo de I/O|Usados|Disponibles|Total|Spare|
+|-|-|-|-|-|
+|DI|14|18|32|1.28
+|AI|0|0|0|-
+|DO|8|8|16|1
+|AO|12|4|16|0.33
+
+**Nota**: $Spare = \frac{\#I/O\ no\ usados}{\#I/O\ usados}$. 
+
+Se espera un valor entre 0.2 y 0.3. En esta caso, tenemos un Spare mayor debido a que no hay potencia de 2 que supla los valores requeridos sin agregar muchos slots que queden vacíos. Esto no es malo, dado que permite tener disponibilidad de entradas o salidas en caso de que alguna se dañe.
+
+### Desglose de la lógica
+Para la programación se seccionó la lógica requerida en las siguientes subrutinas:
+- `Main`: Rutina para llamar a las demas subrutinas constantemente.
+- `Actuadores`: Rutina para la gestión de los tags que se relacionan con los actuadores (encender, apagar o controlar actuadores).
+- `Contadores`: Rutina para la actualización de los valores de los contadores en base a los flancos de subida/bajada de los sensores.
+- `Control`: Rutina para el control del paso de elementos por la banda principal. Se encarga de balancear las líneas en caso de ser necesario y define cuáles piezas de inyectora/estación deben esperar y cuáles deben avanzar.
+- `Estados`: Rutina para gestionar los estados en los que se encuentra cada elemento. Gestiona las señales de falla, mantenimiento, on, off.
+- `Rutina_Celda`: Rutina de etapas y transiciones para el control de los actuadores que conectan con la celda.
+- `Rutina_Estaciones`: Rutina de etapas y transiciones para el control de los actuadores que conectan con la zona de almacenaje de piezas.
+- `Rutina_Inyectoras`: Rutina de etapas y transiciones para el control de los actuadores de la zona de las inyectoras.
+- `Sensores`: Rutina para la detección de flancos de subida y de bajada de los sensores.
+- `Setup`: Rutina que, cuando cambia la indicación de cuál juguete producir, realiza una espera para dar tiempo a los operarios que hagan el setup.
+
+### Detalle de las rutinas
+#### Main
+Esta rutina simplemente utiliza el bloque `JSR` (Jump to Routine) para llamar a cada una de las rutinas definidas.
+
+#### Actuadores
+Los actuadores se gestionan según la etapa del proceso en la que se esté. La lógica implementada es la siguiente, suponiendo que el actuador se activa en las etapas `i`, `j`, `k`.
+
+
+#### Contadores
+Se utiliza el bloque `CTU` (Count up), para incrementar un tag interno en `1` cada vez que se detecta un flanco de subida en los sensores de conteo. Si se cambia el tipo de juguete a producir, todos los contadores se resetean a `0`.
+
+#### Control
+En esta rutina se gestionan dos tags internas del controlador: `Linea_Activa` y `Balance_Linea`. Cada una toma valores de `0` a `3`, donde:
+- 0: indefinido
+- 1: Línea de producción Inyectora A - Estación A
+- 2: Línea de producción Inyectora B - Estación B
+- 3: Línea de producción Inyectora C - Estación C
+
+Esta rutina revisa cuál línea tiene piezas disponibles para entrar en la banda principal y toma las siguientes decisiones:
+- Si solo hay una línea con piezas disponibles, se permite el paso de dichas piezas por la banda principal.
+- Si varias líneas tienen piezas disponibles, se permite el paso a la línea que lleve más tiempo sin pasar piezas (balanceo de líneas).
+
+#### Estados
+Esta rutina gestiona los estados siguiendo las siguientes reglas en orden de prioridad:
+- Si no hay conexión, el estado es `Offline`.
+- Si se detecta falla, el estado es `Falla`.
+- Si se ordena mantenimiento, el estado es `Mantenimiento`.
+- Si se ordena Off con el estado `Stop` o `Funcionando`, el estado es `Stop`.
+- Si se ordena On con el estado `Stop` o `Funcionando`, el estado es `Funcionando`.
+
+Para que las rutinas de etapas y transiciones se habiliten, se requiere que el estado del elemento correspondiente sea `Funcionando`.
+
+#### Rutina_Celda
+
+#### Rutina_Estaciones
+
+#### Rutina_Inyectoras
+
+#### Sensores
+se utilizan los bloques `OSR` (One Shot Rising) y `OSF` (One Shot Falling) para detectar flancos de subida y de bajada para cada sensor.
+
+#### Setup
+Esta rutina al detectar un cambio en el tipo de juguete que se debe producir, coloca todos los estados de todos los elementos en `Setup`, espera un tiempo predefinido y finalmente coloca los estados de todos los elementos en `Stop`.
+
+### Studio 5000
+Video
 
 ## Módulo 8: SCADA
 
