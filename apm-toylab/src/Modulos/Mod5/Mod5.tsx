@@ -21,6 +21,9 @@ const Robot = () => {
       </div>
       <div className="chart-container">
         <h2 className="mod5-h2">Simulación celda robotizada</h2>
+        <p className="parr-graph">
+          Video ilustrativo sobre la simulación completa del proceso que realiza la celda robotizada.
+        </p>
         <video controls width="1024" height="480">
           <source src={sim} type="video/mp4" />
           Tu navegador no soporta la reproducción de videos.
@@ -28,6 +31,9 @@ const Robot = () => {
       </div>
       <div className="chart-container">
         <h2 className="mod5-h2">Rutina de empacado # 1</h2>
+        <p className="parr-graph">
+          Video ilustrativo sobre la rutina de empacado que se realiza en la primera etapa de la celda robotizada.
+        </p>
         <video controls width="1024" height="480">
           <source src={emp1} type="video/mp4" />
           Tu navegador no soporta la reproducción de videos.
@@ -35,6 +41,9 @@ const Robot = () => {
       </div>
       <div className="chart-container">
         <h2 className="mod5-h2">Rutina de empacado # 2</h2>
+        <p className="parr-graph">
+          Video ilustrativo sobre la siguiente rutina de empacado que se realiza en la celda robotizada.
+        </p>
         <video controls width="1024" height="480">
           <source src={emp2} type="video/mp4" />
           Tu navegador no soporta la reproducción de videos.
@@ -42,6 +51,9 @@ const Robot = () => {
       </div>
       <div className="chart-container">
         <h2 className="mod5-h2">Rutina de paletizado</h2>
+        <p className="parr-graph">
+          Video ilustrativo sobre la rutina final de la celda robotizada, donde se paletizan los productos finales.
+        </p>
         <video controls width="1024" height="480">
           <source src={palet} type="video/mp4" />
           Tu navegador no soporta la reproducción de videos.
@@ -49,15 +61,18 @@ const Robot = () => {
       </div>
       <div className="chart-container">
         <h2 className="mod5-h2">Realidad aumentada</h2>
+        <p className="parr-graph">
+          El siguiente video presenta la celda robotizada renderizada en un entorno real (realidad aumentada).
+        </p>
         <video controls width="1024" height="480">
           <source src={vr} type="video/mp4" />
           Tu navegador no soporta la reproducción de videos.
         </video>
       </div>
       <div className="chart-container">
-        <h2 className="mod5-h2">Mejora: Industria 5.0 (entornos cobóticos)</h2>
+        <h2 className="mod5-h2">Mejora: Industria 5.0 (entornos de robótica colaborativa)</h2>
         <p className="parr-graph">
-          Si el operario se duerme, la celda robotizada se apaga.
+          El siguiente video presenta la celda robotizada operando y una cámara mostrando el estado físico de un posible operario. Si el operario se duerme o se cansa bastante, la celda robotizada se detiene por seguridad.
         </p>
         <video controls width="1024" height="480">
           <source src={cobot} type="video/mp4" />

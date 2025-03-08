@@ -8,6 +8,11 @@ const PLC = () => {
   return (
     <div className="mod7-container">
       <h1>Módulo 7: Controladores Industriales (PLC)</h1>
+      <div className="chart-container" style={{ paddingLeft: 100, paddingRight: 100 }}>
+        <h2 className="mod7-h2">Reporte PLC</h2>
+        <h3>Reporte en PDF. Incluye el código Ladder y todos los tags del controlador.</h3>
+        <button className="VSM-button" onClick={() => { window.open("PDF/Ladder.pdf", '_blank'); }}>PDF</button>
+      </div>
       <div className="chart-container">
         <h2 className="mod7-h2">Elementos a controlar</h2>
         <p className="parr-graph-plc">

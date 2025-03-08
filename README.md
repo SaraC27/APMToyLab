@@ -1622,6 +1622,8 @@ Se utilizan los bloques `OSR` (One Shot Rising) y `OSF` (One Shot Falling) para 
 #### Setup
 Esta rutina al detectar un cambio en el tipo de juguete que se debe producir, coloca todos los estados de todos los elementos en `Setup`, espera un tiempo predefinido y finalmente coloca los estados de todos los elementos en `Stop`.
 
+### Reporte PLC
+En el siguiente [enlace](Files/Ladder.pdf) se encuentra el reporte generado sobre todo el programa del PLC. El reporte incluye todas las `tags` usadas y el código en `Ladder`.
 
 ## Módulo 8: SCADA
 

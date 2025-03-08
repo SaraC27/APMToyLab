@@ -13,6 +13,9 @@ const NX = () => {
       </p>
       <div className="chart-container">
         <h2 className="mod6-h2">Sensores y actuadores virtuales</h2>
+        <p className="parr-graph">
+          Video sobre los sensores y actuadores virtuales utilziados en Siemens NX.
+        </p>
         <video controls width="1024" height="480">
           <source src={vid1} type="video/mp4" />
           Tu navegador no soporta la reproducción de videos.
@@ -20,6 +23,9 @@ const NX = () => {
       </div>
       <div className="chart-container">
         <h2 className="mod6-h2">Explicación de la rutina</h2>
+        <p className="parr-graph">
+          Video explicativo sobre la rutina de producción simulada en el gemelo digital.
+        </p>
         <video controls width="1024" height="480">
           <source src={vid2} type="video/mp4" />
           Tu navegador no soporta la reproducción de videos.
@@ -27,6 +33,9 @@ const NX = () => {
       </div>
       <div className="chart-container">
         <h2 className="mod6-h2">Simulación</h2>
+        <p className="parr-graph">
+          Video presentando la simulación en funcionamiento dentro de Siemens NX sobre el gemelo digital.
+        </p>
         <video controls width="1024" height="480">
           <source src={vid3} type="video/mp4" />
           Tu navegador no soporta la reproducción de videos.

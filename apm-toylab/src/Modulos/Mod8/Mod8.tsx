@@ -11,6 +11,9 @@ const SCADA = () => {
       </p>
       <div className="chart-container">
         <h2 className="mod8-h2">Dashboards SCADA</h2>
+        <p className="parr-graph">
+          Video explicativo e ilustrativo sobre los dashboards realizados para el sistema SCADA.
+        </p>
         <video controls width="1024" height="480">
           <source src={vid} type="video/mp4" />
           Tu navegador no soporta la reproducción de videos.

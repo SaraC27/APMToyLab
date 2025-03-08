@@ -162,6 +162,9 @@ const TimeSeriesCharts = () => {
       <div className="chart-container">
         <h2 className="mod1-h2">Planta Pre - Automatizada</h2>
         <h3>Tecnomatix</h3>
+        <p className="parr-graph">
+          Simulación de Tecnomatiz de la planta antes de automatizar.
+        </p>
         <video controls width="1024" height="480">
           <source src={pre} type="video/mp4" />
           Tu navegador no soporta la reproducción de videos.
@@ -265,6 +268,9 @@ const TimeSeriesCharts = () => {
       <div className="chart-container">
         <h2 className="mod1-h2">Planta Automatizada</h2>
         <h3>Tecnomatix</h3>
+        <p className="parr-graph">
+          Simulación de Tecnomatiz de la planta después de automatizar.
+        </p>
         <video controls width="1024" height="480">
           <source src={post} type="video/mp4" />
           Tu navegador no soporta la reproducción de videos.
